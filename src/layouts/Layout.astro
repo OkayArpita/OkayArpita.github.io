@@ -7,7 +7,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-
 const baseTheme = SITE_CONFIG.baseTheme;
 const defaultTheme = `${baseTheme}-dark`;
 ---
@@ -20,10 +19,8 @@ const defaultTheme = `${baseTheme}-dark`;
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>{title}</title>
 
-    <!-- THEME TOGGLE SCRIPT -->
     <script is:inline define:vars={{ baseTheme, defaultTheme }}>
       const savedTheme = localStorage.getItem('theme');
-
       if (savedTheme && savedTheme.startsWith(baseTheme)) {
         document.documentElement.setAttribute('data-theme', savedTheme);
       } else {
@@ -51,6 +48,7 @@ const defaultTheme = `${baseTheme}-dark`;
     >
       <svg class="w-14 h-14 -rotate-90">
         <circle cx="28" cy="28" r="24" fill="none" stroke="currentColor" stroke-width="3" class="text-accent/5"></circle>
+     
         <circle
           id="progress-circle"
           cx="28" cy="28" r="24"
@@ -61,6 +59,7 @@ const defaultTheme = `${baseTheme}-dark`;
           stroke-dashoffset="150.7"
           stroke-linecap="round"
           class="text-accent transition-all duration-100"
+  
         ></circle>
       </svg>
       
@@ -76,7 +75,7 @@ const defaultTheme = `${baseTheme}-dark`;
       const characters = "ARPITA";
       // const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$#@&%";
       const colors = ["#FF4500", "#32CD32", "#1E90FF", "#FFD700", "#8A2BE2", "#FF1493"];
-
+      
       function createLetter() {
         if (!container) return;
 
@@ -86,8 +85,10 @@ const defaultTheme = `${baseTheme}-dark`;
         const color = "var(--color-textrain)";
         
         const left = Math.random() * 100; 
-        const duration = 4 + Math.random() * 8; // 4s to 10s
-        const size = 10 + Math.random() * 10; // 10px to 20px
+        const duration = 4 + Math.random() * 8;
+        // 4s to 10s
+        const size = 10 + Math.random() * 10;
+        // 10px to 20px
         
         span.innerText = char;
         span.className = 'falling-letter';
@@ -95,54 +96,18 @@ const defaultTheme = `${baseTheme}-dark`;
         span.style.color = color;
         span.style.fontSize = `${size}px`;
         span.style.animationDuration = `${duration}s`;
-        
         // Add a slight glow effect
         span.style.textShadow = `0 0 5px ${color}`;
         
         container.appendChild(span);
-
         setTimeout(() => {
           span.remove();
         }, duration * 1000);
       }
 
-
-      if (window.innerWidth > 768) {
-        // one letter every 250ms
-        setInterval(createLetter, 250);
-      } else {
-        // Static scatter effect for mobile optimization
-        const mobileCount = 20; 
-        for (let i = 0; i < mobileCount; i++) {
-          createStaticLetter();
-        }
-      }
-
-      function createStaticLetter() {
-        if (!container) return;
-
-        const span = document.createElement('span');
-        const char = characters[Math.floor(Math.random() * characters.length)];
-        const color = "var(--color-textrain)";
-        
-        const left = Math.random() * 100; 
-        const top = Math.random() * 90; // Random vertical position
-        const size = 10 + Math.random() * 10;
-        
-        span.innerText = char;
-        span.className = 'falling-letter'; // from global.css
-        
-        // Override animation for mobile 'none'
-        span.style.animation = 'none'; 
-        span.style.left = `${left}vw`;
-        span.style.top = `${top}vh`;
-        span.style.color = color;
-        span.style.fontSize = `${size}px`;
-        span.style.opacity = (0.1 + Math.random() * 0.3).toString();
-        span.style.textShadow = `0 0 5px ${color}`;
-        
-        container.appendChild(span);
-      }
+      // Rain on all devices! Slightly slower on mobile for smooth performance.
+      const spawnRate = window.innerWidth > 768 ? 250 : 600; 
+      setInterval(createLetter, spawnRate);
 
       
       // ** SCROLL TO TOP ** //
@@ -150,7 +115,7 @@ const defaultTheme = `${baseTheme}-dark`;
       const progressCircle = document.getElementById('progress-circle');
       const circumference = 150.796; // 2 * pi * 24
       const arrowIcon = toTopBtn?.querySelector('.absolute');
-
+      
       function handleScroll() {
         const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercentage = window.scrollY / scrollHeight;
@@ -179,11 +144,7 @@ const defaultTheme = `${baseTheme}-dark`;
       }
 
       window.addEventListener('scroll', handleScroll, { passive: true });
-
-      // toTopBtn?.addEventListener('click', () => {
-      //   window.scrollTo({ top: 0, behavior: 'smooth' });
-      // });
-
+      
       toTopBtn?.addEventListener('click', () => {
       arrowIcon?.classList.add('launching');
 
@@ -208,6 +169,7 @@ const defaultTheme = `${baseTheme}-dark`;
       function animation(currentTime: number) {
         if (startTime === null) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
+ 
         const run = easeOutQuad(timeElapsed, startPosition, -startPosition, duration);
         
         window.scrollTo(0, run);
