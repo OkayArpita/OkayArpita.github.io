@@ -1,72 +1,34 @@
 {
-  "name": "John Doe",
+  "name": "Arpita Kumari",
   "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
-
-  "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
+  "intro": "Hi, I am an engineering student studying ECE. I really like working on embedded systems, firmware, and making hardware projects. I spend a lot of time on robotics and building practical devices using microcontrollers and 3D printing.",
+  "introHtml": "Hi, I am an engineering student studying <span class='text-white font-bold'>ECE</span>. I really like working on <span class='text-white font-bold'>embedded systems</span>, <span class='text-white font-bold'>firmware</span>, and making hardware projects. I spend a lot of time on robotics and building practical devices using microcontrollers and 3D printing.",
+  "webpageTitle": "Arpita Kumari - Portfolio",
+  "resumeUrl": "#",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/OkayArpita",
       "icon": "mdi:github",
       "showInContact": true
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://linkedin.com/in/OkayArpita",
       "icon": "mdi:linkedin",
       "showInContact": true
     },
     {
-      "name": "Leetcode",
-      "url": "#",
-      "icon": "devicon-plain:leetcode",
-      "showInContact": false
-    },
-    {
-      "name": "Behance",
-      "url": "#",
-      "icon": "devicon-plain:behance",
-      "showInContact": false
-    },
-    {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:arpita.2327ec1129@kiet.edu",
       "icon": "mdi:email",
       "showInContact": true
     },
     {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "https://wa.me/917392049437",
       "icon": "mdi:whatsapp",
       "showInContact": true
-    },
-    {
-      "name": "Facebook",
-      "url": "#",
-      "icon": "mdi:facebook",
-      "showInContact": false
-    },
-    {
-      "name": "Messenger",
-      "url": "#",
-      "icon": "mdi:facebook-messenger",
-      "showInContact": true
-    },
-    {
-      "name": "Instagram",
-      "url": "#",
-      "icon": "mdi:instagram",
-      "showInContact": false
-    },
-    {
-      "name": "Twitter",
-      "url": "#",
-      "icon": "mdi:twitter",
-      "showInContact": false
     }
   ]
 }
