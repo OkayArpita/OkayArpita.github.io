@@ -6,6 +6,7 @@ interface Props {
     company: string;
     description: string;
     skills: string[];
+    logo?: string;
   };
   variant: 'mobile' | 'desktop-left' | 'desktop-right';
 }
@@ -16,15 +17,29 @@ const isMobile = variant === 'mobile';
 const isLeft = variant === 'desktop-left';
 
 const alignmentClass = isLeft ? "text-right" : "";
-
 const skillContainerClasses = `flex flex-wrap gap-2 ${isLeft ? 'justify-end' : ''}`;
 ---
 
 <div class={`bg-accent/5 border border-accent/10 p-4 md:p-6 rounded-2xl hover:border-accent/40 transition-all group ${alignmentClass}`}>
-  <span class={`font-mono text-xs tracking-widest uppercase text-accent/75`}>{item.period}</span>
-  <h3 class="text-xl font-heading font-bold text-maintext mt-1">{item.role}</h3>
-  <p class="text-accent text-sm mb-4">{item.company}</p>
+  
+  <div class={`flex gap-4 items-start mb-4 ${isLeft ? 'flex-row-reverse' : ''}`}>
+    {item.logo && (
+      <img 
+        src={`/${item.logo}`} 
+        alt={`${item.company} logo`} 
+        class="w-12 h-12 md:w-14 md:h-14 object-contain rounded-md bg-white/5 p-1 border border-accent/20 flex-shrink-0" 
+      />
+    )}
+    
+    <div class="flex-1">
+      <span class={`font-mono text-xs tracking-widest uppercase text-accent/75`}>{item.period}</span>
+      <h3 class="text-xl font-heading font-bold text-maintext mt-1">{item.role}</h3>
+      <p class="text-accent text-sm">{item.company}</p>
+    </div>
+  </div>
+
   <p class="text-subtext font-body text-sm leading-relaxed mb-4">{item.description}</p>
+  
   <div class={skillContainerClasses}>
     {item.skills.map((skill: string) => (
       <span class={`rounded-md text-[10px] px-2 md:px-4 py-1 bg-accent/5 border border-accent/10 text-accent/80 group-hover:border-accent/40 group-hover:text-accent`}>{skill}</span>
