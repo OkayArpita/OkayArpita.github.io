@@ -3,10 +3,10 @@
     {
       "title": "Embedded Systems & Hardware",
       "skills": [
-        { "name": "STM32 & ESP32", "level": 3, "icon": "mdi:chip" },
-        { "name": "FPGA (Verilog)", "level": 2, "icon": "mdi:expansion-card-variant" },
+        { "name": "STM32 & ESP32", "level": 3, "icon": "mdi:memory" },
+        { "name": "FPGA (Verilog)", "level": 2, "icon": "mdi:cpu-32-bit" },
         { "name": "Arduino", "level": 3, "icon": "mdi:developer-board" },
-        { "name": "PCB Design (KiCAD)", "level": 2, "icon": "mdi:circuit-board" }
+        { "name": "PCB Design (KiCAD)", "level": 2, "icon": "mdi:view-grid-outline" }
       ]
     },
     {
