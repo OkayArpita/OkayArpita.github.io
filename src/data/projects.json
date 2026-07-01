@@ -4,7 +4,7 @@
     "description": "Built a two-wheeled self-balancing robot. We used LQR control and did the simulation in MATLAB. We got 4th rank internationally in the e-Yantra competition.",
     "images": ["astro-01.webp"],
     "tech": ["MATLAB", "Embedded C", "Sensor Fusion"],
-    "platforms": ["hardware"],
+    "platforms": ["robot"],
     "link": "#",
     "category": "Robotics"
   },
@@ -13,7 +13,7 @@
     "description": "We made an autonomous maze solver bot using FPGA for the e-Yantra competition. I designed the chassis and made the PCB in KiCAD.",
     "images": ["astro-01.webp"],
     "tech": ["FPGA", "Verilog HDL", "KiCAD", "Autodesk Fusion"],
-    "platforms": ["hardware"],
+    "platforms": ["robot"],
     "link": "#",
     "category": "Robotics"
   },
@@ -22,7 +22,7 @@
     "description": "Won Best Innovation Award in MEDHA 2024. Led the making of a portable back pain relief belt. Did the CAD design and hardware integration.",
     "images": ["astro-01.webp"],
     "tech": ["Hardware Integration", "Actuators", "CAD"],
-    "platforms": ["hardware"],
+    "platforms": ["robot"],
     "link": "#",
     "category": "Wearable Tech"
   },
@@ -31,7 +31,7 @@
     "description": "Built a very fast line follower using STM32. I wrote the PID code and integrated the motors and sensors for fast navigation.",
     "images": ["astro-01.webp"],
     "tech": ["STM32", "PID Control", "Embedded C"],
-    "platforms": ["hardware"],
+    "platforms": ["robot"],
     "link": "#",
     "category": "Robotics"
   }
