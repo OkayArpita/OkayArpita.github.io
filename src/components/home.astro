@@ -44,7 +44,7 @@ const profileImage = await resolveAssetImage(photoUrl);
 
 <section id="home" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
   <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
-    <div class="balloon-float w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]">
+    <div class="balloon-float w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]">
       <!-- Use Astro Image tag for optimization, fallback to img-->
       {profileImage ? (
         <Image
@@ -63,7 +63,7 @@ const profileImage = await resolveAssetImage(photoUrl);
         />
       )}
     </div>
-    <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-20"></div>
+    <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[120px] opacity-10"></div>
   </div>
 
     <div class="reveal-content" style="animation-delay: 200ms;">
