@@ -1,35 +1,37 @@
 {
   "categories": [
     {
-      "title": "Mobile Development",
+      "title": "Embedded Systems & Hardware",
       "skills": [
-        { "name": "Flutter", "level": 3, "icon": "skill-icons:flutter-dark" },
-        { "name": "Dart", "level": 3, "icon": "skill-icons:dart-dark" },
-        { "name": "Kotlin", "level": 1, "icon": "skill-icons:kotlin-dark" }
+        { "name": "STM32 & ESP32", "level": 3, "icon": "mdi:chip" },
+        { "name": "FPGA (Verilog)", "level": 2, "icon": "mdi:expansion-card-variant" },
+        { "name": "Arduino", "level": 3, "icon": "skill-icons:arduino" },
+        { "name": "PCB Design (KiCAD)", "level": 2, "icon": "mdi:circuit-board" }
       ]
     },
     {
-      "title": "Frontend",
+      "title": "Programming",
       "skills": [
-        { "name": "Astro", "level": 2, "icon": "skill-icons:astro" },
-        { "name": "HTML", "level": 2, "icon": "skill-icons:html" },
-        { "name": "CSS", "level": 2, "icon": "skill-icons:css" },
-        { "name": "Tailwind CSS", "level": 1, "icon": "skill-icons:tailwindcss-dark" }
-      ]
-    },
-    {
-      "title": "Backend",
-      "skills": [
-        { "name": "FastAPI", "level": 2, "icon": "skill-icons:fastapi" },
+        { "name": "C / C++", "level": 3, "icon": "skill-icons:c" },
         { "name": "Python", "level": 2, "icon": "skill-icons:python-dark" },
-        { "name": "Firebase", "level": 3, "icon": "vscode-icons:file-type-firebase" }
+        { "name": "Embedded C", "level": 3, "icon": "skill-icons:c" },
+        { "name": "MATLAB", "level": 2, "icon": "skill-icons:matlab" }
       ]
     },
     {
-      "title": "Database",
+      "title": "Robotics & Control",
       "skills": [
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
-        { "name": "PostgreSQL", "level": 2, "icon": "skill-icons:postgresql-dark" }
+        { "name": "PID & LQR Control", "level": 3, "icon": "mdi:robot" },
+        { "name": "Sensor Fusion (IMU)", "level": 2, "icon": "mdi:axis-arrow" },
+        { "name": "Firmware Development", "level": 3, "icon": "mdi:code-tags-check" }
+      ]
+    },
+    {
+      "title": "Design & Prototyping",
+      "skills": [
+        { "name": "Autodesk Fusion", "level": 3, "icon": "mdi:cube-outline" },
+        { "name": "3D Printing", "level": 3, "icon": "mdi:printer-3d" },
+        { "name": "SolidWorks", "level": 2, "icon": "mdi:cube" }
       ]
     }
   ]
