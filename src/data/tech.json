@@ -1,71 +1,38 @@
-[
-  {
-    "title": "Balancing Builder Bot",
-    "description": "A two-wheeled self-balancing robot made for the e-Yantra competition. It uses IMU for state estimation and LQR for stabilization. We secured 4th position internationally.",
-    "images": [
-      "astro-01.webp"
-    ],
-    "tech": [
-      "MATLAB",
-      "Embedded C",
-      "Sensor Fusion"
-    ],
-    "platforms": [
-      "hardware"
-    ],
-    "link": "#",
-    "category": "Robotics"
-  },
-  {
-    "title": "Maze Solver Bot",
-    "description": "An FPGA-based autonomous robot that solves a maze. I designed the chassis in Fusion 360, made the PCB in KiCAD, and wrote the logic for the DE0-Nano FPGA.",
-    "images": [
-      "astro-01.webp"
-    ],
-    "tech": [
-      "FPGA",
-      "Verilog HDL",
-      "KiCAD",
-      "Autodesk Fusion"
-    ],
-    "platforms": [
-      "hardware"
-    ],
-    "link": "#",
-    "category": "Robotics"
-  },
-  {
-    "title": "Posture Pro Belt",
-    "description": "A portable posture correction belt with vibration alerts and massage. Won the Best Innovation Award at the MEDHA 2024 hackathon for the hardware design and prototyping.",
-    "images": [
-      "astro-01.webp"
-    ],
-    "tech": [
-      "Hardware Integration",
-      "Actuators",
-      "CAD"
-    ],
-    "platforms": [
-      "hardware"
-    ],
-    "link": "#",
-    "category": "Wearable Tech"
-  },
-  {
-    "title": "Fastest Line Follower",
-    "description": "A high-speed robot built using an STM32 microcontroller and QTRX sensors. I wrote the PID tracking code and the embedded control stack to make it navigate fast.",
-    "images": [
-      "astro-01.webp"
-    ],
-    "tech": [
-      "STM32",
-      "PID Control",
-      "Embedded C"
-    ],
-    "platforms": [
-      "hardware"
-    ],
-    "link": "#",
-    "category": "Robotics"
-  }
-]
+{
+  "categories": [
+    {
+      "title": "Embedded Systems & Hardware",
+      "skills": [
+        { "name": "STM32 & ESP32", "level": 3, "icon": "mdi:chip" },
+        { "name": "FPGA (Verilog)", "level": 2, "icon": "mdi:expansion-card-variant" },
+        { "name": "Arduino", "level": 3, "icon": "mdi:developer-board" },
+        { "name": "PCB Design (KiCAD)", "level": 2, "icon": "mdi:circuit-board" }
+      ]
+    },
+    {
+      "title": "Programming",
+      "skills": [
+        { "name": "C / C++", "level": 3, "icon": "mdi:language-cpp" },
+        { "name": "Python", "level": 2, "icon": "mdi:language-python" },
+        { "name": "Embedded C", "level": 3, "icon": "mdi:language-c" },
+        { "name": "MATLAB", "level": 2, "icon": "mdi:math-compass" }
+      ]
+    },
+    {
+      "title": "Robotics & Control",
+      "skills": [
+        { "name": "PID & LQR Control", "level": 3, "icon": "mdi:robot" },
+        { "name": "Sensor Fusion (IMU)", "level": 2, "icon": "mdi:axis-arrow" },
+        { "name": "Firmware Development", "level": 3, "icon": "mdi:code-tags-check" }
+      ]
+    },
+    {
+      "title": "Design & Prototyping",
+      "skills": [
+        { "name": "Autodesk Fusion", "level": 3, "icon": "mdi:cube-outline" },
+        { "name": "3D Printing", "level": 3, "icon": "mdi:printer-3d" },
+        { "name": "SolidWorks", "level": 2, "icon": "mdi:cube" }
+      ]
+    }
+  ]
+}
