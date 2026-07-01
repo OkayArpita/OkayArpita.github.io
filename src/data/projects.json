@@ -1,20 +1,38 @@
 [
   {
-    "title": "Awesome Website",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
-    "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
-    "category": "Published Website"
+    "title": "Balancing Builder Bot",
+    "description": "Built a two-wheeled self-balancing robot. We used LQR control and did the simulation in MATLAB. We got 4th rank internationally in the e-Yantra competition.",
+    "images": ["astro-01.webp"],
+    "tech": ["MATLAB", "Embedded C", "Sensor Fusion"],
+    "platforms": ["hardware"],
+    "link": "#",
+    "category": "Robotics"
   },
   {
-    "title": "Demo Mobile App",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
-    "category": "Hobby"
+    "title": "Maze Solver Bot",
+    "description": "We made an autonomous maze solver bot using FPGA for the e-Yantra competition. I designed the chassis and made the PCB in KiCAD.",
+    "images": ["astro-01.webp"],
+    "tech": ["FPGA", "Verilog HDL", "KiCAD", "Autodesk Fusion"],
+    "platforms": ["hardware"],
+    "link": "#",
+    "category": "Robotics"
+  },
+  {
+    "title": "Posture Pro Belt",
+    "description": "Won Best Innovation Award in MEDHA 2024. Led the making of a portable back pain relief belt. Did the CAD design and hardware integration.",
+    "images": ["astro-01.webp"],
+    "tech": ["Hardware Integration", "Actuators", "CAD"],
+    "platforms": ["hardware"],
+    "link": "#",
+    "category": "Wearable Tech"
+  },
+  {
+    "title": "Fastest Line Follower",
+    "description": "Built a very fast line follower using STM32. I wrote the PID code and integrated the motors and sensors for fast navigation.",
+    "images": ["astro-01.webp"],
+    "tech": ["STM32", "PID Control", "Embedded C"],
+    "platforms": ["hardware"],
+    "link": "#",
+    "category": "Robotics"
   }
 ]
