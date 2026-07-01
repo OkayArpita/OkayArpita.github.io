@@ -5,7 +5,8 @@
     "period": "Mar 2026 - May 2026",
     "type": "Remote Internship",
     "description": "Designing CAD models for the Open Parametric Hand project. Working on 3D design and rapid prototyping to improve modular robotic hands.",
-    "skills": ["CAD Modelling", "Rapid Prototyping", "Hardware Design"]
+    "skills": ["CAD Modelling", "Rapid Prototyping", "Hardware Design"],
+    "logo": "epfl-logo.png"
   },
   {
     "company": "ACT Lab, IIT Madras",
@@ -13,7 +14,8 @@
     "period": "Sep 2025 - Nov 2025",
     "type": "Onsite Internship",
     "description": "Built a multi-channel infusion system for an ex vivo heart revival platform. Developed the firmware in C and designed the PCB and circuit routing.",
-    "skills": ["Embedded C", "PCB Design", "Electromechanical Integration"]
+    "skills": ["Embedded C", "PCB Design", "Electromechanical Integration"],
+    "logo": "IITM-logo.png"
   },
   {
     "company": "BETIC, IIT Bombay",
@@ -21,7 +23,8 @@
     "period": "May 2025 - Jul 2025",
     "type": "Onsite Internship",
     "description": "Worked on building an automatic blood smear device for screening sickle cell anemia. Handled the embedded control stack and motor control.",
-    "skills": ["Embedded Hardware Design", "Motor Control", "Bench-level testing"]
+    "skills": ["Embedded Hardware Design", "Motor Control", "Bench-level testing"],
+    "logo": "IITB-logo.jpg"
   },
   {
     "company": "KIET Group of Institutions",
