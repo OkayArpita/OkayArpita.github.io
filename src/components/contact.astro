@@ -1,12 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components';
 import localData from '../data/home.json';
-
 ---
 
 <section id="contact" class="section-container">
   <div class="container mx-auto">
     <div class="space-y-12">
+      
       <div class="contact-header opacity-0 mb-16">
         <h2 class="text-3xl md:text-4xl font-heading font-bold text-maintext mb-2 flex items-center gap-4">
             <span class="text-accent">/</span> Contact Me
@@ -16,15 +16,14 @@ import localData from '../data/home.json';
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <div class="flex flex-wrap justify-center gap-6 text-center max-w-5xl mx-auto">
         {localData.socials
         .filter((social) => social.showInContact && social.url && social.url !== "#" && social.url !== "")
         .map((social) => (
-          <!-- Added 'contact-card' and 'opacity-0' here -->
           <a 
             href={social.url} 
             target="_blank" 
-            class="contact-card opacity-0 group p-8 bg-accent/5 border border-accent/10 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all duration-300"
+            class="contact-card opacity-0 group p-8 bg-accent/5 border border-accent/10 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all duration-300 w-full sm:w-[calc(50%-1.5rem)] md:w-64"
           >
             <Icon 
               name={social.icon} 
@@ -38,7 +37,6 @@ import localData from '../data/home.json';
         ))}
       </div>
 
-      <!-- /* FOOTER */ -->
       <div class="contact-footer opacity-0 pt-20 border-t border-white/5">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <p class="text-subtext text-sm font-body order-2 md:order-1">
@@ -104,7 +102,7 @@ import localData from '../data/home.json';
 
           if (target.classList.contains('contact-card')) {
             const index = Array.from(cards).indexOf(target);
-            // Stagger effect for the 4-column grid
+            // Stagger effect for the grid
             setTimeout(() => {
               target.classList.add('reveal');
             }, (index % 4) * 150);
