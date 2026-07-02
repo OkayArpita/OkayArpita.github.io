@@ -6,6 +6,7 @@ import Tech from "../components/tech.astro";
 import Projects from "../components/projects.astro";
 import Contact from "../components/contact.astro";
 import Career from "../components/career.astro";
+import Achievements from "../components/achievements.astro";
 import localData from '../data/home.json';
 
 interface ProfileData {
@@ -15,7 +16,8 @@ interface ProfileData {
 const isApiLive = import.meta.env.PROD; // Auto true in production
 const BASE_URL = import.meta.env.PUBLIC_API_BASE_URL;
 
-let data: ProfileData; // data as ProfileData
+let data: ProfileData;
+// data as ProfileData
 
 if (isApiLive && BASE_URL) {
   try {
@@ -37,6 +39,7 @@ const { webpageTitle } = data;
   	<Nav />
 	<Home />
 	<Career />
+	<Achievements />
 	<Projects />
 	<Tech />
 	<Contact />
