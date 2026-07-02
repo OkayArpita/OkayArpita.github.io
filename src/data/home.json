@@ -23,12 +23,6 @@
       "url": "mailto:arpita.2327ec1129@kiet.edu",
       "icon": "mdi:email",
       "showInContact": true
-    },
-    {
-      "name": "Whatsapp",
-      "url": "https://wa.me/917392049437",
-      "icon": "mdi:whatsapp",
-      "showInContact": true
     }
   ]
 }
