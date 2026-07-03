@@ -27,16 +27,18 @@
     ]
   },
   {
-    "event": "Medical Device Innovation Challenge (BETIC, IIT Bombay)",
+    "event": "BETIC, IIT Bombay",
     "logo": "BETIC.png",
     "editions": [
       {
-        "award": "Stage 2 Finalist (MEDIC 2024)",
+        "event": "Medical Device Innovation Challenge (MEDIC 2024)",
+        "award": "Finalist",
         "year": "October 2024",
         "description": "[YOUR MEDIC PROJECT DESCRIPTION GOES HERE]"
       },
       {
-        "award": "Stage 1 Best Innovation Award Winner (MEDHA 2024)",
+        "event": "Medical Device Hackathon (MEDHA 2024)",
+        "award": "Best Innovation Award Winner",
         "year": "September 2024",
         "description": "Led the R&D for a portable posture correction belt prototype, focusing on the hardware-software integration."
       }
