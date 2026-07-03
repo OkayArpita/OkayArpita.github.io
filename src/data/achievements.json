@@ -4,12 +4,12 @@
     "logo": "eYantra.png",
     "editions": [
       {
-        "award": "Stage 2 Qualifier (Top 50)",
+        "award": "10th Position Internationally among 682 teams",
         "year": "Aug 2025 - Feb 2026",
         "description": "Selected in the top 50 out of 1000+ teams for the maze-solver robot theme. Working on the embedded firmware and control logic."
       },
       {
-        "award": "4th Position Internationally",
+        "award": "4th Position Internationally among 1008 teams",
         "year": "Sep 2024 - Mar 2025",
         "description": "Developed a two-wheeled self-balancing robot. Implemented LQR-based control logic for stable balancing and navigation."
       }
@@ -20,14 +20,14 @@
     "logo": "HMEL.png",
     "editions": [
       {
-        "award": "Participant / Finalist",
+        "award": 1st Runner-Up among 300+ teams",
         "year": "Jul 2025 - Sep 2025",
         "description": "[YOUR HMEL PROJECT DESCRIPTION GOES HERE]"
       }
     ]
   },
   {
-    "event": "Medical Device Innovation Hackathons",
+    "event": "Medical Device Innovation Challenge (MEDHA 2024)",
     "logo": "BETIC.png",
     "editions": [
       {
