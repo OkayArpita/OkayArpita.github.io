@@ -27,6 +27,17 @@
     ]
   },
   {
+    "event": "TechnoXian - World Robotics Championship",
+    "logo": "Technoxian.png",
+    "editions": [
+      {
+        "award": "Participant",
+        "year": "Aug 2025 - Sep 2025",
+        "description": "[YOUR TECHNOXIAN PROJECT DESCRIPTION GOES HERE]"
+      }
+    ]
+  },
+  {
     "event": "BETIC, IIT Bombay",
     "logo": "BETIC.png",
     "editions": [
