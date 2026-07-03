@@ -2,34 +2,37 @@
   {
     "event": "e-Yantra Robotics Competition 2025-26",
     "award": "Stage 2 Qualifier (Top 50)",
-    "year": "2025 - 2026",
+    "year": " August 2025 - February 2026",
     "description": "Selected in the top 50 out of 1000+ teams for the maze-solver robot theme. Working on the embedded firmware and control logic.",
     "logo": "eYantra.png"
   },
-  {
-    "event": "e-Yantra Robotics Competition 2024-25",
-    "award": "4th Position Internationally",
-    "year": "2024 - 2025",
-    "description": "Developed a two-wheeled self-balancing robot. Implemented LQR-based control logic for stable balancing and navigation.",
-    "logo": "eYantra.png"
-  },
-  {
-    "event": "MEDHA 2024 Hackathon",
-    "award": "Best Innovation Award Winner",
-    "year": "2024",
-    "description": "Led the R&D for a portable posture correction belt prototype, focusing on the hardware-software integration."
-  },
-  {
+    {
     "event": "HMEL Innovation Challenge",
     "award": "Participant / Finalist",
-    "year": "2024",
+    "year": "September 2025",
     "description": "[YOUR HMEL PROJECT DESCRIPTION GOES HERE]",
     "logo": "HMEL.png"
   },
   {
-    "event": "Medic 2024",
-    "award": "Participant",
-    "year": "2024",
+    "event": "e-Yantra Robotics Competition 2024-25",
+    "award": "4th Position Internationally",
+    "year": " September 2024 - March 2025",
+    "description": "Developed a two-wheeled self-balancing robot. Implemented LQR-based control logic for stable balancing and navigation.",
+    "logo": "eYantra.png"
+  },
+  {
+    "event": "Medical Device Innovation Challenge (MEDIC) 2024",
+    "award": "Finalist",
+    "year": " October 2024",
     "description": "[YOUR MEDIC PROJECT DESCRIPTION GOES HERE]"
+    "logo": "BETIC.png"
   }
+  {
+    "event": "MEDHA 2024 Hackathon",
+    "award": "Best Innovation Award Winner",
+    "year": " September 2024",
+    "description": "Led the R&D for a portable posture correction belt prototype, focusing on the hardware-software integration."
+    "logo": "BETIC.png"
+  },
+
 ]
