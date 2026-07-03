@@ -2,7 +2,7 @@
   {
     "title": "Open Parametric Hand",
     "description": "Working on this during my remote internship at CREATE Lab, EPFL. Mostly focusing on 3D design and rapid prototyping to build an open-source robotic hand.",
-    "tech": ["3D Printing", "CAD", "Rapid Prototyping", "Hardware Design"],
+    "tags": ["3D Printing", "CAD", "Rapid Prototyping", "Hardware Design"],
     "image": "oph.png",
     "github": "",
     "link": ""
@@ -10,7 +10,7 @@
   {
     "title": "Balancing Builder Bot",
     "description": "Made a two-wheeled self-balancing robot for the e-Yantra competition where we placed 4th internationally. Handled the embedded firmware and LQR control logic after running simulations.",
-    "tech": ["Embedded Systems", "LQR Control", "Microcontrollers", "C++"],
+    "tags": ["Embedded Systems", "LQR Control", "Microcontrollers", "C++"],
     "image": "balancing-bot.png",
     "github": "",
     "link": ""
@@ -18,7 +18,7 @@
   {
     "title": "Multichannel Infusion System",
     "description": "Developed this hardware setup for an ex vivo heart revival platform during my time at ACT Lab, IIT Madras.",
-    "tech": ["Hardware Integration", "Embedded Systems", "PCB Design"],
+    "tags": ["Hardware Integration", "Embedded Systems", "PCB Design"],
     "image": "infusion.png",
     "github": "",
     "link": ""
@@ -26,7 +26,7 @@
   {
     "title": "Automatic Blood Smear Device",
     "description": "Built an automatic blood smear device for sickle cell anaemia screening during my internship at BETIC, IIT Bombay.",
-    "tech": ["Hardware Engineering", "Prototyping", "Embedded C"],
+    "tags": ["Hardware Engineering", "Prototyping", "Embedded C"],
     "image": "blood-smear.png",
     "github": "",
     "link": ""
@@ -34,7 +34,7 @@
   {
     "title": "Dental Intra Oral Scanner",
     "description": "[YOUR DENTAL SCANNER DESCRIPTION GOES HERE. Focus on the hardware and embedded work you did.]",
-    "tech": ["Hardware Design", "Firmware"],
+    "tags": ["Hardware Design", "Firmware"],
     "image": "scanner.png",
     "github": "",
     "link": ""
@@ -42,7 +42,7 @@
   {
     "title": "Posture Pro Belt",
     "description": "Led the R&D for a portable posture correction belt prototype for MEDHA 2024. Focused completely on the hardware-software integration.",
-    "tech": ["Microcontrollers", "Sensors", "Hardware-Software Integration"],
+    "tags": ["Microcontrollers", "Sensors", "Hardware-Software Integration"],
     "image": "posture-belt.png",
     "github": "",
     "link": ""
@@ -50,7 +50,7 @@
   {
     "title": "Maze Solver Bot",
     "description": "Currently making this for e-Yantra 2025-26 stage 2. Writing the embedded firmware and control logic to navigate the maze.",
-    "tech": ["Embedded Firmware", "Control Logic", "STM32/Arduino"],
+    "tags": ["Embedded Firmware", "Control Logic", "STM32/Arduino"],
     "image": "maze-solver.png",
     "github": "",
     "link": ""
@@ -58,7 +58,7 @@
   {
     "title": "Fastest Line Follower Robot",
     "description": "[YOUR LINE FOLLOWER DESCRIPTION GOES HERE. Mention the sensors and microcontroller you used.]",
-    "tech": ["PID Control", "Sensors", "Microcontrollers"],
+    "tags": ["PID Control", "Sensors", "Microcontrollers"],
     "image": "line-follower.png",
     "github": "",
     "link": ""
