@@ -20,23 +20,23 @@
     "logo": "HMEL.png",
     "editions": [
       {
-        "award": 1st Runner-Up among 300+ teams",
+        "award": "1st Runner-Up among 300+ teams",
         "year": "Jul 2025 - Sep 2025",
         "description": "[YOUR HMEL PROJECT DESCRIPTION GOES HERE]"
       }
     ]
   },
   {
-    "event": "Medical Device Innovation Challenge (MEDHA 2024)",
+    "event": "Medical Device Innovation Challenge (BETIC, IIT Bombay)",
     "logo": "BETIC.png",
     "editions": [
       {
-        "award": "Finalist (MEDIC 2024)",
+        "award": "Stage 2 Finalist (MEDIC 2024)",
         "year": "October 2024",
         "description": "[YOUR MEDIC PROJECT DESCRIPTION GOES HERE]"
       },
       {
-        "award": "Best Innovation Award Winner (MEDHA 2024)",
+        "award": "Stage 1 Best Innovation Award Winner (MEDHA 2024)",
         "year": "September 2024",
         "description": "Led the R&D for a portable posture correction belt prototype, focusing on the hardware-software integration."
       }
