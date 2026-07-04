@@ -1,66 +1,74 @@
 [
   {
     "title": "Open Parametric Hand",
+    "category": "Robotics / 3D Design",
     "description": "Working on this during my remote internship at CREATE Lab, EPFL. Mostly focusing on 3D design and rapid prototyping to build an open-source robotic hand.",
-    "tags": ["3D Printing", "CAD", "Rapid Prototyping", "Hardware Design"],
-    "image": "oph.png",
-    "github": "",
+    "images": ["oph.png"],
+    "platforms": [],
+    "tech": ["3D Printing", "CAD", "Rapid Prototyping", "Hardware Design"],
     "link": ""
   },
   {
     "title": "Balancing Builder Bot",
+    "category": "Robotics / Control",
     "description": "Made a two-wheeled self-balancing robot for the e-Yantra competition where we placed 4th internationally. Handled the embedded firmware and LQR control logic after running simulations.",
-    "tags": ["Embedded Systems", "LQR Control", "Microcontrollers", "C++"],
-    "image": "balancing-bot.png",
-    "github": "",
+    "images": ["balancing-bot.png"],
+    "platforms": [],
+    "tech": ["Embedded Systems", "LQR Control", "Microcontrollers", "C++"],
     "link": ""
   },
   {
     "title": "Multichannel Infusion System",
+    "category": "Biomedical Hardware",
     "description": "Developed this hardware setup for an ex vivo heart revival platform during my time at ACT Lab, IIT Madras.",
-    "tags": ["Hardware Integration", "Embedded Systems", "PCB Design"],
-    "image": "infusion.png",
-    "github": "",
+    "images": ["infusion.png"],
+    "platforms": [],
+    "tech": ["Hardware Integration", "Embedded Systems", "PCB Design"],
     "link": ""
   },
   {
     "title": "Automatic Blood Smear Device",
+    "category": "Biomedical Robotics",
     "description": "Built an automatic blood smear device for sickle cell anaemia screening during my internship at BETIC, IIT Bombay.",
-    "tags": ["Hardware Engineering", "Prototyping", "Embedded C"],
-    "image": "blood-smear.png",
-    "github": "",
+    "images": ["blood-smear.png"],
+    "platforms": [],
+    "tech": ["Hardware Engineering", "Prototyping", "Embedded C"],
     "link": ""
   },
   {
     "title": "Dental Intra Oral Scanner",
+    "category": "Hardware Design",
     "description": "[YOUR DENTAL SCANNER DESCRIPTION GOES HERE. Focus on the hardware and embedded work you did.]",
-    "tags": ["Hardware Design", "Firmware"],
-    "image": "scanner.png",
-    "github": "",
+    "images": ["scanner.png"],
+    "platforms": [],
+    "tech": ["Hardware Design", "Firmware"],
     "link": ""
   },
   {
     "title": "Posture Pro Belt",
+    "category": "Wearable Tech",
     "description": "Led the R&D for a portable posture correction belt prototype for MEDHA 2024. Focused completely on the hardware-software integration.",
-    "tags": ["Microcontrollers", "Sensors", "Hardware-Software Integration"],
-    "image": "posture-belt.png",
-    "github": "",
+    "images": ["posture-belt.png"],
+    "platforms": [],
+    "tech": ["Microcontrollers", "Sensors", "Hardware-Software Integration"],
     "link": ""
   },
   {
     "title": "Maze Solver Bot",
+    "category": "Robotics",
     "description": "Currently making this for e-Yantra 2025-26 stage 2. Writing the embedded firmware and control logic to navigate the maze.",
-    "tags": ["Embedded Firmware", "Control Logic", "STM32/Arduino"],
-    "image": "maze-solver.png",
-    "github": "",
+    "images": ["maze-solver.png"],
+    "platforms": [],
+    "tech": ["Embedded Firmware", "Control Logic", "STM32/Arduino"],
     "link": ""
   },
   {
     "title": "Fastest Line Follower Robot",
+    "category": "Robotics",
     "description": "[YOUR LINE FOLLOWER DESCRIPTION GOES HERE. Mention the sensors and microcontroller you used.]",
-    "tags": ["PID Control", "Sensors", "Microcontrollers"],
-    "image": "line-follower.png",
-    "github": "",
+    "images": ["line-follower.png"],
+    "platforms": [],
+    "tech": ["PID Control", "Sensors", "Microcontrollers"],
     "link": ""
   }
 ]
