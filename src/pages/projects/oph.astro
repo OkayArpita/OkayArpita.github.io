@@ -44,7 +44,7 @@ const profileImage = await resolveAssetImage("oph.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Working on this during my remote internship at CREATE Lab, EPFL. Mostly focusing on 3D design and rapid prototyping to build an open-source robotic hand.
+          The Voice-Controlled Open Parametric Hand (OPH) is a compact, lightweight, tendon-driven bionic hand designed to replicate the anatomical structure and movement of the human hand. Transitioning the manually operated OPH platform into a fully motorized system, this project integrates five micro metal gear motors and intelligent feedback-controlled actuation to enable advanced grasping and manipulation tasks through intuitive voice commands.
         </p>
       </div>
     </div>
@@ -57,7 +57,7 @@ const profileImage = await resolveAssetImage("oph.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          [Your details on why this project is important will go here.]
+          This project is crucial for advancing accessible and highly functional bionic limbs. By shifting from a manually operated platform to a fully motorized, voice-controlled system, it vastly improves the ease of use and capability of prosthetics. Optimizing modular hardware architectures and creating scalable, cost-effective development workflows also ensures that this robotic hand can be rapidly prototyped and customized for diverse clinical and assistive use-cases.
         </p>
       </div>
     </div>
@@ -68,10 +68,16 @@ const profileImage = await resolveAssetImage("oph.png");
         <span class="w-8 h-[2px] bg-accent"></span>
         Project Details
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          [Your comprehensive project details, methodology, and challenges will go here.]
+          During my research internship under the guidance of Prof. Josie Hughes at CREATE Lab (EPFL), I focused heavily on 3D design and rapid prototyping to build this open-source robotic hand.
         </p>
+        <ul class="list-disc list-outside ml-5 text-gray font-body text-base md:text-lg leading-relaxed space-y-2">
+          <li>Designing and optimizing CAD models for the OPH, improving its modular prosthetic architectures.</li>
+          <li>Developing parametric design strategies that incorporate anatomical tendon routing, multi-degree-of-freedom actuation, and performance tuning.</li>
+          <li>Executing iterative prototyping cycles utilizing 3D printing to validate improvements, refine mechanical performance, and maintain cost-effective development workflows.</li>
+          <li>Integrating five micro metal gear motors for intelligent feedback-controlled actuation, allowing the hand to perform advanced grasping through voice commands.</li>
+        </ul>
       </div>
     </div>
 
@@ -82,7 +88,7 @@ const profileImage = await resolveAssetImage("oph.png");
         Technology used
       </h2>
       <div class="flex flex-wrap gap-3 pt-2">
-        {["3D Printing", "CAD", "Rapid Prototyping", "Hardware Design"].map((t) => (
+        {["3D Printing", "CAD", "Rapid Prototyping", "Hardware Design", "Voice Control", "Micro Metal Gear Motors", "Parametric Design"].map((t) => (
           <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
             {t}
           </span>
@@ -97,9 +103,15 @@ const profileImage = await resolveAssetImage("oph.png");
         Associated with
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex items-center gap-4">
-        <p class="text-maintext font-heading text-lg md:text-xl font-bold">
-          CREATE Lab, EPFL
-        </p>
+        <div>
+          <p class="text-maintext font-heading text-lg md:text-xl font-bold">
+            CREATE Lab, EPFL
+          </p>
+          <p class="text-subtext font-body text-sm md:text-base mt-1">
+            Research Internship | Guide: Prof. Josie Hughes<br />
+            Mar '26 - May '26 (Remote)
+          </p>
+        </div>
       </div>
     </div>
 
@@ -111,7 +123,7 @@ const profileImage = await resolveAssetImage("oph.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed italic">
-          Certificate details pending...
+          Letter of Recommendation / Certificate available upon request.
         </p>
       </div>
     </div>
