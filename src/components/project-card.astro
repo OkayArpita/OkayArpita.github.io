@@ -14,9 +14,18 @@ const optimizedImages = await Promise.all(
 const validImages = optimizedImages.filter(Boolean);
 
 const isSlider = validImages.length > 1;
+
+const CardTag = project.link ? 'a' : 'div';
+const cardProps = project.link ? {
+  href: project.link,
+  target: project.link.startsWith('/') ? '_self' : '_blank',
+  class: "project-card group block relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500 cursor-pointer"
+} : {
+  class: "project-card group relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500"
+};
 ---
 
-<div class="project-card group relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500">
+<CardTag {...cardProps}>
   <div class="aspect-video overflow-hidden relative bg-background/50">
     <div class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
     
@@ -57,9 +66,9 @@ const isSlider = validImages.length > 1;
         <h3 class="text-xl font-heading font-bold text-maintext mt-1">{project.title}</h3>
       </div>
       {project.link && (
-        <a href={project.link} target={project.link.startsWith('/') ? "_self" : "_blank"} class="text-accent/75 hover:text-accent transition-colors">
+        <div class="text-accent/75 group-hover:text-accent transition-colors">
           <Icon name={project.link.startsWith('/') ? "mdi:arrow-right" : "mdi:open-in-new"} class="w-6 h-6" />
-        </a>
+        </div>
       )}
     </div>
 
@@ -75,7 +84,7 @@ const isSlider = validImages.length > 1;
       ))}
     </div>
   </div>
-</div>
+</CardTag>
 
 <script>
   function initSliders() {
