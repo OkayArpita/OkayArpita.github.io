@@ -284,14 +284,18 @@ const navItems: NavItem[] = [
   //smooth scrolling to a linked section
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault();
       const target = e.currentTarget as HTMLAnchorElement;
       const targetId = target.getAttribute("href")?.substring(1) || "";
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
+        e.preventDefault();
         targetElement.scrollIntoView({
           behavior: "smooth",
         });
+      } else {
+        // If target element is not on this page (e.g. we are on a project detail page),
+        // let the default link behavior take over (which goes to e.g. /#projects)
+        target.setAttribute('href', '/#' + targetId);
       }
     });
   });
