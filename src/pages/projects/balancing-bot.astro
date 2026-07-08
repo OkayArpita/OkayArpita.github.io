@@ -99,9 +99,9 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.png");
             Arduino Code for Complementary Filter:
           </p>
           <div class="rounded-xl overflow-hidden bg-[#1E1E1E] text-sm md:text-base border border-accent/20">
-            <pre class="p-4 overflow-x-auto"><code class="text-green-400">float <span class="text-blue-400">complementaryFilter</span>(float gyroAngle, float accelAngle) {
+            <pre class="p-4 overflow-x-auto"><code class="text-green-400">float <span class="text-blue-400">complementaryFilter</span>(float gyroAngle, float accelAngle) &#123;
   <span class="text-purple-400">return</span> (gyroAngle * <span class="text-yellow-400">0.98</span>) + (accelAngle * <span class="text-yellow-400">0.02</span>);
-}</code></pre>
+&#125;</code></pre>
           </div>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">
             This method is computationally efficient and suitable for real-time angle measurement applications.
