@@ -3,72 +3,121 @@
     "title": "Open Parametric Hand",
     "category": "Robotics / 3D Design",
     "description": "Working on this during my remote internship at CREATE Lab, EPFL. Mostly focusing on 3D design and rapid prototyping to build an open-source robotic hand.",
-    "images": ["oph.png"],
+    "images": [
+      "oph.png"
+    ],
     "platforms": [],
-    "tech": ["3D Printing", "CAD", "Rapid Prototyping", "Hardware Design"],
+    "tech": [
+      "3D Printing",
+      "CAD",
+      "Rapid Prototyping",
+      "Hardware Design"
+    ],
     "link": "/projects/oph"
   },
   {
     "title": "Balancing Builder Bot",
     "category": "Robotics / Control",
     "description": "Made a two-wheeled self-balancing robot for the e-Yantra competition where we placed 4th internationally. Handled the embedded firmware and LQR control logic after running simulations.",
-    "images": ["balancing-bot.png"],
+    "images": [
+      "balancing-bot.png"
+    ],
     "platforms": [],
-    "tech": ["Embedded Systems", "LQR Control", "Microcontrollers", "C++"],
-    "link": ""
+    "tech": [
+      "Embedded Systems",
+      "LQR Control",
+      "Microcontrollers",
+      "C++"
+    ],
+    "link": "/projects/balancing-bot"
   },
   {
     "title": "Multichannel Infusion System",
     "category": "Biomedical Hardware",
     "description": "Developed this hardware setup for an ex vivo heart revival platform during my time at ACT Lab, IIT Madras.",
-    "images": ["infusion.png"],
+    "images": [
+      "infusion.png"
+    ],
     "platforms": [],
-    "tech": ["Hardware Integration", "Embedded Systems", "PCB Design"],
-    "link": ""
+    "tech": [
+      "Hardware Integration",
+      "Embedded Systems",
+      "PCB Design"
+    ],
+    "link": "/projects/infusion"
   },
   {
     "title": "Automatic Blood Smear Device",
     "category": "Biomedical Robotics",
     "description": "Built an automatic blood smear device for sickle cell anaemia screening during my internship at BETIC, IIT Bombay.",
-    "images": ["blood-smear.png"],
+    "images": [
+      "blood-smear.png"
+    ],
     "platforms": [],
-    "tech": ["Hardware Engineering", "Prototyping", "Embedded C"],
-    "link": ""
+    "tech": [
+      "Hardware Engineering",
+      "Prototyping",
+      "Embedded C"
+    ],
+    "link": "/projects/blood-smear"
   },
   {
     "title": "Dental Intra Oral Scanner",
     "category": "Hardware Design",
     "description": "[YOUR DENTAL SCANNER DESCRIPTION GOES HERE. Focus on the hardware and embedded work you did.]",
-    "images": ["scanner.png"],
+    "images": [
+      "scanner.png"
+    ],
     "platforms": [],
-    "tech": ["Hardware Design", "Firmware"],
-    "link": ""
+    "tech": [
+      "Hardware Design",
+      "Firmware"
+    ],
+    "link": "/projects/scanner"
   },
   {
     "title": "Posture Pro Belt",
     "category": "Wearable Tech",
     "description": "Led the R&D for a portable posture correction belt prototype for MEDHA 2024. Focused completely on the hardware-software integration.",
-    "images": ["posture-belt.png"],
+    "images": [
+      "posture-belt.png"
+    ],
     "platforms": [],
-    "tech": ["Microcontrollers", "Sensors", "Hardware-Software Integration"],
-    "link": ""
+    "tech": [
+      "Microcontrollers",
+      "Sensors",
+      "Hardware-Software Integration"
+    ],
+    "link": "/projects/posture-belt"
   },
   {
     "title": "Maze Solver Bot",
     "category": "Robotics",
     "description": "Currently making this for e-Yantra 2025-26 stage 2. Writing the embedded firmware and control logic to navigate the maze.",
-    "images": ["maze-solver.png"],
+    "images": [
+      "maze-solver.png"
+    ],
     "platforms": [],
-    "tech": ["Embedded Firmware", "Control Logic", "STM32/Arduino"],
-    "link": ""
+    "tech": [
+      "Embedded Firmware",
+      "Control Logic",
+      "STM32/Arduino"
+    ],
+    "link": "/projects/maze-solver"
   },
   {
     "title": "Fastest Line Follower Robot",
     "category": "Robotics",
     "description": "[YOUR LINE FOLLOWER DESCRIPTION GOES HERE. Mention the sensors and microcontroller you used.]",
-    "images": ["line-follower.png"],
+    "images": [
+      "line-follower.png"
+    ],
     "platforms": [],
-    "tech": ["PID Control", "Sensors", "Microcontrollers"],
-    "link": ""
+    "tech": [
+      "PID Control",
+      "Sensors",
+      "Microcontrollers"
+    ],
+    "link": "/projects/line-follower"
   }
 ]
