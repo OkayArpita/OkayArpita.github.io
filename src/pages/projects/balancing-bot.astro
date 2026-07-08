@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
+import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { resolveAssetImage } from '../../utils/images';
 
@@ -42,28 +43,242 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.png");
     <!-- Project Summary -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span>
-        Project Summary
+        <span class="text-accent">/</span> Project Summary
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Made a two-wheeled self-balancing robot for the e-Yantra competition where we placed 4th internationally. Handled the embedded firmware and LQR control logic after running simulations.
+          The Balancing Builder Bot is a two-wheeled self-balancing mobile manipulator developed for the e-Yantra Robotics Competition. The robot combines inverted-pendulum stabilization with a servo-actuated pick-and-place mechanism, enabling an operator to transport and manipulate construction blocks while maintaining dynamic balance. The complete system was designed, simulated, and validated through both virtual and hardware implementations.
         </p>
       </div>
     </div>
 
-    <!-- Technology used -->
+    <!-- Why this Project is Important -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span>
-        Technology used
+        <span class="text-accent">/</span> Why this Project is Important
       </h2>
-      <div class="flex flex-wrap gap-3 pt-2">
-        {["Embedded Systems","LQR Control","Microcontrollers","C++"].map((t) => (
-          <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-            {t}
-          </span>
-        ))}
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          Operating a manipulator on a dynamically unstable two-wheeled platform is a challenging control problem. Every arm movement and payload transfer shifts the robot's center of mass, introducing disturbances that can destabilize the balancing controller. This project demonstrates the integration of real-time control, embedded systems, and mechanical design to achieve stable teleoperated manipulation while continuously maintaining balance.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Project Details
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Dynamic Stabilization</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Designed and tuned PID and LQR controllers to stabilize the inverted-pendulum platform. The controller continuously compensates for disturbances caused by manipulator motion, payload transfer, and external perturbations.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <img src="/Projects/BalancingBuilderBot/InvertedPendulum.png" alt="Inverted Pendulum" class="rounded-lg border border-accent/20 shadow-md w-full object-cover aspect-video" />
+            <img src="/Projects/BalancingBuilderBot/PIDControl.png" alt="PID Control" class="rounded-lg border border-accent/20 shadow-md w-full object-cover aspect-video" />
+            <img src="/Projects/BalancingBuilderBot/LQRControl.png" alt="LQR Control" class="rounded-lg border border-accent/20 shadow-md w-full object-cover aspect-video" />
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">State Estimation</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Implemented IMU-based attitude estimation by fusing accelerometer and gyroscope measurements to obtain accurate, low-latency tilt estimation for closed-loop balancing.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            The MPU6050 complementary filter leverages the strengths of both sensors:
+          </p>
+          <ul class="list-disc list-outside ml-5 text-gray font-body text-base md:text-lg leading-relaxed space-y-1">
+            <li>Accelerometers are stable but noisy.</li>
+            <li>Gyroscopes are precise but drift over time.</li>
+          </ul>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed pt-2">
+            Arduino Code for Complementary Filter:
+          </p>
+          <div class="rounded-xl overflow-hidden bg-[#1E1E1E] text-sm md:text-base border border-accent/20">
+            <pre class="p-4 overflow-x-auto"><code class="text-green-400">float <span class="text-blue-400">complementaryFilter</span>(float gyroAngle, float accelAngle) {
+  <span class="text-purple-400">return</span> (gyroAngle * <span class="text-yellow-400">0.98</span>) + (accelAngle * <span class="text-yellow-400">0.02</span>);
+}</code></pre>
+          </div>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">
+            This method is computationally efficient and suitable for real-time angle measurement applications.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Mobile Manipulation</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Designed a lightweight 3D-printed robotic arm and servo-driven gripper capable of picking, transporting, and placing construction blocks while minimizing the impact on the robot's stability.
+          </p>
+          <img src="/Projects/BalancingBuilderBot/Manipulator.png" alt="Manipulator" class="rounded-lg border border-accent/20 shadow-md w-full max-w-2xl mx-auto object-cover" />
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Wireless Teleoperation</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Developed a custom Android application using MIT App Inventor to wirelessly control both the robot's locomotion and manipulator via Bluetooth UART communication. The interface enabled intuitive real-time operation while the balancing controller maintained platform stability.
+          </p>
+          <div class="flex justify-center">
+             <img src="/Projects/BalancingBuilderBot/ControllerApp.png" alt="Controller App" class="rounded-lg border border-accent/20 shadow-md max-h-96 object-contain" />
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Simulation & Hardware Validation</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Developed and validated the robot in CoppeliaSim before deploying the control algorithms to the physical platform, allowing efficient controller tuning and system verification prior to hardware implementation.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <video autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full aspect-video object-cover bg-black/50">
+              <source src="/Projects/BalancingBuilderBot/SimulationDemo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full aspect-video object-cover bg-black/50">
+              <source src="/Projects/BalancingBuilderBot/HardwareDemo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Implementation</h3>
+          <ul class="list-disc list-outside ml-5 text-gray font-body text-base md:text-lg leading-relaxed space-y-2">
+            <li>Physics-based simulation in CoppeliaSim</li>
+            <li>Hardware implementation on a custom-built two-wheeled balancing robot</li>
+            <li>Bluetooth UART-based teleoperation through a custom Android application</li>
+            <li>Real-time embedded control on Arduino</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Tech Stack
+      </h2>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:robot-outline" class="w-5 h-5" />
+          PID & LQR Control
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:language-cpp" class="w-5 h-5" />
+          C/C++
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:language-python" class="w-5 h-5" />
+          Python
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:cube-outline" class="w-5 h-5" />
+          CoppeliaSim
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:android" class="w-5 h-5" />
+          MIT App Inventor
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:rotate-3d-variant" class="w-5 h-5" />
+          Autodesk Fusion
+        </div>
+      </div>
+    </div>
+
+    <!-- Hardware Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Hardware Stack
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 overflow-x-auto">
+        <table class="w-full text-left text-sm md:text-base font-body border-collapse">
+          <thead>
+            <tr class="border-b border-accent/20">
+              <th class="py-3 px-4 text-accent font-bold">Component</th>
+              <th class="py-3 px-4 text-accent font-bold">Purpose</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray divide-y divide-accent/10">
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Arduino Nano (ATmega328P)</td>
+              <td class="py-3 px-4 leading-relaxed">Primary embedded controller executing the balancing, manipulator, and communication algorithms.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">MPU-6050 IMU</td>
+              <td class="py-3 px-4 leading-relaxed">6-axis inertial measurement unit providing accelerometer and gyroscope data for real-time tilt estimation and closed-loop balancing.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">300 RPM N20 Geared Motors with Encoders (×2)</td>
+              <td class="py-3 px-4 leading-relaxed">Differential drive actuators providing propulsion and encoder feedback for precise motor control.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">L298N Dual H-Bridge Motor Driver</td>
+              <td class="py-3 px-4 leading-relaxed">Drives and controls the bidirectional motion of both DC motors.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">MG90S Servo Motor</td>
+              <td class="py-3 px-4 leading-relaxed">Actuates the robotic manipulator for pick-and-place operations.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">HC-05 Bluetooth Module</td>
+              <td class="py-3 px-4 leading-relaxed">Enables wireless UART communication with the custom Android controller application.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Custom PCB</td>
+              <td class="py-3 px-4 leading-relaxed">Integrates the power distribution, motor driver, voltage regulation, and interface circuitry into a compact embedded control board.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">7805 Voltage Regulator</td>
+              <td class="py-3 px-4 leading-relaxed">Provides a regulated 5 V supply for the controller and peripheral electronics.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Demonstrated At -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Demonstrated At
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-md border border-accent/20">
+          <img src="/eYantra.png" alt="e-Yantra Logo" class="h-20 w-auto object-contain" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+        </div>
+        <div class="text-center md:text-left pt-2">
+          <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
+            e-Yantra Robotics Competition
+          </p>
+          <p class="text-maintext font-body text-base md:text-lg mt-2">
+            IIT Bombay, India
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
+            2024-25 Season <span class="text-yellow-500">(4th Place Internationally)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Certificate
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img 
+          src="/Projects/BalancingBuilderBot/eYRC24_Certificate_1.png" 
+          alt="eYRC Certificate 1" 
+          class="w-full object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+        />
+        <img 
+          src="/Projects/BalancingBuilderBot/eYRC24_Certificate_2.png" 
+          alt="eYRC Certificate 2" 
+          class="w-full object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+        />
       </div>
     </div>
 
