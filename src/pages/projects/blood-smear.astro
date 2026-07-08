@@ -18,9 +18,9 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
     <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
       <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center">
         {profileImage ? (
-          <Image src={profileImage} alt={title} class="w-full h-full object-contain p-4" loading="eager" />
+          <Image src={profileImage} alt={title} class="w-full h-full object-cover" loading="eager" />
         ) : (
-          <img src="/placeholder.jpeg" alt={title} class="w-full h-full object-contain p-4" />
+          <img src="/placeholder.jpeg" alt={title} class="w-full h-full object-cover" />
         )}
       </div>
       <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30"></div>
