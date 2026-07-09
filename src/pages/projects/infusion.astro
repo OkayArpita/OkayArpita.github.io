@@ -45,9 +45,15 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Project Summary
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Developed a multi-channel infusion system for an ex vivo cardiac revival platform at the Healthcare Technology Innovation Centre (HTIC). The system enables precise delivery of cardioplegic drugs and perfusates, critical for sustaining isolated hearts during research and transplant evaluation.
+          Developed a compact, modular multichannel drug infusion system for <strong>Beat Back</strong>, an ex vivo heart revival and preservation platform under development at the Healthcare Technology Innovation Centre (HTIC), IIT Madras.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          At the time of development, multiple drugs and cardioplegic cocktails were administered manually to the heart. Some of these formulations required continuous delivery in small quantities over prolonged periods. To automate this process within the highly space-constrained Beat Back setup, I proposed and developed a fully customised infusion architecture comprising independently controlled syringe-pump modules.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          During my two-month onsite research internship, I designed and built two functional infusion modules from scratch, each measuring only <strong>16.3 cm in maximum length and 3.5 cm in width</strong>, along with a compact ESP32-based motherboard capable of controlling both channels independently.
         </p>
       </div>
     </div>
@@ -60,24 +66,86 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
         
         <div class="space-y-4">
-          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Programmable Architecture</h3>
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Clinical Need & Engineering Problem</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Designed a flexible and programmable architecture featuring Bluetooth control and independent channel actuation. The system includes modular syringe mounts and automated arbitration algorithms to ensure safe and collision-free operation during critical infusion phases.
+            <strong>Beat Back</strong> is an ex vivo cardiac revival and preservation platform being developed to maintain a donor heart outside the body for a limited period, with the system targeting approximately <strong>30 minutes of extracorporeal support</strong> at the time of the project.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            When I joined the lab, multiple drugs and cardioplegic cocktails were being administered manually. Several of these formulations required small-volume delivery continuously over prolonged periods during cardiac procedures and ex vivo heart maintenance.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            My research guide, <strong>Dr. Nabeel P. M.</strong>, introduced me to this drug-dispensing bottleneck and the need for an automated delivery system. Existing commercial infusion systems were not well suited to the application due to their large form factor and high cost. Moreover, the existing Beat Back enclosure was already densely integrated, leaving very limited space for an additional drug-delivery subsystem.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            This created the need for a <strong>compact, customised, modular, and independently controllable infusion system</strong> designed specifically around the physical and operational constraints of the Beat Back platform.
           </p>
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-xl font-heading font-bold text-maintext text-accent">End-to-End System Development</h3>
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Modular System Architecture</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Led the full system development lifecycle from concept to deployment. This included circuit design, PCB routing, electromechanical integration, CAD modelling, and fabrication using 3D-printed components. The firmware was developed entirely in C, followed by rigorous multi-channel validation.
+            Proposed a scalable architecture comprising <strong>4–5 independently controllable syringe-pump modules</strong> connected to a common central controller. The architecture was designed to allow each channel to operate independently, enabling different drugs or cocktails to be dispensed according to individual delivery requirements.
           </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            The central control system was built around an <strong>ESP32 microcontroller</strong>, enabling wireless operation through Bluetooth. The architecture was also proposed for future integration with the existing <strong>NI LabVIEW-based control platform</strong> used by the Beat Back system.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Within the internship duration, I developed <strong>two independently controllable functional modules</strong> connected to a shared motherboard, establishing the feasibility of the proposed multichannel architecture.
+          </p>
+          <img src="/Projects/MultichannelInfusionSystem/Two Modules.png" alt="Two Modules" class="rounded-lg border border-accent/20 shadow-md w-full max-w-2xl mx-auto object-cover" />
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Precision Flow Control & Telemetry</h3>
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Compact Electromechanical Design</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Implemented micro metal-gear motors with encoder-based closed-loop calibration. This achieved highly repeatable flow rates essential for cardioplegic delivery. Additionally, integrated IoT telemetry was added to provide real-time remote monitoring, improving system reliability and scalability.
+            Designed the complete syringe-actuation mechanism in <strong>Autodesk Fusion</strong>, with the mechanical architecture driven by the severe space constraints of the existing Beat Back enclosure.
           </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Each module measured only <strong>16.3 cm at its maximum length and 3.5 cm in width</strong>. The mechanical components were fabricated using <strong>resin 3D printing</strong> to achieve the required compact geometry and structural integration.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Each syringe-drive module incorporated a <strong>12 V, 100 RPM N20 geared DC motor with an integrated encoder</strong>, mechanically coupled to a <strong>100 mm M4 threaded lead screw</strong>. The mechanism converted the rotary motion of the motor into linear displacement of the syringe plunger for controlled fluid delivery.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            A <strong>limit switch</strong> was integrated into each module to detect the mechanical end position of the actuation mechanism.
+          </p>
+          <img src="/Projects/MultichannelInfusionSystem/CadRender - 1.png" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full max-w-2xl mx-auto object-cover" />
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Custom Control Electronics</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Developed a compact central motherboard on a <strong>double-sided prototyping board</strong>, manually assembling and soldering the complete control electronics while minimising the overall board footprint.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            The motherboard integrated an <strong>ESP32 microcontroller</strong> for system-level control and Bluetooth communication, a <strong>TB6612FNG dual-channel motor driver</strong> for independent control of two syringe-drive motors, and an <strong>MP1584 DC–DC buck converter</strong> for regulated power conversion.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Both infusion modules were connected to the same motherboard and power subsystem while retaining independent motor actuation and channel-level control.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="/Projects/MultichannelInfusionSystem/Wiring Diagram.png" alt="Wiring Diagram" class="rounded-lg border border-accent/20 shadow-md w-full object-cover aspect-video bg-white/5" />
+            <img src="/Projects/MultichannelInfusionSystem/pcb.png" alt="PCB Assembly" class="rounded-lg border border-accent/20 shadow-md w-full object-cover aspect-video bg-white/5" />
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">System Integration & Testing</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Integrated the mechanical, electronic, and embedded subsystems into a complete two-channel functional prototype.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            The assembled system was tested for independent actuation of both syringe modules, motor-driven linear translation of the syringe mechanism, limit-switch operation, and coordinated control through the central ESP32-based motherboard.
+          </p>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            The resulting prototype demonstrated the feasibility of a compact and modular drug-delivery architecture designed specifically around the spatial and operational constraints of the Beat Back ex vivo heart revival platform.
+          </p>
+          <div class="flex justify-center mt-4">
+            <video controls autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-w-2xl aspect-video object-cover bg-black/50">
+              <source src="/Projects/MultichannelInfusionSystem/Project Demonstration.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
 
       </div>
@@ -94,21 +162,68 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
           Embedded C
         </div>
         <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:bluetooth" class="w-5 h-5" />
-          Bluetooth / IoT
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:memory" class="w-5 h-5" />
-          PCB Design
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
           <Icon name="mdi:rotate-3d-variant" class="w-5 h-5" />
-          CAD & 3D Printing
+          Autodesk Fusion
         </div>
         <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:robot-industrial" class="w-5 h-5" />
-          Electromechanical Integration
+          <Icon name="mdi:chart-line-variant" class="w-5 h-5" />
+          NI LabVIEW
         </div>
+      </div>
+    </div>
+
+    <!-- Hardware Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Hardware Stack
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 overflow-x-auto">
+        <table class="w-full text-left text-sm md:text-base font-body border-collapse">
+          <thead>
+            <tr class="border-b border-accent/20">
+              <th class="py-3 px-4 text-accent font-bold">Component Name</th>
+              <th class="py-3 px-4 text-accent font-bold">Purpose</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray divide-y divide-accent/10">
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">ESP32</td>
+              <td class="py-3 px-4 leading-relaxed">Central microcontroller for system control, independent channel actuation, and Bluetooth communication</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">TB6612FNG Dual Motor Driver</td>
+              <td class="py-3 px-4 leading-relaxed">Provides independent bidirectional control of the two N20 geared DC motors</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">MP1584 Buck Converter</td>
+              <td class="py-3 px-4 leading-relaxed">Performs DC–DC voltage regulation for the control electronics</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">12 V, 100 RPM N20 Geared DC Motor with Encoder</td>
+              <td class="py-3 px-4 leading-relaxed">Drives the syringe actuation mechanism and provides encoder feedback for motor motion tracking</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">M4 Threaded Lead Screw (100 mm)</td>
+              <td class="py-3 px-4 leading-relaxed">Converts the motor's rotary motion into linear displacement of the syringe plunger</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Limit Switch</td>
+              <td class="py-3 px-4 leading-relaxed">Detects the mechanical end position of each syringe actuation module</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Double-Sided Prototyping Board</td>
+              <td class="py-3 px-4 leading-relaxed">Provides a compact platform for assembling and interconnecting the motherboard electronics</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">12 V, 2 A Power Adapter</td>
+              <td class="py-3 px-4 leading-relaxed">Supplies external power to the infusion system</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Resin 3D-Printed Mechanical Assembly</td>
+              <td class="py-3 px-4 leading-relaxed">Houses and aligns the syringe, motor, lead screw, and actuation mechanism within the compact module</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -126,12 +241,32 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
             Healthcare Technology Innovation Centre (HTIC)
           </p>
           <p class="text-maintext font-body text-base md:text-lg mt-2">
-            IIT Madras (Onsite)
+            IIT Madras — Onsite
           </p>
           <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
-            Guide: Prof. Jayaraj Joseph and Dr. Nabeel PM
+            Academic Research Internship: 10 September – 10 November 2025
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
+            Project: Beat Back — Ex Vivo Heart Revival and Preservation Platform
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
+            Guides: Prof. Jayaraj Joseph and Dr. Nabeel P. M.
           </p>
         </div>
+      </div>
+    </div>
+
+    <!-- Certificate -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Certificate
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
+        <img 
+          src="/Projects/MultichannelInfusionSystem/Internship Certificate.jpg" 
+          alt="Internship Certificate" 
+          class="w-full max-w-4xl object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+        />
       </div>
     </div>
 
