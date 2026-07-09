@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
+import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { resolveAssetImage } from '../../utils/images';
 
@@ -42,28 +43,95 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
     <!-- Project Summary -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span>
-        Project Summary
+        <span class="text-accent">/</span> Project Summary
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Developed this hardware setup for an ex vivo heart revival platform during my time at ACT Lab, IIT Madras.
+          Developed a multi-channel infusion system for an ex vivo cardiac revival platform at the Healthcare Technology Innovation Centre (HTIC). The system enables precise delivery of cardioplegic drugs and perfusates, critical for sustaining isolated hearts during research and transplant evaluation.
         </p>
       </div>
     </div>
 
-    <!-- Technology used -->
+    <!-- Project Details -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span>
-        Technology used
+        <span class="text-accent">/</span> Project Details
       </h2>
-      <div class="flex flex-wrap gap-3 pt-2">
-        {["Hardware Integration","Embedded Systems","PCB Design"].map((t) => (
-          <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-            {t}
-          </span>
-        ))}
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Programmable Architecture</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Designed a flexible and programmable architecture featuring Bluetooth control and independent channel actuation. The system includes modular syringe mounts and automated arbitration algorithms to ensure safe and collision-free operation during critical infusion phases.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">End-to-End System Development</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Led the full system development lifecycle from concept to deployment. This included circuit design, PCB routing, electromechanical integration, CAD modelling, and fabrication using 3D-printed components. The firmware was developed entirely in C, followed by rigorous multi-channel validation.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Precision Flow Control & Telemetry</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Implemented micro metal-gear motors with encoder-based closed-loop calibration. This achieved highly repeatable flow rates essential for cardioplegic delivery. Additionally, integrated IoT telemetry was added to provide real-time remote monitoring, improving system reliability and scalability.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Tech Stack
+      </h2>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:language-c" class="w-5 h-5" />
+          Embedded C
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:bluetooth" class="w-5 h-5" />
+          Bluetooth / IoT
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:memory" class="w-5 h-5" />
+          PCB Design
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:rotate-3d-variant" class="w-5 h-5" />
+          CAD & 3D Printing
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:robot-industrial" class="w-5 h-5" />
+          Electromechanical Integration
+        </div>
+      </div>
+    </div>
+
+    <!-- Demonstrated At -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Researched At
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div class="flex-shrink-0 bg-white w-32 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center p-2">
+          <img src="/IIT_Madras.png" alt="IIT Madras Logo" class="w-full h-full object-contain" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+        </div>
+        <div class="text-center md:text-left pt-2">
+          <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
+            Healthcare Technology Innovation Centre (HTIC)
+          </p>
+          <p class="text-maintext font-body text-base md:text-lg mt-2">
+            IIT Madras (Onsite)
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
+            Guide: Prof. Jayaraj Joseph and Dr. Nabeel PM
+          </p>
+        </div>
       </div>
     </div>
 
