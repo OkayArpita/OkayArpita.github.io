@@ -103,15 +103,15 @@ const profileImage = await resolveAssetImage("oph@dp.png");
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Demonstrated At
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex items-center gap-6">
-        <div class="flex-shrink-0">
-          <img src="/EPFL.png" alt="EPFL Logo" class="h-16 md:h-20 w-auto object-contain" />
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div class="flex-shrink-0 bg-white w-24 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center p-2">
+          <img src="/EPFL.png" alt="EPFL Logo" class="w-full h-full object-contain" />
         </div>
-        <div>
-          <p class="text-maintext font-heading text-lg md:text-xl font-bold">
+        <div class="text-center md:text-left pt-2">
+          <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
             CREATE Lab, EPFL
           </p>
-          <p class="text-subtext font-body text-sm md:text-base mt-1">
+          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
             Research Internship | Guide: Prof. Josie Hughes<br />
             Mar '26 - May '26 (Remote)
           </p>
