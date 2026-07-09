@@ -1,10 +1,22 @@
 ---
 import { Icon } from 'astro-icon/components';
 import ThemeToggle from './theme-toggle.astro';
+
+import careerData from '../data/career.json';
+import projectsData from '../data/projects.json';
+import achievementsData from '../data/achievements.json';
+import techData from '../data/tech.json';
+
+interface SubItem {
+  label: string;
+  href: string;
+}
+
 interface NavItem {
   label: string;
   href: string;
   icon: string;
+  subItems?: SubItem[];
 }
 
 const navItems: NavItem[] = [
@@ -17,21 +29,25 @@ const navItems: NavItem[] = [
     label: "Career",
     href: "#career",
     icon: `mdi:work`,
+    subItems: careerData.map((item, index) => ({ label: item.company, href: `/#career-${index}` }))
   },
   {
     label: "Projects",
     href: "#projects",
     icon: `mdi:computer`,
+    subItems: projectsData.map((item) => ({ label: item.title, href: item.link }))
   },
   {
     label: "Achievements",
     href: "#achievements",
     icon: `mdi:trophy`,
+    subItems: achievementsData.map((item, index) => ({ label: item.event, href: `/#achievement-${index}` }))
   },
   {
     label: "Tech",
     href: "#tech",
     icon: `mdi:code-tags`,
+    subItems: techData.categories.map((cat, index) => ({ label: cat.title, href: `/#tech-${index}` }))
   },
   {
     label: "Contact",
@@ -55,7 +71,7 @@ const navItems: NavItem[] = [
       >
         {
           navItems.map((item) => (
-            <li class="flex-1 md:flex-none">
+            <li class="flex-1 md:flex-none relative group/nav">
               <a
                 href={item.href}
                 class="flex flex-col items-center gap-1 text-accent transition-colors text-xs md:text-base relative group"
@@ -67,9 +83,29 @@ const navItems: NavItem[] = [
                     class="nav-icon w-full h-full text-accent/50 group-hover:text-accent transition-colors duration-300" 
                   />
                 </span>
-                <span class="hidden md:inline-block">{item.label}</span>
+                <span class="hidden md:inline-block relative">
+                  {item.label}
+                  {item.subItems && (
+                    <Icon name="mdi:chevron-down" class="inline-block w-4 h-4 ml-0.5 opacity-50 relative top-0.5" />
+                  )}
+                </span>
                 <span class="md:hidden text-xs">{item.label}</span>
               </a>
+              
+              {item.subItems && item.subItems.length > 0 && (
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 hidden md:block opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-300 z-[60]">
+                  <ul class="bg-background/95 backdrop-blur-xl border border-accent/20 rounded-2xl shadow-xl p-3 min-w-[220px] flex flex-col gap-1 relative before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-accent/20">
+                    <div class="absolute -top-[1px] left-1/2 -translate-x-1/2 w-8 h-[1px] bg-accent/40 rounded-full blur-[1px]"></div>
+                    {item.subItems.map((subItem) => (
+                      <li>
+                        <a href={subItem.href} class="block px-4 py-2.5 text-sm font-medium text-subtext hover:text-maintext hover:bg-accent/10 rounded-xl transition-all duration-200 whitespace-nowrap">
+                          {subItem.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </li>
           ))
         }

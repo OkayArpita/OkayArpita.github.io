@@ -43,8 +43,8 @@ try {
     </div>
 
     <div class="space-y-10">
-      {categories.map((category) => (
-        <div class="space-y-3">
+      {categories.map((category, index) => (
+        <div id={`tech-${index}`} class="space-y-3">
           <h3 class="text-maintext font-body text-[11px] uppercase tracking-[0.4em] ml-1">
             {category.title}
           </h3>
