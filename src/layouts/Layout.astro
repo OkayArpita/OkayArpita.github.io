@@ -188,6 +188,20 @@ const defaultTheme = `${baseTheme}-dark`;
       requestID = requestAnimationFrame(animation);
     });
 
+    // Navigation with Left Arrow key to navigate to home page
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') {
+        const target = event.target;
+        if (target instanceof HTMLElement && (
+          target.tagName === 'INPUT' || 
+          target.tagName === 'TEXTAREA' || 
+          target.isContentEditable
+        )) {
+          return;
+        }
+        window.location.href = '/';
+      }
+    });
     </script>
   </body>
 </html>
