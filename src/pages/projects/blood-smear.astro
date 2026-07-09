@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
+import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { resolveAssetImage } from '../../utils/images';
 
@@ -42,27 +43,164 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
     <!-- Project Summary -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span>
-        Project Summary
+        <span class="text-accent">/</span> Project Summary
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Built an automatic blood smear device for sickle cell anaemia screening during my internship at BETIC, IIT Bombay.
+          Designed and developed the actuation-control subsystem for an automated slide-preparation platform designed for sickle-cell screening. This project was developed during a research internship at the Biomedical Engineering and Technology Innovation Centre (BETIC), IIT Bombay.
         </p>
       </div>
     </div>
 
-    <!-- Technology used -->
+    <!-- Why this Project is Important -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Why this Project is Important
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          Accurate sickle-cell screening relies heavily on the quality and uniformity of blood smears. Manual slide preparation introduces high variability in smear thickness and cell distribution, depending on operator speed and technique. Automating this step guarantees repeatable slide quality, improving the reliability of microscopic diagnosis and streamlining high-throughput clinical workflows.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Project Details
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Linear Actuation and Velocity Regulation</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Designed a linear guide carriage that achieves a constant translation speed of 100 mm/s. Maintaining a stable, precise linear velocity is critical to forming a uniform boundary layer as the blood droplet is spread across the slide.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Feedback Control and Dynamics Tuning</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Integrated sensor-feedback loops to monitor carriage speed in real time, dynamically adjusting motor torque to suppress acceleration noise. Tuning the mechanical dynamics minimized structural vibrations, resulting in a consistent smear thickness from end to end.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Embedded Hardware and Control Stack</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Developed the embedded control firmware in C and engineered custom driver electronics to interface with limit switches, velocity sensors, and user-input controls. Conducted structural prototyping and physical integration using CAD modeling and 3D printing.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Tech Stack
       </h2>
-      <div class="flex flex-wrap gap-3 pt-2">
-        {["Hardware Engineering","Prototyping","Embedded C"].map((t) => (
-          <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-            {t}
-          </span>
-        ))}
+      <div class="flex flex-wrap gap-4 pt-2">
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:language-cpp" class="w-5 h-5" />
+          C / C++
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:rotate-3d-variant" class="w-5 h-5" />
+          Autodesk Fusion
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:printer-3d" class="w-5 h-5" />
+          3D Printing
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:chip" class="w-5 h-5" />
+          Embedded Systems
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:chart-line-variant" class="w-5 h-5" />
+          Control Loops
+        </div>
+      </div>
+    </div>
+
+    <!-- Hardware Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Hardware Stack
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 overflow-x-auto">
+        <table class="w-full text-left text-sm md:text-base font-body border-collapse">
+          <thead>
+            <tr class="border-b border-accent/20">
+              <th class="py-3 px-4 text-accent font-bold">Component Name</th>
+              <th class="py-3 px-4 text-accent font-bold">Purpose</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray divide-y divide-accent/10">
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Microcontroller</td>
+              <td class="py-3 px-4 leading-relaxed">Handles sensor acquisition, user control interface, and execution of speed control algorithms</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">DC Geared Motor with Encoder</td>
+              <td class="py-3 px-4 leading-relaxed">Provides precise mechanical actuation with quadrature speed feedback</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Motor Driver Block</td>
+              <td class="py-3 px-4 leading-relaxed">Enables high-frequency PWM speed regulation and direction control for the motor</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Optocoupler Speed Sensors</td>
+              <td class="py-3 px-4 leading-relaxed">Provides independent velocity tracking for the closed-loop controller</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Limit Switches</td>
+              <td class="py-3 px-4 leading-relaxed">Acts as homing sensors and mechanical over-travel safety cutoffs</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Linear Actuator Rail Assembly</td>
+              <td class="py-3 px-4 leading-relaxed">Translates motor rotational motion into highly stable linear slide movement</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Demonstrated At -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Demonstrated At
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div class="flex-shrink-0 bg-white w-24 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center">
+          <img src="/IIT_Bombay.png" alt="IIT Bombay Logo" class="w-full h-full object-contain p-2" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+        </div>
+        <div class="text-center md:text-left pt-2">
+          <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
+            Biomedical Engineering and Technology Innovation Centre (BETIC)
+          </p>
+          <p class="text-maintext font-body text-base md:text-lg mt-2">
+            IIT Bombay, India
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
+            Research Internship <span class="text-yellow-500">(Onsite - Full Time)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Certificate
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
+        <div class="text-center py-6">
+          <Icon name="mdi:file-document-outline" class="w-12 h-12 text-accent/50 mx-auto mb-3" />
+          <p class="text-maintext font-heading text-lg font-bold">Internship Certificate</p>
+          <p class="text-subtext font-body text-sm mt-1">Available upon request</p>
+        </div>
       </div>
     </div>
 
