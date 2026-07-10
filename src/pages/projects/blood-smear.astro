@@ -249,7 +249,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
         <div class="flex-shrink-0 bg-white w-24 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center">
-          <img src="/IIT_Bombay.png" alt="IIT Bombay Logo" class="w-full h-full object-contain p-2" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+          <img src="/IIT_Bombay.png" alt="IIT Bombay Logo" class="w-full h-full object-cover" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
         </div>
         <div class="text-center md:text-left pt-2">
           <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
@@ -258,10 +258,14 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
           <p class="text-maintext font-body text-base md:text-lg mt-2">
             IIT Bombay, India
           </p>
-          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
-            Electronics Engineering Intern <span class="text-yellow-500">(Onsite - Full-Time)</span>
+          <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
+            Summer Research Internship <span class="text-yellow-500">(Full Time - On Site)</span>
           </p>
-          <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
+          <p class="text-gray font-body text-base md:text-lg mt-1">
+            <span class="font-semibold text-maintext">Project:</span> Beat Back - automatic blood smear device for sickle cell anemia detection<br/>
+            <span class="font-semibold text-maintext">Guides:</span> Prof. Parag Bhargava and Dr. Bhanupratap Gaur
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
             19 May - 11 July 2025
           </p>
         </div>
