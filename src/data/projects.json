@@ -64,7 +64,7 @@
   {
     "title": "Dental Intra Oral Scanner",
     "category": "Hardware Design",
-    "description": "[YOUR DENTAL SCANNER DESCRIPTION GOES HERE. Focus on the hardware and embedded work you did.]",
+    "description": "Conducted an engineering analysis of the Helios 500 intraoral scanner at BETIC, IIT Bombay, evaluating its optical projection, circuitry, and data acquisition flow to propose hardware improvements.",
     "images": [
       "scanner.png"
     ],
