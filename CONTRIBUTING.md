@@ -1,7 +1,7 @@
 ## Contributions are Welcome & Appreciated! 
 
 Every contribution matters
-— fixing a bug, adding a feature, improving the UI/Animation, optimizing performance, enhancing accessibility.
+- fixing a bug, adding a feature, improving the UI/Animation, optimizing performance, enhancing accessibility.
 
 ### 📌 How to contribute
 1. Fork the repository

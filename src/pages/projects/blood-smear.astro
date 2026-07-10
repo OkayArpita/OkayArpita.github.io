@@ -46,13 +46,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          During my <strong>8-week Electronics Engineering Internship at the Biomedical Engineering and Technology Innovation Centre (BETIC), IIT Bombay</strong>, from <strong>19 May to 11 July 2025</strong>, I worked on the development of an <strong>Automatic Blood Smear Device</strong> for sickle-cell anaemia screening.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The project involved transforming an existing early-stage prototype into a functional <strong>proof of concept (PoC)</strong> capable of producing repeatable blood smears through a fully automated process. My work focused on electromechanical actuation, embedded firmware development, motion optimization, vibration suppression, smear-quality improvement, complete process automation, and compact product enclosure design.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Through iterative mechanical modifications, firmware development, and extensive experimental trials, I successfully demonstrated all targeted PoC parameters and completed the proof of concept approximately <strong>four months ahead of the official project deadline</strong>.
+          I developed an <strong>Automatic Blood Smear Device</strong> for sickle-cell anaemia screening during my 8-week Electronics Engineering Internship at BETIC, IIT Bombay. I transformed an early-stage prototype into a fully automated proof of concept (PoC), completing the project four months ahead of schedule. My work involved electromechanical actuation, embedded firmware, vibration suppression, and product enclosure design.
         </p>
       </div>
     </div>
@@ -64,23 +58,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          I joined <strong>BETIC, IIT Bombay</strong>, as an <strong>Electronics Engineering Intern</strong> for an eight-week onsite research internship. BETIC works on the development and translation of healthcare technologies and is associated with the <strong>Indian Council of Medical Research (ICMR)</strong>.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          During my initial exposure to the ongoing projects in the laboratory, I became particularly interested in two medical-device development projects:
-        </p>
-        <ul class="list-disc list-inside text-gray font-body text-base md:text-lg space-y-2">
-          <li>an <strong>Automatic Blood Smear Device</strong> for sickle-cell anaemia screening; and</li>
-          <li>a <strong>Dental Intraoral Scanner</strong> being developed toward a commercially viable product.</li>
-        </ul>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4">
-          The Automatic Blood Smear Device became one of my primary engineering assignments during the internship.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          At the time I joined the project, an initial prototype already existed, but the system was in an early experimental state and several critical performance parameters remained unresolved. The prototype exhibited mechanical vibration, visible striations in the prepared smear, incomplete process automation, and motion characteristics that required further optimization.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The objective was to resolve these engineering limitations and demonstrate the remaining performance parameters required for the proof of concept.
+          The initial prototype had mechanical vibration, visible striations, incomplete automation, and unoptimized motion. The goal was to resolve these issues and demonstrate the required PoC parameters.
         </p>
       </div>
     </div>
@@ -92,13 +70,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The diagnostic quality of a peripheral blood smear depends significantly on the consistency of the spreading process. In manual preparation, variations in spreader velocity, contact mechanics, applied force, and operator technique can result in inconsistent smear length, non-uniform thickness, visible striations, and irregular cellular distribution.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          For sickle-cell screening, the quality and repeatability of the prepared smear directly influence microscopic examination and can affect downstream image-based analysis.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The objective of the device was therefore to automate the complete smear-preparation cycle while achieving repeatable mechanical motion and consistent smear formation. The broader development objective was to advance the system from an experimental laboratory prototype toward a compact and commercially viable medical device.
+          Manual blood smear preparation introduces variability in thickness and cell distribution, which affects screening accuracy. Automating the smear-preparation cycle ensures repeatable mechanical motion and consistent smear quality, improving the reliability of microscopic diagnosis.
         </p>
       </div>
     </div>
@@ -109,21 +81,14 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         <span class="text-accent">/</span> Engineering Challenges
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The existing prototype required substantial electromechanical refinement before the proof-of-concept criteria could be demonstrated.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">The key engineering targets were:</p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">The key targets were:</p>
         <ul class="list-disc list-inside text-gray font-body text-base md:text-lg space-y-2">
-          <li>achieving the required smear length;</li>
-          <li>eliminating system-induced mechanical vibration;</li>
-          <li>removing visible striations from the prepared smear;</li>
-          <li>achieving a linear spreading velocity of <strong>100 mm/s</strong>;</li>
-          <li>automating the complete smear-preparation process; and</li>
-          <li>integrating a controlled jerk motion for improved neck gripping.</li>
+          <li>Achieving the required smear length</li>
+          <li>Eliminating system-induced mechanical vibration and visible striations</li>
+          <li>Reaching a linear spreading velocity of 100 mm/s</li>
+          <li>Automating the complete process</li>
+          <li>Integrating a controlled jerk motion for improved neck gripping</li>
         </ul>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4">
-          These parameters were strongly coupled. Changes in motor dynamics, structural rigidity, mechanical alignment, acceleration characteristics, and firmware timing directly affected the quality of the resulting smear.
-        </p>
         <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4 font-semibold text-accent">
           Prototype Modification &rarr; Firmware Tuning &rarr; Smear Trial &rarr; Result Evaluation &rarr; Parameter Refinement
         </p>
@@ -140,13 +105,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Electromechanical Actuation System</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Developed and refined the electromechanical actuation system responsible for driving the smear-spreading mechanism across the microscope slide.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The system used a <strong>12 V planetary-geared DC motor with an integrated incremental encoder</strong> to generate the required motion. The planetary gearbox provided the torque required to drive the mechanism within a compact form factor, while the encoder enabled motor-motion measurement and experimental velocity characterization.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The actuation mechanism was iteratively tested under actual operating conditions to achieve the required <strong>100 mm/s linear spreading velocity</strong>. Mechanical behaviour was evaluated across repeated smear trials, and the system was progressively refined to reduce vibration, improve motion stability, and achieve repeatable operation throughout the active spreading stroke.
+            Used a 12 V planetary-geared DC motor with an incremental encoder. Iteratively refined the actuation mechanism to achieve a stable 100 mm/s linear spreading velocity.
           </p>
           <video src="/Projects/Automaticbloodsmeardevice/Blood smear Demo Video.mp4" controls class="w-full max-w-2xl mx-auto rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5"></video>
         </div>
@@ -154,34 +113,14 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Embedded Firmware and Motion Control</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Developed the embedded firmware in <strong>C/C++</strong> to control the complete electromechanical operation of the device.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">The firmware coordinated:</p>
-          <ul class="list-disc list-inside text-gray font-body text-base md:text-lg space-y-2 grid grid-cols-1 md:grid-cols-2">
-            <li>motor actuation</li>
-            <li>PWM-based speed control</li>
-            <li>encoder feedback acquisition</li>
-            <li>motion timing</li>
-            <li>limit-switch inputs</li>
-            <li>actuator sequencing</li>
-            <li>jerk-motion execution</li>
-            <li>complete automated cycle control</li>
-          </ul>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4">
-            Multiple firmware parameters were experimentally tuned through repeated physical trials to obtain the required motion characteristics. The control sequence was progressively refined to achieve the target linear velocity, reduce transient mechanical disturbances, improve motion repeatability, and coordinate all stages of the smear-preparation process. The final firmware transformed the previously incomplete experimental setup into a fully automated proof-of-concept system.
+            Developed C/C++ firmware on an Arduino UNO R4 to control motor actuation, PWM speed, encoder feedback, and the complete automated cycle.
           </p>
         </div>
 
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Vibration Suppression and Striation Removal</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            One of the major limitations of the initial prototype was the presence of mechanical vibrations during the spreading operation. These vibrations propagated through the actuation mechanism and affected the interaction between the spreader and the blood sample, resulting in visible striations across the prepared smear.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            I conducted repeated experimental trials to study the relationship between motor actuation behaviour, mechanical alignment, structural response, motion parameters, and resulting smear quality.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The system was iteratively modified and tuned to suppress vibration during the active spreading stroke. Reducing these mechanical disturbances was critical to removing visible striations and improving the consistency of the resulting blood film. The final system successfully demonstrated suppression of significant system-induced vibration, elimination of visible smear striations, and improved repeatability of the spreading motion.
+            Tuned motor parameters and mechanical alignment to suppress vibrations during the spreading stroke. This successfully eliminated visible striations and improved the consistency of the blood film.
           </p>
           <img src="/Projects/Automaticbloodsmeardevice/blood trails.png" alt="Blood Trails" class="w-full max-w-2xl mx-auto rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5 object-contain" />
         </div>
@@ -189,62 +128,29 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Smear-Length and Velocity Optimization</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Two critical proof-of-concept requirements were the achievement of the required <strong>smear length</strong> and a linear spreading velocity of <strong>100 mm/s</strong>.
+            Calibrated motor-control parameters to simultaneously achieve the required smear length and a linear spreading velocity of 100 mm/s, while maintaining smooth motion.
           </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            These parameters could not be optimized independently, as changes to the actuation profile directly affected the geometry and quality of the resulting smear. The system was therefore experimentally calibrated through multiple physical trials. Motor-control parameters, motion timing, and mechanical behaviour were iteratively adjusted based on the resulting smear characteristics.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">This process continued until the system simultaneously demonstrated:</p>
-          <ul class="list-disc list-inside text-gray font-body text-base md:text-lg space-y-2">
-            <li>the required smear length;</li>
-            <li>the target linear velocity of <strong>100 mm/s</strong>;</li>
-            <li>reduced mechanical vibration; and</li>
-            <li>elimination of visible striations.</li>
-          </ul>
         </div>
 
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Jerk-Motion Integration</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Integrated a controlled jerk motion into the automated actuation sequence to improve mechanical gripping at the neck region.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The additional motion phase was implemented directly within the embedded firmware and experimentally tuned to achieve reliable engagement without compromising the stability of the primary spreading operation. The jerk sequence was synchronized with the remaining actuator operations, enabling it to function as an integrated stage of the complete automated cycle.
+            Added a controlled jerk motion phase into the firmware to improve mechanical gripping at the neck region without compromising spreading stability.
           </p>
         </div>
 
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Complete Process Automation</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The initial prototype required further development to automate the complete smear-preparation process. I developed the firmware logic required to coordinate the complete sequence of mechanical operations within a single automated cycle.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">The final control sequence integrated:</p>
-          <ul class="list-disc list-inside text-gray font-body text-base md:text-lg space-y-2 grid grid-cols-1 md:grid-cols-2">
-            <li>system initialization</li>
-            <li>actuator positioning</li>
-            <li>mechanical engagement</li>
-            <li>jerk-assisted gripping</li>
-            <li>controlled spreading motion</li>
-            <li>end-of-travel detection</li>
-            <li>actuator return</li>
-            <li>cycle completion</li>
-          </ul>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4">
-            The resulting system automated the complete smear process and eliminated manual intervention during the primary operating sequence.
+            Coordinated the full sequence (initialization, positioning, gripping, spreading, and return) into a single automated cycle, eliminating manual intervention.
           </p>
           <video src="/Projects/Automaticbloodsmeardevice/final prototype demo.mov" controls class="w-full max-w-2xl mx-auto rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5"></video>
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Product Enclosure and Form-Factor Optimization</h3>
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Product Enclosure</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            After achieving the required functional performance of the system, I extended the project beyond the core proof-of-concept requirements by designing the external enclosure of the device. The objective was to transition the system from an exposed laboratory prototype toward a compact, integrated, and product-like form factor.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The enclosure was designed around the complete internal electromechanical architecture, including planetary-geared motor assembly, linear motion mechanism, control electronics, sensor placement, internal wiring, mechanical clearances, and assembly requirements.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The overall dimensions were minimized while preserving sufficient internal space for reliable mechanical operation and system integration. The resulting enclosure gave the prototype a more refined, product-oriented appearance and demonstrated the feasibility of packaging the complete system within a compact footprint.
+            Designed a compact 3D-printed enclosure around the electromechanical architecture to package the system into a product-oriented form factor.
           </p>
         </div>
 
@@ -257,7 +163,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         <span class="text-accent">/</span> Proof-of-Concept Results
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4 overflow-x-auto">
-        <table class="w-full text-left text-sm md:text-base font-body border-collapse mb-4">
+        <table class="w-full text-left text-sm md:text-base font-body border-collapse">
           <thead>
             <tr class="border-b border-accent/20">
               <th class="py-3 px-4 text-accent font-bold">PoC Parameter</th>
@@ -270,13 +176,10 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
             <tr><td class="py-3 px-4 font-semibold text-maintext">Smear Striations</td><td class="py-3 px-4 leading-relaxed">Eliminated</td></tr>
             <tr><td class="py-3 px-4 font-semibold text-maintext">Linear Spreading Velocity</td><td class="py-3 px-4 leading-relaxed">100 mm/s achieved</td></tr>
             <tr><td class="py-3 px-4 font-semibold text-maintext">Complete Smear Process</td><td class="py-3 px-4 leading-relaxed">Fully automated</td></tr>
-            <tr><td class="py-3 px-4 font-semibold text-maintext">Jerk-Based Motion</td><td class="py-3 px-4 leading-relaxed">Integrated for improved neck gripping</td></tr>
-            <tr><td class="py-3 px-4 font-semibold text-maintext">Product Enclosure</td><td class="py-3 px-4 leading-relaxed">Designed and physically integrated</td></tr>
+            <tr><td class="py-3 px-4 font-semibold text-maintext">Jerk-Based Motion</td><td class="py-3 px-4 leading-relaxed">Integrated</td></tr>
+            <tr><td class="py-3 px-4 font-semibold text-maintext">Product Enclosure</td><td class="py-3 px-4 leading-relaxed">Designed and integrated</td></tr>
           </tbody>
         </table>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The complete proof of concept was demonstrated approximately <strong>four months ahead of the official project deadline</strong>.
-        </p>
       </div>
     </div>
 
@@ -289,14 +192,14 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         {[
           { name: "C / C++", icon: "mdi:language-cpp" },
           { name: "Autodesk Fusion", icon: "mdi:rotate-3d-variant" },
-          { name: "Embedded Firmware Development", icon: "mdi:chip" },
-          { name: "PWM-Based Motor Control", icon: "mdi:engine-outline" },
-          { name: "Encoder Feedback Acquisition", icon: "mdi:chart-timeline-variant" },
-          { name: "Motion-Sequence Programming", icon: "mdi:robot-industrial" },
-          { name: "Electromechanical System Integration", icon: "mdi:cogs" },
-          { name: "CAD and Product Enclosure Design", icon: "mdi:cube-outline" },
-          { name: "3D Printing and Rapid Prototyping", icon: "mdi:printer-3d" },
-          { name: "Experimental Validation", icon: "mdi:test-tube" }
+          { name: "Embedded Firmware", icon: "mdi:chip" },
+          { name: "Motor Control", icon: "mdi:engine-outline" },
+          { name: "Encoder Feedback", icon: "mdi:chart-timeline-variant" },
+          { name: "Motion Programming", icon: "mdi:robot-industrial" },
+          { name: "System Integration", icon: "mdi:cogs" },
+          { name: "CAD Design", icon: "mdi:cube-outline" },
+          { name: "3D Printing", icon: "mdi:printer-3d" },
+          { name: "Iterative Testing", icon: "mdi:test-tube" }
         ].map((t) => (
           <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
             <Icon name={t.icon} class="w-5 h-5" />
@@ -315,42 +218,34 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         <table class="w-full text-left text-sm md:text-base font-body border-collapse">
           <thead>
             <tr class="border-b border-accent/20">
-              <th class="py-3 px-4 text-accent font-bold">Component Name</th>
+              <th class="py-3 px-4 text-accent font-bold">Component</th>
               <th class="py-3 px-4 text-accent font-bold">Purpose</th>
             </tr>
           </thead>
           <tbody class="text-gray divide-y divide-accent/10">
             <tr>
               <td class="py-3 px-4 font-semibold text-maintext">Arduino UNO R4</td>
-              <td class="py-3 px-4 leading-relaxed">Serves as the primary embedded controller, executing the automated smear sequence, processing sensor inputs, generating motor-control commands, and coordinating system-state logic</td>
+              <td class="py-3 px-4 leading-relaxed">Primary controller for automated sequence and sensor inputs</td>
             </tr>
             <tr>
               <td class="py-3 px-4 font-semibold text-maintext">TB6612FN Motor Driver</td>
-              <td class="py-3 px-4 leading-relaxed">Provides bidirectional control of the DC motor through PWM-based speed regulation and direction switching</td>
+              <td class="py-3 px-4 leading-relaxed">Bidirectional PWM speed regulation</td>
             </tr>
             <tr>
-              <td class="py-3 px-4 font-semibold text-maintext">PG36M555-19.2K Planetary-Geared DC Motor</td>
-              <td class="py-3 px-4 leading-relaxed">Provides the torque and rotational actuation required to drive the blood-smear spreading mechanism</td>
+              <td class="py-3 px-4 font-semibold text-maintext">PG36M555-19.2K DC Motor</td>
+              <td class="py-3 px-4 leading-relaxed">Torque for spreading mechanism</td>
             </tr>
             <tr>
-              <td class="py-3 px-4 font-semibold text-maintext">ME-37 Incremental Encoder (7 PPR)</td>
-              <td class="py-3 px-4 leading-relaxed">Provides rotational feedback for motor-speed measurement, motion characterization, and experimental velocity tuning</td>
+              <td class="py-3 px-4 font-semibold text-maintext">ME-37 Encoder (7 PPR)</td>
+              <td class="py-3 px-4 leading-relaxed">Rotational feedback for speed measurement</td>
             </tr>
             <tr>
               <td class="py-3 px-4 font-semibold text-maintext">Limit Switches</td>
-              <td class="py-3 px-4 leading-relaxed">Provides positional references, end-of-travel detection, and mechanical over-travel protection</td>
+              <td class="py-3 px-4 leading-relaxed">Positional references and over-travel protection</td>
             </tr>
             <tr>
               <td class="py-3 px-4 font-semibold text-maintext">Linear Motion Assembly</td>
-              <td class="py-3 px-4 leading-relaxed">Converts motor-driven rotational motion into the controlled linear translation required for smear formation</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-maintext">Custom Mechanical Components</td>
-              <td class="py-3 px-4 leading-relaxed">Provides structural integration, actuator mounting, mechanical alignment, and gripping functionality</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-semibold text-maintext">3D-Printed Product Enclosure</td>
-              <td class="py-3 px-4 leading-relaxed">Packages the complete electromechanical system within a compact, integrated, product-oriented form factor</td>
+              <td class="py-3 px-4 leading-relaxed">Translates rotation into linear motion</td>
             </tr>
           </tbody>
         </table>
@@ -377,7 +272,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
             Electronics Engineering Intern <span class="text-yellow-500">(Onsite - Full-Time)</span>
           </p>
           <p class="text-subtext font-body text-base md:text-lg mt-1 font-semibold">
-            19 May - 11 July 2025 · 8 Weeks
+            19 May - 11 July 2025
           </p>
         </div>
       </div>
@@ -390,7 +285,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          <strong>Letter of Recommendation</strong> received from <strong>Prof. Parag Bhargava, IIT Bombay</strong>, following the successful demonstration of the complete proof of concept approximately four months ahead of the official project deadline.
+          <strong>Letter of Recommendation</strong> received from Prof. Parag Bhargava for successful early completion of the proof of concept.
         </p>
         <div class="mt-4 flex justify-center">
           <img 

@@ -19,7 +19,7 @@ A high-performance, responsive portfolio built with **Astro**, **Tailwind CSS**,
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Icons:** [Iconify](https://iconify.design/) via `astro-icon`
 - **Deployment:** [Netlify](https://www.netlify.com)
-- **Backend:** [FastAPI](https://fastapi.tiangolo.com/) *(Works without backend — open source release coming soon)*
+- **Backend:** [FastAPI](https://fastapi.tiangolo.com/) *(Works without backend - open source release coming soon)*
 
 ## 🚀 Getting Started
 Follow these instructions to get a local copy up and running.
