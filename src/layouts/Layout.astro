@@ -195,7 +195,13 @@ const defaultTheme = `${baseTheme}-dark`;
       const dialogImg = document.createElement('img');
       dialogImg.className = 'max-w-[95vw] max-h-[95vh] object-contain scale-95 transition-transform duration-300 pointer-events-none';
       
+      const closeBtn = document.createElement('button');
+      closeBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+      closeBtn.className = 'absolute top-4 right-4 md:top-6 md:right-6 text-white/70 hover:text-white p-2 rounded-full bg-black/40 hover:bg-black/80 transition-all cursor-pointer z-50';
+      closeBtn.setAttribute('aria-label', 'Close fullscreen image');
+
       dialog.appendChild(dialogImg);
+      dialog.appendChild(closeBtn);
       document.body.appendChild(dialog);
 
       const style = document.createElement('style');
