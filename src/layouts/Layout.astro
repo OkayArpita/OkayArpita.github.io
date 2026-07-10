@@ -190,7 +190,7 @@ const defaultTheme = `${baseTheme}-dark`;
 
       // ** FULLSCREEN IMAGE LIGHTBOX ** //
       const dialog = document.createElement('dialog');
-      dialog.className = 'fixed inset-0 m-0 w-full h-full max-w-none max-h-none bg-black/90 z-[9999] p-0 flex items-center justify-center opacity-0 transition-opacity duration-300 backdrop-blur-sm cursor-zoom-out border-none';
+      dialog.className = 'fixed inset-0 m-0 w-full h-full max-w-none max-h-none bg-black/90 z-[9999] p-0 flex items-center justify-center opacity-0 transition-opacity duration-300 backdrop-blur-sm cursor-zoom-out border-none pointer-events-none';
       
       const dialogImg = document.createElement('img');
       dialogImg.className = 'max-w-[95vw] max-h-[95vh] object-contain scale-95 transition-transform duration-300 pointer-events-none';
