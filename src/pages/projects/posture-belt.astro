@@ -48,8 +48,8 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
         <span class="text-accent">/</span> Demonstrated At
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
-        <div class="flex-shrink-0 bg-white w-24 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center p-2">
-          <img src="/BETIC.png" alt="BETIC Logo" class="w-full h-full object-contain" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+        <div class="flex-shrink-0 bg-white w-24 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center">
+          <img src="/BETIC.png" alt="BETIC Logo" class="w-full h-full object-contain p-1" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
         </div>
         <div class="text-center md:text-left pt-2">
           <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
@@ -171,7 +171,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Integrates multiple coin vibration motors across the thoracic and lumbar regions. The actuator array is divided into independent upper and lower sections for targeted muscle coverage.
           </p>
-          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="w-full max-w-lg rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5 object-contain" />
+          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="w-full max-w-lg mx-auto block rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5 object-contain" />
         </div>
 
         <div class="space-y-4">
@@ -179,7 +179,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Powered by a 5000 mAh Li-Po battery with a TP4056 charging module. Driven by an Arduino Nano and a buck converter for regulated power distribution.
           </p>
-          <img src="/Projects/PostureProBelt/Controller Circuit.jpg" alt="Controller Circuit" class="w-full max-w-lg rounded-lg border border-accent/20 shadow-lg mt-4 object-cover" />
+          <img src="/Projects/PostureProBelt/controller circuit.png" alt="Controller Circuit" class="w-full max-w-lg mx-auto block rounded-lg border border-accent/20 shadow-lg mt-4 object-cover" />
         </div>
 
         <div class="space-y-4">
@@ -313,19 +313,31 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
       </div>
     </div>
 
-    <!-- Certificate -->
+    <!-- Certificates -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span> Certificate
+        <span class="text-accent">/</span> Certificates
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
-        <div class="mt-4 flex justify-center w-full">
-          <img 
-            src="/Projects/PostureProBelt/Medha Certificate.jpg" 
-            alt="MEDHA Certificate" 
-            class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
-            onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
-          />
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center text-center">
+          <div class="flex flex-col items-center gap-2">
+            <img 
+              src="/Projects/PostureProBelt/MEDHA 2024 (Ar)_page-0001.jpg" 
+              alt="MEDHA Certificate" 
+              class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5 mx-auto block"
+              onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
+            />
+            <p class="text-accent font-semibold text-sm">MEDHA 2024</p>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img 
+              src="/Projects/PostureProBelt/MEDIC 2024.jpg" 
+              alt="MEDIC Certificate" 
+              class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5 mx-auto block"
+              onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
+            />
+            <p class="text-accent font-semibold text-sm">MEDIC 2024</p>
+          </div>
         </div>
       </div>
     </div>
