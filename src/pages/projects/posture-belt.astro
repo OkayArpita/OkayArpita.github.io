@@ -146,16 +146,12 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
           Initial concept and rapid prototyping demonstrating the technical feasibility of integrating posture sensing and therapeutic actuators.
         </p>
-        <div class="flex flex-col gap-6 items-center">
-          <div class="flex justify-center">
-             <img src="/Projects/PostureProBelt/medha prototype and concept.png" alt="MEDHA Prototype and Concept" class="rounded-xl border border-accent/20 shadow-lg max-h-[300px] w-auto object-contain bg-background" />
-          </div>
-          <div class="flex justify-center">
-            <video controls class="rounded-xl border border-accent/20 shadow-lg max-h-[300px] w-full object-cover bg-background">
-              <source src="/Projects/PostureProBelt/medhaDemo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <img src="/Projects/PostureProBelt/medha prototype and concept.png" alt="MEDHA Prototype and Concept" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
+          <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
+            <source src="/Projects/PostureProBelt/medhaDemo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 
@@ -165,16 +161,12 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
           Hardware design refined for better wearability and robustness, producing a final product-oriented form factor with optimized electronics.
         </p>
-        <div class="flex flex-col gap-6 items-center">
-          <div class="flex justify-center">
-             <img src="/Projects/PostureProBelt/Final Belt as product.png" alt="Final Belt as Product" class="rounded-xl border border-accent/20 shadow-lg max-h-[400px] w-auto object-contain bg-background" />
-          </div>
-          <div class="flex justify-center">
-            <video controls class="rounded-xl border border-accent/20 shadow-lg max-h-[400px] w-full object-cover bg-background">
-              <source src="/Projects/PostureProBelt/PosturePro Belt Demonstration medic.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <img src="/Projects/PostureProBelt/Final Belt as product.png" alt="Final Belt as Product" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
+          <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
+            <source src="/Projects/PostureProBelt/PosturePro Belt Demonstration medic.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
@@ -214,7 +206,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           <p class="text-gray text-sm md:text-base leading-relaxed">
             Integrates multiple coin vibration motors across the thoracic and lumbar regions. The actuator array is divided into independent upper and lower sections for targeted muscle coverage.
           </p>
-          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="rounded-lg border border-accent/20 w-full mt-4 object-cover" />
+          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="rounded-lg border border-accent/20 w-full h-64 object-contain bg-background p-2 mt-4" />
         </div>
 
         <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
@@ -225,7 +217,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           <p class="text-gray text-sm md:text-base leading-relaxed">
             Powered by a 5000 mAh Li-Po battery with a TP4056 charging module. Driven by an Arduino Nano and a buck converter for regulated power distribution.
           </p>
-          <img src="/Projects/PostureProBelt/Controller Circuit.jpg" alt="Controller Circuit" class="rounded-lg border border-accent/20 w-full mt-4 object-cover" />
+          <img src="/Projects/PostureProBelt/Controller Circuit.jpg" alt="Controller Circuit" class="rounded-lg border border-accent/20 w-full h-64 object-cover mt-4" />
         </div>
 
         <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
