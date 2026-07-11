@@ -40,202 +40,154 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
   </section>
 
   <!-- Content Sections -->
-  <section class="px-6 sm:px-14 md:px-18 lg:px-28 max-w-360 mx-auto w-full py-10 space-y-16 reveal-content pb-32" style="animation-delay: 400ms;">
+  <section class="px-6 sm:px-14 md:px-18 lg:px-28 max-w-360 mx-auto w-full py-10 space-y-12 reveal-content pb-32" style="animation-delay: 400ms;">
 
-    <!-- Awards & Recognition -->
-    <div class="flex flex-col gap-6">
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Demonstrated At
-        </h2>
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 h-full">
-          <div class="flex-shrink-0 bg-white w-24 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center p-2">
-            <img src="/BETIC.png" alt="BETIC Logo" class="w-full h-full object-contain" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
-          </div>
-          <div class="text-center md:text-left pt-2">
-            <p class="text-maintext font-heading text-xl font-bold text-accent">
-              Medical Device Hackathon (MEDHA 2024)
-            </p>
-            <p class="text-maintext font-body text-base mt-2">
-              BETIC, IIT Bombay, India
-            </p>
-            <p class="text-subtext font-body text-base mt-1 font-semibold">
-              Role: Team Lead & R&D Lead
-            </p>
-            <p class="text-gray font-body text-sm mt-2">
-              <span class="font-semibold text-maintext">Focus:</span> Biomechanical analysis, wearable system architecture, embedded electronics, posture monitoring, actuator integration, CAD design, and rapid prototyping.
-            </p>
-            <p class="text-subtext font-body text-sm mt-2 font-semibold">
-              Duration: Sep 2024 - Oct 2024
-            </p>
-          </div>
+    <!-- Demonstrated At -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Demonstrated At
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div class="flex-shrink-0 bg-white w-24 h-24 rounded-xl shadow-md border border-accent/20 overflow-hidden flex items-center justify-center p-2">
+          <img src="/BETIC.png" alt="BETIC Logo" class="w-full h-full object-contain" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
         </div>
-      </div>
-
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Recognition & Patents
-        </h2>
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4 h-full">
-          <div class="flex items-center gap-3 bg-yellow-500/10 border border-yellow-500/20 rounded-xl p-4">
-            <div class="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center text-yellow-500 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/><path d="M12 2a6 6 0 0 0-6 6v3.58a1 1 0 0 0 .25.66l1.39 1.5a1 1 0 0 0 .75.34h7.22a1 1 0 0 0 .75-.34l1.39-1.5a1 1 0 0 0 .25-.66V8a6 6 0 0 0-6-6z"/></svg>
-            </div>
-            <div>
-              <p class="text-maintext font-heading font-bold">Best Innovation Award</p>
-              <p class="text-gray text-xs md:text-sm">Awarded at MEDHA 2024 for integrating posture monitoring and therapeutic assistance into a single embedded system.</p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4 bg-accent/10 border border-accent/20 rounded-xl p-4">
-            <div class="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center text-accent flex-shrink-0 mt-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .6 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-            </div>
-            <div class="flex-1">
-              <p class="text-maintext font-heading font-bold text-accent">Patent Published</p>
-              <p class="text-gray font-mono text-xs mt-1">Application No.: 202511041609</p>
-              <p class="text-gray text-xs mt-1 mb-3">Published by the Indian Patent Office (April 2025).</p>
-              <a href="/Projects/PostureProBelt/Patent Publication (Posture Pro Belt).jpg" target="_blank" class="inline-block">
-                <img src="/Projects/PostureProBelt/Patent Publication (Posture Pro Belt).jpg" alt="Patent Publication" class="rounded-lg border border-accent/20 max-h-40 object-cover hover:opacity-90 transition-opacity" />
-              </a>
-            </div>
-          </div>
+        <div class="text-center md:text-left pt-2">
+          <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
+            Medical Device Hackathon (MEDHA 2024)
+          </p>
+          <p class="text-maintext font-body text-base md:text-lg mt-2">
+            BETIC, IIT Bombay, India
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
+            Role: Team Lead & R&D Lead
+          </p>
+          <p class="text-gray font-body text-base md:text-lg mt-1">
+            <span class="font-semibold text-maintext">Focus:</span> Biomechanical analysis, wearable system architecture, embedded electronics, posture monitoring, actuator integration, CAD design, and rapid prototyping.
+          </p>
+          <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
+            Duration: Sep 2024 - Oct 2024
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- Project Summary & Importance -->
-    <div class="flex flex-col gap-6">
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Project Summary
-        </h2>
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 space-y-4 h-full">
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The <strong>Posture Pro Belt</strong> is a wearable rehabilitation system designed to reduce musculoskeletal strain through posture monitoring and corrective intervention. It integrates inertial sensing, embedded control, and therapeutic vibration into a compact battery-powered platform.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The device uses an MPU6050 IMU to continuously estimate trunk inclination. An embedded controller evaluates this against predefined ergonomic thresholds and generates immediate corrective feedback when forward bending exceeds 25° from the vertical.
-          </p>
-        </div>
+    <!-- Project Summary -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Project Summary
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The <strong>Posture Pro Belt</strong> is a wearable rehabilitation system designed to reduce musculoskeletal strain through posture monitoring and corrective intervention. It integrates inertial sensing, embedded control, and therapeutic vibration into a compact battery-powered platform.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The device uses an MPU6050 IMU to continuously estimate trunk inclination. An embedded controller evaluates this against predefined ergonomic thresholds and generates immediate corrective feedback when forward bending exceeds 25° from the vertical.
+        </p>
       </div>
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Why this Project is Important
-        </h2>
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 space-y-4 h-full">
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Prolonged poor posture contributes heavily to chronic lower back disorders. While existing correctors generally only monitor posture, and massagers only provide symptomatic relief, this project combines preventive correction and targeted therapeutic intervention into a single system.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            It actively encourages users to maintain ergonomic posture while providing localized mechanical stimulation across the thoracic and lumbar regions for muscular relaxation and fatigue reduction.
-          </p>
-        </div>
+    </div>
+
+    <!-- Why this Project is Important -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Why this Project is Important
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          Prolonged poor posture contributes heavily to chronic lower back disorders. While existing correctors generally only monitor posture, and massagers only provide symptomatic relief, this project combines preventive correction and targeted therapeutic intervention into a single system.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          It actively encourages users to maintain ergonomic posture while providing localized mechanical stimulation across the thoracic and lumbar regions for muscular relaxation and fatigue reduction.
+        </p>
       </div>
     </div>
 
     <!-- Development Phases -->
-    <div class="space-y-8">
+    <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Development Phases
       </h2>
-      
-      <!-- MEDHA Phase -->
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-6">
-        <h3 class="text-xl md:text-2xl font-heading font-bold text-accent">Phase 1: MEDHA 2024 (Prototype & Concept)</h3>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Initial concept and rapid prototyping demonstrating the technical feasibility of integrating posture sensing and therapeutic actuators.
-        </p>
-        <div class="grid grid-cols-2 gap-4 md:gap-6 mt-6">
-          <img src="/Projects/PostureProBelt/medha prototype and concept.png" alt="MEDHA Prototype and Concept" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
-          <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
-            <source src="/Projects/PostureProBelt/medhaDemo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
+        
+        <!-- MEDHA Phase -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Phase 1: MEDHA 2024 (Prototype & Concept)</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Initial concept and rapid prototyping demonstrating the technical feasibility of integrating posture sensing and therapeutic actuators.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4">
+            <img src="/Projects/PostureProBelt/medha prototype and concept.png" alt="MEDHA Prototype and Concept" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
+            <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
+              <source src="/Projects/PostureProBelt/medhaDemo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>
 
-      <!-- Medic Phase -->
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-6">
-        <h3 class="text-xl md:text-2xl font-heading font-bold text-accent">Phase 2: Medic & Final Refinement</h3>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Hardware design refined for better wearability and robustness, producing a final product-oriented form factor with optimized electronics.
-        </p>
-        <div class="grid grid-cols-2 gap-4 md:gap-6 mt-6">
-          <img src="/Projects/PostureProBelt/Final Belt as product.png" alt="Final Belt as Product" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
-          <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
-            <source src="/Projects/PostureProBelt/PosturePro Belt Demonstration medic.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <!-- Medic Phase -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Phase 2: Medic & Final Refinement</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Hardware design refined for better wearability and robustness, producing a final product-oriented form factor with optimized electronics.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4">
+            <img src="/Projects/PostureProBelt/Final Belt as product.png" alt="Final Belt as Product" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
+            <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
+              <source src="/Projects/PostureProBelt/PosturePro Belt Demonstration medic.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
+
       </div>
     </div>
 
     <!-- Project Details -->
-    <div class="space-y-6">
+    <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Project Details
       </h2>
-      
-      <div class="flex flex-col gap-6">
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-          <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-2">
-            <Icon name="mdi:sine-wave" class="w-6 h-6" />
-          </div>
-          <h3 class="text-lg font-heading font-bold text-maintext">1. IMU-Based Posture Monitoring</h3>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">IMU-Based Posture Monitoring</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             An MPU6050 6-axis IMU measures upper-body inclination. The embedded controller processes accelerometer and gyroscope data to detect sustained forward bending beyond a 25° ergonomic threshold.
           </p>
         </div>
 
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-          <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-2">
-            <Icon name="mdi:bell-ring-outline" class="w-6 h-6" />
-          </div>
-          <h3 class="text-lg font-heading font-bold text-maintext">2. Real-Time Corrective Feedback</h3>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Real-Time Corrective Feedback</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             An embedded buzzer activates when unsafe posture is detected, providing an immediate audible notification to encourage behavioral correction.
           </p>
         </div>
 
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-          <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-2">
-            <Icon name="mdi:vibrate" class="w-6 h-6" />
-          </div>
-          <h3 class="text-lg font-heading font-bold text-maintext">3. Distributed Therapeutic Vibration System</h3>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Distributed Therapeutic Vibration System</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Integrates multiple coin vibration motors across the thoracic and lumbar regions. The actuator array is divided into independent upper and lower sections for targeted muscle coverage.
           </p>
-          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="rounded-lg border border-accent/20 w-full h-64 object-contain bg-background p-2 mt-4" />
+          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="w-full max-w-lg rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5 object-contain" />
         </div>
 
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-          <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-2">
-            <Icon name="mdi:chip" class="w-6 h-6" />
-          </div>
-          <h3 class="text-lg font-heading font-bold text-maintext">4. Embedded Electronics & Power Architecture</h3>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Embedded Electronics & Power Architecture</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Powered by a 5000 mAh Li-Po battery with a TP4056 charging module. Driven by an Arduino Nano and a buck converter for regulated power distribution.
           </p>
-          <img src="/Projects/PostureProBelt/Controller Circuit.jpg" alt="Controller Circuit" class="rounded-lg border border-accent/20 w-full h-64 object-cover mt-4" />
+          <img src="/Projects/PostureProBelt/Controller Circuit.jpg" alt="Controller Circuit" class="w-full max-w-lg rounded-lg border border-accent/20 shadow-lg mt-4 object-cover" />
         </div>
 
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-          <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-2">
-            <Icon name="mdi:tshirt-crew-outline" class="w-6 h-6" />
-          </div>
-          <h3 class="text-lg font-heading font-bold text-maintext">5. Mechanical Design & Wearability</h3>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Mechanical Design & Wearability</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Designed in Autodesk Fusion and SolidWorks. Features optimized component placement for measurement accuracy and user comfort, utilizing a modular assembly.
           </p>
         </div>
 
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-          <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-2">
-            <Icon name="mdi:lightbulb-on-outline" class="w-6 h-6" />
-          </div>
-          <h3 class="text-lg font-heading font-bold text-maintext">6. Future Scope</h3>
-          <ul class="list-disc pl-5 text-gray text-sm md:text-base space-y-2">
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Future Scope</h3>
+          <ul class="list-disc list-inside text-gray font-body text-base md:text-lg space-y-2">
             <li>Bluetooth Low Energy (BLE) connectivity</li>
             <li>Mobile application for posture visualization and analytics</li>
             <li>End-of-day posture reports and activity summaries</li>
@@ -244,54 +196,38 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
             <li>Remote rehabilitation monitoring for clinicians</li>
           </ul>
         </div>
+
       </div>
     </div>
 
     <!-- Tech Stack -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span> Tech Stack & Prototyping Tools
+        <span class="text-accent">/</span> Tech Stack
       </h2>
       <div class="flex flex-wrap gap-4 pt-2">
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:language-c" class="w-5 h-5" />
-          Embedded C
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:code-tags" class="w-5 h-5" />
-          Arduino IDE
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:rotate-3d-variant" class="w-5 h-5" />
-          Autodesk Fusion 360
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:cube-outline" class="w-5 h-5" />
-          SolidWorks
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:memory" class="w-5 h-5" />
-          Circuit Design & PCB Prototyping
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:sine-wave" class="w-5 h-5" />
-          IMU-Based Motion Sensing
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:printer-3d" class="w-5 h-5" />
-          FDM 3D Printing
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:watch-variant" class="w-5 h-5" />
-          Wearable Electronics Integration
-        </div>
+        {[
+          { name: "Embedded C", icon: "mdi:language-c" },
+          { name: "Arduino IDE", icon: "mdi:code-tags" },
+          { name: "Autodesk Fusion 360", icon: "mdi:rotate-3d-variant" },
+          { name: "SolidWorks", icon: "mdi:cube-outline" },
+          { name: "Circuit Design & PCB Prototyping", icon: "mdi:memory" },
+          { name: "IMU-Based Motion Sensing", icon: "mdi:sine-wave" },
+          { name: "FDM 3D Printing", icon: "mdi:printer-3d" },
+          { name: "Wearable Electronics Integration", icon: "mdi:watch-variant" }
+        ].map((t) => (
+          <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+            <Icon name={t.icon} class="w-5 h-5" />
+            {t.name}
+          </div>
+        ))}
       </div>
     </div>
 
-    <!-- Hardware Components -->
+    <!-- Hardware Stack -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span> Hardware Components
+        <span class="text-accent">/</span> Hardware Stack
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 overflow-x-auto">
         <table class="w-full text-left text-sm md:text-base font-body border-collapse">
@@ -336,6 +272,57 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+
+    <!-- Recognition -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Recognition
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        
+        <div class="flex items-center gap-3 bg-yellow-500/10 border border-yellow-500/20 rounded-xl p-4">
+          <div class="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center text-yellow-500 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/><path d="M12 2a6 6 0 0 0-6 6v3.58a1 1 0 0 0 .25.66l1.39 1.5a1 1 0 0 0 .75.34h7.22a1 1 0 0 0 .75-.34l1.39-1.5a1 1 0 0 0 .25-.66V8a6 6 0 0 0-6-6z"/></svg>
+          </div>
+          <div>
+            <p class="text-maintext font-heading font-bold">Best Innovation Award</p>
+            <p class="text-gray text-xs md:text-sm">Awarded at MEDHA 2024 for integrating posture monitoring and therapeutic assistance into a single embedded system.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 bg-accent/10 border border-accent/20 rounded-xl p-4">
+          <div class="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center text-accent flex-shrink-0 mt-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .6 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+          </div>
+          <div class="flex-1">
+            <p class="text-maintext font-heading font-bold text-accent">Patent Published</p>
+            <p class="text-gray font-mono text-xs mt-1">Application No.: 202511041609</p>
+            <p class="text-gray text-xs mt-1 mb-3">Published by the Indian Patent Office (April 2025).</p>
+            <a href="/Projects/PostureProBelt/Patent Publication (Posture Pro Belt).jpg" target="_blank" class="inline-block">
+              <img src="/Projects/PostureProBelt/Patent Publication (Posture Pro Belt).jpg" alt="Patent Publication" class="rounded-lg border border-accent/20 max-h-40 object-cover hover:opacity-90 transition-opacity" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Certificate -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Certificate
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
+        <div class="mt-4 flex justify-center w-full">
+          <img 
+            src="/Projects/PostureProBelt/Medha Certificate.jpg" 
+            alt="MEDHA Certificate" 
+            class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+            onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
+          />
+        </div>
       </div>
     </div>
 
