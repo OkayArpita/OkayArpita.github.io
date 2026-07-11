@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/nav.astro';
+
+const title = "Arpita Kumari - Resume";
+---
+<Layout title={title}>
+  <!-- Back Button -->
+  <div class="fixed top-4 left-4 z-50 reveal-content" style="animation-delay: 700ms;">
+    <a href="/" class="group flex items-center justify-center w-12 h-12 bg-background/50 backdrop-blur-md rounded-full border border-accent/10 hover:border-accent/50 hover:bg-accent/10 transition-all duration-300 shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent group-hover:text-maintext transition-colors"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+    </a>
+  </div>
+  <Nav />
+  
+  <section class="max-w-4xl mx-auto px-6 sm:px-14 md:px-18 py-32 space-y-16 reveal-content" style="animation-delay: 200ms;">
+    
+    <!-- Header -->
+    <div class="text-center space-y-4">
+      <h1 class="text-4xl md:text-6xl font-heading font-bold text-maintext tracking-tight">Arpita Kumari</h1>
+      <div class="flex flex-wrap justify-center gap-4 text-gray font-body text-sm md:text-base">
+        <span>arpita.2327ec1129@kiet.edu</span>
+        <span class="text-accent">•</span>
+        <span>linkedin.com/in/OkayArpita</span>
+        <span class="text-accent">•</span>
+        <span>+91 7392049437</span>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-heading font-bold text-maintext border-b border-accent/20 pb-2">Education</h2>
+      <div class="flex flex-col md:flex-row justify-between items-start gap-2">
+        <div>
+          <h3 class="text-xl font-bold text-maintext">Dr. A. P. J. Abdul Kalam Technical University (KIET Group of Institutions)</h3>
+          <p class="text-accent font-medium">Bachelor of Technology, Electronics and Communication Engineering</p>
+        </div>
+        <div class="text-left md:text-right text-gray text-sm md:text-base">
+          <p>Uttar Pradesh, India</p>
+          <p>Oct '23 - Jul '27 | CGPA: 7.94/10</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fields of Interest -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-heading font-bold text-maintext border-b border-accent/20 pb-2">Fields of Interest</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray font-body list-disc list-inside">
+        <li>Control Systems (PID and LQR)</li>
+        <li>Sensor Fusion & State Estimation</li>
+        <li>Parametric Design and Additive Manufacturing</li>
+        <li>Embedded Systems for Diagnostic and Clinical Use</li>
+        <li>Distributed IoT and Hardware Monitoring</li>
+        <li>Assistive and Bionic Robotic Systems</li>
+      </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-heading font-bold text-maintext border-b border-accent/20 pb-2">Internships & Research</h2>
+      
+      <div class="space-y-8">
+        <!-- CREATE Lab -->
+        <div class="space-y-3">
+          <div class="flex flex-col md:flex-row justify-between items-start gap-2">
+            <div>
+              <h3 class="text-xl font-bold text-maintext">CREATE Lab (Computational Robot Design and Fabrication Lab)</h3>
+              <p class="text-accent font-medium">Research Internship | Guide: Prof. Josie Hughes</p>
+            </div>
+            <div class="text-left md:text-right text-gray text-sm md:text-base">
+              <p>EPFL, Switzerland (Remote)</p>
+              <p>Mar '26 - May '26</p>
+            </div>
+          </div>
+          <ul class="text-gray text-sm md:text-base space-y-2 list-disc list-outside ml-5 leading-relaxed">
+            <li>Designing and optimizing CAD models for the Open Parametric Hand, improving modular prosthetic architectures.</li>
+            <li>Developing parametric design strategies for robotic hand systems, incorporating anatomical tendon routing and multi-degree-of-freedom actuation.</li>
+            <li>Executing prototyping cycles using 3D printing and validating improvements.</li>
+            <li>Collaborating with interdisciplinary teams under guidance of Prof Josie Hughes.</li>
+          </ul>
+        </div>
+
+        <!-- HTIC -->
+        <div class="space-y-3">
+          <div class="flex flex-col md:flex-row justify-between items-start gap-2">
+            <div>
+              <h3 class="text-xl font-bold text-maintext">Healthcare Technology Innovation Centre (HTIC)</h3>
+              <p class="text-accent font-medium">Research Internship | Guide: Prof. Jayaraj Joseph and Dr. Nabeel PM</p>
+            </div>
+            <div class="text-left md:text-right text-gray text-sm md:text-base">
+              <p>IIT Madras (Onsite)</p>
+              <p>Sep '25 - Nov '25</p>
+            </div>
+          </div>
+          <ul class="text-gray text-sm md:text-base space-y-2 list-disc list-outside ml-5 leading-relaxed">
+            <li>Developed a multi-channel infusion system for an ex vivo cardiac revival platform.</li>
+            <li>Designed a programmable architecture with Bluetooth control and automated arbitration for safe operation.</li>
+            <li>Led full system development: circuit design, PCB routing, CAD modelling, and firmware in C.</li>
+            <li>Implemented micro metal-gear motors with encoder-based closed-loop calibration.</li>
+          </ul>
+        </div>
+
+        <!-- BETIC -->
+        <div class="space-y-3">
+          <div class="flex flex-col md:flex-row justify-between items-start gap-2">
+            <div>
+              <h3 class="text-xl font-bold text-maintext">Biomedical Engineering and Technology Innovation Centre (BETIC)</h3>
+              <p class="text-accent font-medium">Research Internship | Guide: Prof. Parag Bhargava and Dr. Bhanupratap</p>
+            </div>
+            <div class="text-left md:text-right text-gray text-sm md:text-base">
+              <p>IIT Bombay (Onsite)</p>
+              <p>May '25 - Jul '25</p>
+            </div>
+          </div>
+          <ul class="text-gray text-sm md:text-base space-y-2 list-disc list-outside ml-5 leading-relaxed">
+            <li>Automatic Blood Smear Device: Designed the actuation-control subsystem achieving 100 mm/s linear motion and improved smear uniformity.</li>
+            <li>Dental Intraoral Scanner Evaluation: Conducted an engineering analysis of the Helios 500 scanner proposing improvements.</li>
+            <li>Applied a multidisciplinary toolkit spanning embedded hardware design, precision motor control, and CAD modelling.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-heading font-bold text-maintext border-b border-accent/20 pb-2">Projects & Achievements</h2>
+      
+      <div class="space-y-6">
+        <!-- Maze Solver -->
+        <div>
+          <div class="flex justify-between items-start">
+            <h3 class="text-lg font-bold text-maintext">Maze Solver Bot <span class="text-accent font-normal text-sm ml-2">e-Yantra Robotics Competition</span></h3>
+            <span class="text-gray text-sm">Aug '25 - Mar '26</span>
+          </div>
+          <p class="text-gray text-sm mt-1">Developed an FPGA-based autonomous maze-solving robot. Achieved top 10 rank among 680+ teams.</p>
+        </div>
+
+        <!-- Hydrogen Islands -->
+        <div>
+          <div class="flex justify-between items-start">
+            <h3 class="text-lg font-bold text-maintext">Dynamic Floating Hydrogen Islands <span class="text-accent font-normal text-sm ml-2">QUEST Innovation Challenge</span></h3>
+            <span class="text-gray text-sm">Sep '25 - Nov '25</span>
+          </div>
+          <p class="text-gray text-sm mt-1">Contributed to a systems-level concept integrating offshore renewables. Won 2nd position nationally with ₹1,00,000 prize.</p>
+        </div>
+
+        <!-- Line Follower -->
+        <div>
+          <div class="flex justify-between items-start">
+            <h3 class="text-lg font-bold text-maintext">Fastest Line Follower <span class="text-accent font-normal text-sm ml-2">Technoxian World Robotics</span></h3>
+            <span class="text-gray text-sm">Aug '25 - Sep '25</span>
+          </div>
+          <p class="text-gray text-sm mt-1">Built a high-speed STM32-based line-follower using PID-based tracking and full embedded control stack.</p>
+        </div>
+
+        <!-- Balance Bot -->
+        <div>
+          <div class="flex justify-between items-start">
+            <h3 class="text-lg font-bold text-maintext">Balancing Builder Bot <span class="text-accent font-normal text-sm ml-2">e-Yantra Robotics Competition</span></h3>
+            <span class="text-gray text-sm">Aug '24 - Mar '25</span>
+          </div>
+          <p class="text-gray text-sm mt-1">Developed a two-wheeled self-balancing robot with LQR-based stabilization. Secured 4th internationally among 1008 teams.</p>
+        </div>
+
+        <!-- Posture Belt -->
+        <div>
+          <div class="flex justify-between items-start">
+            <h3 class="text-lg font-bold text-maintext">Posture Pro Belt <span class="text-accent font-normal text-sm ml-2">Medical Device Hackathon</span></h3>
+            <span class="text-gray text-sm">Sep '24 - Oct '24</span>
+          </div>
+          <p class="text-gray text-sm mt-1">Won Best Innovation Award for a 3-in-1 Posture Pro belt with vibrational alerts and massage system.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patent -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-heading font-bold text-maintext border-b border-accent/20 pb-2">Patent</h2>
+      <div>
+        <h3 class="text-lg font-bold text-maintext">AI-Powered Wearable for Posture Correction and Back Pain Relief</h3>
+        <p class="text-gray text-sm mt-1">Published | Application Number: 202511041609 | Filed on Apr '25, Indian Patent Office</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-heading font-bold text-maintext border-b border-accent/20 pb-2">Technical Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm md:text-base">
+        <div><strong class="text-accent">Robotics & Control:</strong> <span class="text-gray">Autonomous Navigation, LQR & PID Control, Sensor Fusion, Differential Drive Kinematics</span></div>
+        <div><strong class="text-accent">Embedded & Electronics:</strong> <span class="text-gray">FPGA, STM32, Arduino, ESP32, PCB design (KiCAD)</span></div>
+        <div><strong class="text-accent">Programming & Tools:</strong> <span class="text-gray">C, C++, Python, MATLAB, Embedded C, Verilog HDL, Git</span></div>
+        <div><strong class="text-accent">Designing & Prototyping:</strong> <span class="text-gray">Autodesk Fusion, SolidWorks, Blender, OpenSCAD, 3D Printing</span></div>
+      </div>
+    </div>
+
+  </section>
+</Layout>
+
+<style>
+  .reveal-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+  @keyframes revealIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
