@@ -60,13 +60,13 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
               BETIC, IIT Bombay, India
             </p>
             <p class="text-subtext font-body text-base mt-1 font-semibold">
-              Role: Team Lead & R&D Lead <span class="text-yellow-500">(Award-Winning Project)</span>
+              Role: Team Lead & R&D Lead
             </p>
             <p class="text-gray font-body text-sm mt-2">
               <span class="font-semibold text-maintext">Focus:</span> Biomechanical analysis, wearable system architecture, embedded electronics, posture monitoring, actuator integration, CAD design, and rapid prototyping.
             </p>
             <p class="text-subtext font-body text-sm mt-2 font-semibold">
-              Duration: Sep 2024 – Oct 2024
+              Duration: Sep 2024 - Oct 2024
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
             </div>
             <div>
               <p class="text-maintext font-heading font-bold">Best Innovation Award</p>
-              <p class="text-gray text-xs md:text-sm">Recognized at MEDHA 2024 for proposing an innovative preventive healthcare wearable integrating posture monitoring and therapeutic assistance into a single embedded system.</p>
+              <p class="text-gray text-xs md:text-sm">Awarded at MEDHA 2024 for integrating posture monitoring and therapeutic assistance into a single embedded system.</p>
             </div>
           </div>
 
@@ -112,13 +112,10 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
         </h2>
         <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 space-y-4 h-full">
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The <strong>Posture Pro Belt</strong> is a wearable rehabilitation system designed to reduce posture-induced musculoskeletal strain through continuous posture monitoring and active corrective intervention. The wearable integrates inertial sensing, embedded control, distributed haptic actuation, and therapeutic vibration into a compact battery-powered platform capable of both preventing improper spinal posture and providing localized muscular relief.
+            The <strong>Posture Pro Belt</strong> is a wearable rehabilitation system designed to reduce musculoskeletal strain through posture monitoring and corrective intervention. It integrates inertial sensing, embedded control, and therapeutic vibration into a compact battery-powered platform.
           </p>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The posture monitoring subsystem utilizes an MPU6050 6-DoF Inertial Measurement Unit (IMU) to continuously estimate trunk inclination relative to a calibrated upright reference. An embedded controller evaluates the measured posture against predefined ergonomic thresholds and immediately generates corrective feedback whenever sustained forward bending beyond 25° from the vertical is detected.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            To complement the preventive monitoring mechanism, the device incorporates multiple therapeutic vibration actuators distributed across the thoracic and lumbar regions to provide localized mechanical stimulation for temporary muscular relaxation and fatigue reduction.
+            The device uses an MPU6050 IMU to continuously estimate trunk inclination. An embedded controller evaluates this against predefined ergonomic thresholds and generates immediate corrective feedback when forward bending exceeds 25° from the vertical.
           </p>
         </div>
       </div>
@@ -128,13 +125,10 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
         </h2>
         <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 space-y-4 h-full">
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Poor posture during prolonged sitting, standing, or repetitive occupational activities is one of the primary contributors to chronic lower back disorders. Existing wearable posture correctors generally focus on monitoring posture, while commercially available massage devices provide symptomatic relief without addressing the underlying cause of musculoskeletal strain.
+            Prolonged poor posture contributes heavily to chronic lower back disorders. While existing correctors generally only monitor posture, and massagers only provide symptomatic relief, this project combines preventive correction and targeted therapeutic intervention into a single system.
           </p>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The objective of the Posture Pro Belt was to combine preventive posture correction and therapeutic intervention within a single wearable system. Rather than relying solely on pain management, the device actively encourages users to maintain ergonomic posture while simultaneously providing targeted vibration therapy for users already experiencing muscular fatigue.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            The project demonstrates the integration of biomechanics, embedded electronics, wearable system design, and rapid prototyping into a practical healthcare engineering solution.
+            It actively encourages users to maintain ergonomic posture while providing localized mechanical stimulation across the thoracic and lumbar regions for muscular relaxation and fatigue reduction.
           </p>
         </div>
       </div>
@@ -150,7 +144,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-6">
         <h3 class="text-xl md:text-2xl font-heading font-bold text-accent">Phase 1: MEDHA 2024 (Prototype & Concept)</h3>
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The initial concept and rapid prototyping took place during the Medical Device Hackathon (MEDHA 2024). The focus was on proving the technical feasibility of integrating posture sensing and therapeutic actuators in a single belt.
+          Initial concept and rapid prototyping demonstrating the technical feasibility of integrating posture sensing and therapeutic actuators.
         </p>
         <div class="flex flex-col gap-6 items-center">
           <div class="flex justify-center">
@@ -169,7 +163,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-6">
         <h3 class="text-xl md:text-2xl font-heading font-bold text-accent">Phase 2: Medic & Final Refinement</h3>
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Following MEDHA, the design was refined for better wearability, robustness, and commercial viability. The electronics were streamlined, and the belt was constructed using a product-oriented form factor.
+          Hardware design refined for better wearability and robustness, producing a final product-oriented form factor with optimized electronics.
         </p>
         <div class="flex flex-col gap-6 items-center">
           <div class="flex justify-center">
@@ -198,10 +192,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           </div>
           <h3 class="text-lg font-heading font-bold text-maintext">1. IMU-Based Posture Monitoring</h3>
           <p class="text-gray text-sm md:text-base leading-relaxed">
-            The posture monitoring subsystem continuously measures upper-body inclination using an MPU6050 6-axis inertial measurement unit. Accelerometer and gyroscope measurements are processed by the embedded controller to estimate trunk orientation relative to an initial calibrated posture.
-          </p>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
-            Real-time inclination is continuously compared against a predefined ergonomic threshold of 25° forward bending. Sustained deviations beyond this threshold indicate potentially unsafe posture associated with increased spinal loading and lower back strain.
+            An MPU6050 6-axis IMU measures upper-body inclination. The embedded controller processes accelerometer and gyroscope data to detect sustained forward bending beyond a 25° ergonomic threshold.
           </p>
         </div>
 
@@ -211,10 +202,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           </div>
           <h3 class="text-lg font-heading font-bold text-maintext">2. Real-Time Corrective Feedback</h3>
           <p class="text-gray text-sm md:text-base leading-relaxed">
-            To promote proactive posture correction, the system incorporates an embedded audible feedback mechanism.
-          </p>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
-            Whenever excessive forward bending persists beyond the specified threshold, the controller activates a buzzer, immediately notifying the user to restore a neutral spinal posture. This closed-loop feedback mechanism encourages behavioral correction before prolonged musculoskeletal loading occurs.
+            An embedded buzzer activates when unsafe posture is detected, providing an immediate audible notification to encourage behavioral correction.
           </p>
         </div>
 
@@ -224,10 +212,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           </div>
           <h3 class="text-lg font-heading font-bold text-maintext">3. Distributed Therapeutic Vibration System</h3>
           <p class="text-gray text-sm md:text-base leading-relaxed">
-            To support users already experiencing lower back discomfort, the wearable integrates multiple coin vibration motors positioned across both the thoracic and lumbar regions.
-          </p>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
-            Unlike conventional handheld massage devices that target only localized areas, the distributed actuator arrangement provides broader muscle coverage across the back. The actuator array is divided into independent upper and lower sections, allowing users to activate either region individually or operate both simultaneously depending on therapeutic requirements.
+            Integrates multiple coin vibration motors across the thoracic and lumbar regions. The actuator array is divided into independent upper and lower sections for targeted muscle coverage.
           </p>
           <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="rounded-lg border border-accent/20 w-full mt-4 object-cover" />
         </div>
@@ -238,10 +223,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           </div>
           <h3 class="text-lg font-heading font-bold text-maintext">4. Embedded Electronics & Power Architecture</h3>
           <p class="text-gray text-sm md:text-base leading-relaxed">
-            The embedded hardware consists of an Arduino Nano, MPU6050 inertial sensor, vibration actuator network, audible feedback circuit, and rechargeable power subsystem.
-          </p>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
-            A 5000 mAh Li-Po battery powers the wearable, while a TP4056 USB Type-C charging module provides charging and battery protection. A buck converter supplies regulated voltage to the sensing, processing, and actuation electronics, enabling completely wireless operation.
+            Powered by a 5000 mAh Li-Po battery with a TP4056 charging module. Driven by an Arduino Nano and a buck converter for regulated power distribution.
           </p>
           <img src="/Projects/PostureProBelt/Controller Circuit.jpg" alt="Controller Circuit" class="rounded-lg border border-accent/20 w-full mt-4 object-cover" />
         </div>
@@ -252,10 +234,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           </div>
           <h3 class="text-lg font-heading font-bold text-maintext">5. Mechanical Design & Wearability</h3>
           <p class="text-gray text-sm md:text-base leading-relaxed">
-            The wearable architecture was designed to integrate sensing electronics, power circuitry, and distributed actuators within a lightweight ergonomic belt.
-          </p>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
-            Component placement was optimized to improve posture measurement accuracy, maximize vibration transmission, and maintain user comfort during prolonged use. The final prototype emphasized modular assembly, ease of maintenance, and a product-oriented form factor suitable for future commercialization.
+            Designed in Autodesk Fusion and SolidWorks. Features optimized component placement for measurement accuracy and user comfort, utilizing a modular assembly.
           </p>
         </div>
 
@@ -264,9 +243,6 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
             <Icon name="mdi:lightbulb-on-outline" class="w-6 h-6" />
           </div>
           <h3 class="text-lg font-heading font-bold text-maintext">6. Future Scope</h3>
-          <p class="text-gray text-sm md:text-base leading-relaxed">
-            The modular hardware architecture enables straightforward expansion into a connected wearable healthcare platform. Potential future developments include:
-          </p>
           <ul class="list-disc pl-5 text-gray text-sm md:text-base space-y-2">
             <li>Bluetooth Low Energy (BLE) connectivity</li>
             <li>Mobile application for posture visualization and analytics</li>
