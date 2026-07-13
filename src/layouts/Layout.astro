@@ -215,7 +215,7 @@ const defaultTheme = `${baseTheme}-dark`;
 
       document.body.addEventListener('click', (e) => {
         const target = e.target;
-        if (target && target.tagName === 'IMG' && !target.closest('a') && !target.closest('button') && target !== dialogImg && !target.classList.contains('no-fullscreen')) {
+        if (target instanceof HTMLImageElement && !target.closest('a') && !target.closest('button') && target !== dialogImg && !target.classList.contains('no-fullscreen')) {
           dialogImg.src = target.src;
           dialog.showModal();
           setTimeout(() => {
