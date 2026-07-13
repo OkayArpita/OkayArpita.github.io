@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
+import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { resolveAssetImage } from '../../utils/images';
 
@@ -82,17 +83,67 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
       </div>
     </div>
 
-    <!-- Technology used -->
+    <!-- Why this Project is Important -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Why this Project is Important
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          Autonomous line-following at high speeds pushes the limits of embedded systems by demanding extremely low-latency sensor processing, tight control loops, and robust hardware design. This project highlights the ability to integrate precision motor control, real-time trajectory stabilization, and high-density sensing arrays to achieve competitive performance in robotics tournaments.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Project Details
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">High-Speed Trajectory Control</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Engineered an advanced PID-based tracking system with yaw stabilization to ensure the robot stays firmly on the line even during sharp turns. Designed the full embedded control stack on an STM32 microcontroller to execute computations with minimal latency.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Sensor Processing Pipeline</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Integrated Pololu QTRX-16MD high-density infrared sensor arrays for precise line position detection. The custom sensor-processing pipeline reliably filters noise and calibrates dynamic thresholds for robust environmental adaptation.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Precision Locomotion</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Powered by micro metal-gear motors equipped with high-resolution magnetic encoders, the hardware allows for exact odometry feedback and rapid acceleration, enabling highly responsive navigation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Tech Stack
       </h2>
-      <div class="flex flex-wrap gap-3 pt-2">
-        {["STM32", "Pololu QTRX-16MD", "PID Control", "Embedded C", "Sensor Processing", "Motor Drivers"].map((t) => (
-          <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-            {t}
-          </span>
-        ))}
+      <div class="flex flex-wrap gap-4 pt-2">
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:chip" class="w-5 h-5" />
+          STM32 & Sensors
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:code-braces" class="w-5 h-5" />
+          Embedded C
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:robot-outline" class="w-5 h-5" />
+          PID Control
+        </div>
       </div>
     </div>
 
