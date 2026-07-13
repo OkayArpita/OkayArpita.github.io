@@ -126,9 +126,9 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Assembled the electronic system on a prototyping PCB to minimize mass. Implemented power distribution using an MP1584 buck converter and TB6612FNG motor drivers for stable current delivery.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img src="/Projects/FastestLineFollowerRobot/CAD%20render.png" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full aspect-video object-cover" />
-            <img src="/Projects/FastestLineFollowerRobot/Cad%20renders.png" alt="CAD Render 2" class="rounded-lg border border-accent/20 shadow-md w-full aspect-video object-cover" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+            <img src="/Projects/FastestLineFollowerRobot/CAD%20render.png" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+            <img src="/Projects/FastestLineFollowerRobot/Cad%20renders.png" alt="CAD Render 2" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
           </div>
         </div>
 
@@ -151,7 +151,9 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Iteratively tuned PID parameters, sensor calibration, and power distribution to minimize processing latency and improve dynamic response.
           </p>
-          <img src="/Projects/FastestLineFollowerRobot/at%20technoxian.png" alt="At Technoxian" class="rounded-lg border border-accent/20 shadow-md w-full max-w-3xl mx-auto object-cover" />
+          <div class="pt-4 flex justify-center">
+            <img src="/Projects/FastestLineFollowerRobot/at%20technoxian.png" alt="At Technoxian" class="rounded-lg border border-accent/20 shadow-md max-w-xl w-full max-h-80 object-contain bg-black/20" />
+          </div>
         </div>
 
       </div>
@@ -269,23 +271,15 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
         </div>
       </div>
 
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Core Engineering Concepts
-        </h2>
-        <div class="flex flex-wrap gap-3 pt-2">
-          {[
-            "Real-Time Embedded Systems", "Autonomous Mobile Robotics", "Differential Drive Kinematics",
-            "Closed-Loop Motion Control", "PID Controller Design", "Reflectance Sensor Signal Processing",
-            "PWM Motor Control", "Encoder-Based Feedback Control", "Embedded Firmware Development",
-            "Low-Latency Control Systems", "High-Speed Autonomous Navigation", "Lightweight Embedded Hardware Design",
-            "Power Electronics for Mobile Robots", "Competition Robotics Engineering"
-          ].map((concept) => (
-            <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-              {concept}
-            </span>
-          ))}
-        </div>
+    </div>
+
+    <!-- Certificate -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Certificate
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <iframe src="/Projects/FastestLineFollowerRobot/Participation%20Certificate.pdf" class="w-full h-[600px] rounded-lg border border-accent/20 shadow-lg bg-white/5"></iframe>
       </div>
     </div>
 
