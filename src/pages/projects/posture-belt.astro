@@ -1,11 +1,11 @@
-﻿---
+---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
 import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { resolveAssetImage } from '../../utils/images';
 
-const title = "Posture Pro Belt";
+const title = "posture pro belt";
 const profileImage = await resolveAssetImage("posture-belt@dp.png");
 ---
 <Layout title={title}>
@@ -30,7 +30,9 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
     </div>
     
     <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
-      <h1 class="text-4xl md:text-6xl font-heading font-bold text-maintext tracking-tight mt-6">`r`n        {title}`r`n      </h1>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold text-maintext tracking-tight mt-6">
+        {title}
+      </h1>
     </div>
   </section>
 
