@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
+import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { resolveAssetImage } from '../../utils/images';
 
@@ -33,6 +34,10 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
       <h1 class="text-4xl md:text-6xl font-heading font-bold text-maintext tracking-tight mt-6">
         {title}
       </h1>
+      <br>
+      <p class="text-gray font-body text-lg leading-relaxed">
+        FPGA-Based Autonomous Maze-Solving Robot
+      </p>
     </div>
   </section>
 
@@ -50,49 +55,147 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
         </div>
         <div class="text-center md:text-left pt-2">
           <p class="text-maintext font-heading text-xl md:text-2xl font-bold text-accent">
-            e-Yantra Robotics Competition
+            e-Yantra Robotics Competition (eYRC 2025-26)
           </p>
           <p class="text-maintext font-body text-base md:text-lg mt-2">
-            IIT Bombay, India
+            e-Yantra Lab, IIT Bombay
           </p>
           <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
-            Competitor <span class="text-yellow-500">(Stage 2)</span>
-          </p>
-          <p class="text-gray font-body text-base md:text-lg mt-1">
-            <span class="font-semibold text-maintext">Project:</span> Maze Solver Bot<br/>
+            Role: Developer
           </p>
           <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
-            2025-26 Season
+            Duration: Aug 2025 to Mar 2026
           </p>
         </div>
       </div>
     </div>
 
-    
     <!-- Project Summary -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span>
-        Project Summary
+        <span class="text-accent">/</span> Project Summary
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Currently making this for e-Yantra 2025-26 stage 2. Writing the embedded firmware and control logic to navigate the maze.
+          Developed an FPGA-based autonomous maze-solving robot for the e-Yantra Robotics Competition. Engineered for a post-harvest agricultural optimization theme, the system achieved a top 10 rank among 680+ teams. 
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The robot utilizes a DE0-Nano FPGA to execute a hardware-level control pipeline that integrates real-time sensing, motor actuation, and wireless communication with the Central Control Unit (CCU).
         </p>
       </div>
     </div>
 
-    <!-- Technology used -->
+    <!-- Why this Project is Important -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Why this Project is Important
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          Autonomous navigation using FPGAs requires designing concurrent hardware pipelines rather than sequential software execution. This project explores low-latency hardware design, precise synchronization, and real-time interface engineering.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          It highlights the integration of digital systems design, structural packaging, and PCB design to build a responsive mobile robot capable of navigating dynamic environments and executing agricultural optimization tasks.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Project Details
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">FPGA Hardware Pipeline</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Developed a hardware pipeline in Verilog HDL on the DE0-Nano FPGA. The architecture implements concurrent modules for sensor data acquisition, PWM generation for motor speed regulation, and wireless UART communication for telemetry.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Mechanical Design & Fabrication</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Designed the robot chassis and custom soil moisture mechanism using Autodesk Fusion. Simulated structural components to optimize weight distribution and fabricated the physical structure using 3D printing.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Electronic Integration</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Designed and routed a custom PCB in KiCad to handle electronic system integration. The board distributes power from the battery source, regulates voltage for the FPGA and sensors, and provides noise isolation for motor drivers.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Tech Stack
       </h2>
-      <div class="flex flex-wrap gap-3 pt-2">
-        {["Embedded Firmware","Control Logic","STM32/Arduino"].map((t) => (
-          <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-            {t}
-          </span>
-        ))}
+      <div class="flex flex-wrap gap-4 pt-2">
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:code-braces" class="w-5 h-5" />
+          Verilog HDL
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:developer-board" class="w-5 h-5" />
+          Intel Quartus Prime
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:cube-outline" class="w-5 h-5" />
+          Autodesk Fusion
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:layers-outline" class="w-5 h-5" />
+          KiCad
+        </div>
+      </div>
+    </div>
+
+    <!-- Hardware Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Hardware Stack
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 overflow-x-auto">
+        <table class="w-full text-left text-sm md:text-base font-body border-collapse">
+          <thead>
+            <tr class="border-b border-accent/20">
+              <th class="py-3 px-4 text-accent font-bold">Component</th>
+              <th class="py-3 px-4 text-accent font-bold">Purpose</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray divide-y divide-accent/10">
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">DE0-Nano FPGA Board</td>
+              <td class="py-3 px-4 leading-relaxed">Primary controller executing parallel Verilog control pipelines</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Custom PCB (KiCad)</td>
+              <td class="py-3 px-4 leading-relaxed">Integrated power routing, sensor interfaces, and driver circuits</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Soil Moisture Sensor</td>
+              <td class="py-3 px-4 leading-relaxed">Acquires agricultural telemetry data for navigation target calculation</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">DC Geared Motors & Drivers</td>
+              <td class="py-3 px-4 leading-relaxed">Actuation system managed via custom FPGA PWM modules</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Wireless Transceiver</td>
+              <td class="py-3 px-4 leading-relaxed">Telemetry and command interface linking the robot to the CCU</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">3D Printed Custom Chassis</td>
+              <td class="py-3 px-4 leading-relaxed">Lightweight structural frame with integrated sensor mounts</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
