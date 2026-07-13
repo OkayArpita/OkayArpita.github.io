@@ -184,76 +184,99 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
       </div>
     </div>
 
-    <!-- Tech Stack & Hardware Stack -->
-    <div class="space-y-8">
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Tech Stack
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
-            <Icon name="mdi:code-braces" class="w-8 h-8 flex-shrink-0" />
-            <div>
-              <p class="font-bold text-maintext">Embedded C</p>
-              <p class="text-sm text-gray">Embedded firmware development</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
-            <Icon name="mdi:developer-board" class="w-8 h-8 flex-shrink-0" />
-            <div>
-              <p class="font-bold text-maintext">STM32CubeIDE</p>
-              <p class="text-sm text-gray">Firmware development and debugging</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
-            <Icon name="mdi:cube-outline" class="w-8 h-8 flex-shrink-0" />
-            <div>
-              <p class="font-bold text-maintext">Autodesk Fusion</p>
-              <p class="text-sm text-gray">Mechanical design and CAD</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
-            <Icon name="mdi:chart-line-variant" class="w-8 h-8 flex-shrink-0" />
-            <div>
-              <p class="font-bold text-maintext">PID Control</p>
-              <p class="text-sm text-gray">Closed-loop trajectory tracking</p>
-            </div>
-          </div>
+    <!-- Tech Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Tech Stack
+      </h2>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:code-braces" class="w-5 h-5" />
+          Embedded C
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:developer-board" class="w-5 h-5" />
+          STM32CubeIDE
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:cube-outline" class="w-5 h-5" />
+          Autodesk Fusion
+        </div>
+        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+          <Icon name="mdi:chart-line-variant" class="w-5 h-5" />
+          PID Control
         </div>
       </div>
+    </div>
 
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Hardware Stack
-        </h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray font-body text-base md:text-lg">
-          <li><strong class="text-accent">STM32F103C8T6 (Blue Pill):</strong> Main controller</li>
-          <li><strong class="text-accent">Pololu QTRX-16MD:</strong> 16-channel IR sensor array</li>
-          <li><strong class="text-accent">CD74HC4067:</strong> 16-channel analog multiplexer</li>
-          <li><strong class="text-accent">TB6612FNG ×2:</strong> Independent H-bridge motor drivers</li>
-          <li><strong class="text-accent">Micro Metal Gear Motors:</strong> Magnetic encoder feedback</li>
-          <li><strong class="text-accent">MP1584 Buck Converter:</strong> High-efficiency DC-DC regulation</li>
-          <li><strong class="text-accent">11.1 V Li-Po:</strong> High-current power source</li>
-          <li><strong class="text-accent">Dot Board:</strong> Lightweight custom electronics integration</li>
-        </ul>
+    <!-- Hardware Stack -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Hardware Stack
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 overflow-x-auto">
+        <table class="w-full text-left text-sm md:text-base font-body border-collapse">
+          <thead>
+            <tr class="border-b border-accent/20">
+              <th class="py-3 px-4 text-accent font-bold">Component</th>
+              <th class="py-3 px-4 text-accent font-bold">Purpose</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray divide-y divide-accent/10">
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">STM32F103C8T6 (Blue Pill)</td>
+              <td class="py-3 px-4 leading-relaxed">Main real-time embedded controller</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Pololu QTRX-16MD</td>
+              <td class="py-3 px-4 leading-relaxed">16-channel infrared reflectance sensor array for line detection</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">CD74HC4067</td>
+              <td class="py-3 px-4 leading-relaxed">16-channel analog multiplexer for sensor signal routing</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">TB6612FNG ×2</td>
+              <td class="py-3 px-4 leading-relaxed">Independent H-bridge motor drivers (one per motor) for higher current delivery</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Micro Metal Gear Motors</td>
+              <td class="py-3 px-4 leading-relaxed">Differential-drive locomotion with magnetic encoder feedback</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">MP1584 Buck Converter</td>
+              <td class="py-3 px-4 leading-relaxed">High-efficiency DC-DC voltage regulation</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">11.1 V 360 mAh 30C 3S Li-Po</td>
+              <td class="py-3 px-4 leading-relaxed">High-current power source for motors and control electronics</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 font-semibold text-maintext">Double-Sided Dot Board</td>
+              <td class="py-3 px-4 leading-relaxed">Lightweight custom electronics integration platform</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </div>
 
-      <div class="space-y-4">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-          <span class="text-accent">/</span> Core Engineering Concepts
-        </h2>
-        <div class="flex flex-wrap gap-3 pt-2">
-          {[
-            "Real-Time Embedded Systems", "Autonomous Mobile Robotics", "Differential Drive Kinematics",
-            "Closed-Loop Motion Control", "PID Controller Tuning", "Sensor Signal Processing",
-            "PWM Motor Control", "Encoder Feedback Control", "Low-Latency Systems",
-            "Lightweight Hardware Design", "Power Electronics"
-          ].map((concept) => (
-            <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-              {concept}
-            </span>
-          ))}
-        </div>
+    <!-- Core Engineering Concepts -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Core Engineering Concepts
+      </h2>
+      <div class="flex flex-wrap gap-3 pt-2">
+        {[
+          "Real-Time Embedded Systems", "Autonomous Mobile Robotics", "Differential Drive Kinematics",
+          "Closed-Loop Motion Control", "PID Controller Design & Tuning", "Reflectance Sensor Signal Processing",
+          "PWM Motor Control", "Encoder-Based Feedback Control", "Embedded Firmware Development",
+          "Low-Latency Control Systems", "High-Speed Autonomous Navigation", "Lightweight Embedded Hardware Design",
+          "Power Electronics for Mobile Robots", "Competition Robotics Engineering"
+        ].map((concept) => (
+          <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+            {concept}
+          </span>
+        ))}
       </div>
     </div>
 
