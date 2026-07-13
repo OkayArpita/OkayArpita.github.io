@@ -25,6 +25,12 @@ const title = "BETIC, IIT Bombay";
       <h1 class="text-4xl md:text-6xl font-heading font-bold text-maintext tracking-tight mt-6">
         {title}
       </h1>
+      <div class="mt-4">
+        <a href="/projects/posture-belt" class="inline-flex items-center gap-2 text-accent hover:text-maintext transition-colors text-sm font-semibold border border-accent/20 rounded-full px-4 py-2 hover:bg-accent/10">
+          View the Posture Belt Project
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -38,7 +44,7 @@ const title = "BETIC, IIT Bombay";
         <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
           <span class="text-accent">/</span> Medical Device Innovation Challenge (MEDIC 2024)
         </h2>
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <a href="/achievements/betic/medic" class="achievement-tile block bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4 hover:border-accent/40 transition-all duration-500 cursor-pointer">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-accent/10 pb-4">
             <h3 class="text-xl font-heading font-bold text-accent">Finalist</h3>
             <span class="font-mono text-xs tracking-widest uppercase text-accent/75 bg-accent/10 px-3 py-1 rounded-full w-fit">October 2024</span>
@@ -46,13 +52,7 @@ const title = "BETIC, IIT Bombay";
           <p class="text-gray font-body text-base md:text-lg leading-relaxed pt-2">
             Showcased an automatic blood smear device for sickle cell anemia detection, recognized as a finalist for its impactful application in biomedical hardware.
           </p>
-          <div class="pt-4">
-            <a href="/projects/blood-smear" class="inline-flex items-center gap-2 text-accent hover:text-maintext transition-colors text-sm font-semibold border border-accent/20 rounded-full px-4 py-2 hover:bg-accent/10">
-              View the Blood Smear Project
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
+        </a>
       </div>
 
       <!-- Edition 2 -->
@@ -60,7 +60,7 @@ const title = "BETIC, IIT Bombay";
         <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
           <span class="text-accent">/</span> Medical Device Hackathon (MEDHA 2024)
         </h2>
-        <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <a href="/achievements/betic/medha" class="achievement-tile block bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4 hover:border-accent/40 transition-all duration-500 cursor-pointer">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-accent/10 pb-4">
             <h3 class="text-xl font-heading font-bold text-accent">Best Innovation Award Winner</h3>
             <span class="font-mono text-xs tracking-widest uppercase text-accent/75 bg-accent/10 px-3 py-1 rounded-full w-fit">September 2024</span>
@@ -68,15 +68,17 @@ const title = "BETIC, IIT Bombay";
           <p class="text-gray font-body text-base md:text-lg leading-relaxed pt-2">
             Led the R&D for a portable posture correction belt prototype, focusing on the hardware-software integration. 
           </p>
-          <div class="pt-4">
-            <a href="/projects/posture-belt" class="inline-flex items-center gap-2 text-accent hover:text-maintext transition-colors text-sm font-semibold border border-accent/20 rounded-full px-4 py-2 hover:bg-accent/10">
-              View the Posture Belt Project
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
+        </a>
       </div>
 
+    </div>
+
+    <!-- Project Cursor Badge -->
+    <div id="project-cursor-badge" class="project-cursor-badge">
+      <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z" />
+      </svg>
+      <span>Open</span>
     </div>
   </section>
 </Layout>
@@ -103,4 +105,107 @@ const title = "BETIC, IIT Bombay";
     66% { transform: translate(-3px, -4px) rotate(-1deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
   }
+
+  /* Project Cursor Badge */
+  .project-cursor-badge {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    will-change: transform, opacity;
+  }
 </style>
+
+<script>
+  const initCursorBadge = () => {
+    const badge = document.getElementById('project-cursor-badge');
+    const cards = document.querySelectorAll('.achievement-tile');
+    if (!badge || cards.length === 0) return;
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let badgeX = 0;
+    let badgeY = 0;
+    let currentScale = 0.5;
+    let targetScale = 0.5;
+    let currentOpacity = 0;
+    let targetOpacity = 0;
+    let isHovering = false;
+
+    // Track mouse coordinates globally
+    const onMouseMove = (e: MouseEvent) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    };
+
+    window.addEventListener('mousemove', onMouseMove);
+
+    // Mouse entering and leaving cards
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        isHovering = true;
+        targetScale = 1;
+        targetOpacity = 1;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        isHovering = false;
+        targetScale = 0.5;
+        targetOpacity = 0;
+      });
+    });
+
+    let animationFrameId: number;
+
+    const animate = () => {
+      // Smoothen coordinates with a LERP factor (0.15)
+      const dx = mouseX - badgeX;
+      const dy = mouseY - badgeY;
+      badgeX += dx * 0.15;
+      badgeY += dy * 0.15;
+
+      // Smoothen scale and opacity
+      currentScale += (targetScale - currentScale) * 0.15;
+      currentOpacity += (targetOpacity - currentOpacity) * 0.15;
+
+      badge.style.opacity = currentOpacity.toFixed(3);
+      badge.style.transform = `translate3d(${badgeX}px, ${badgeY}px, 0) translate(-50%, -50%) scale(${currentScale.toFixed(3)})`;
+
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    // Return cleanup function to run on navigation/unmount
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
+  };
+
+  let cleanupCursor: (() => void) | null = null;
+
+  const setupAll = () => {
+    if (cleanupCursor) {
+      cleanupCursor();
+    }
+    cleanupCursor = initCursorBadge();
+  };
+
+  window.addEventListener('load', setupAll);
+  document.addEventListener('astro:after-swap', setupAll);
+  setupAll();
+</script>
