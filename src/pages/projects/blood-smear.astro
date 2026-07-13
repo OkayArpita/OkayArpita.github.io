@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
 import { Icon } from 'astro-icon/components';
@@ -131,7 +131,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Used a 12 V planetary-geared DC motor with an incremental encoder. Iteratively refined the actuation mechanism to achieve a stable 100 mm/s linear spreading velocity.
           </p>
-          <video src="/Projects/Automaticbloodsmeardevice/Blood smear Demo Video.mp4" controls class="w-full max-w-sm mx-auto rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5"></video>
+          <video src="/Projects/Automaticbloodsmeardevice/Blood smear Demo Video.mp4" controls class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50"></video>
         </div>
 
         <div class="space-y-4">
@@ -146,7 +146,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Tuned motor parameters and mechanical alignment to suppress vibrations during the spreading stroke. This successfully eliminated visible striations and improved the consistency of the blood film.
           </p>
-          <img src="/Projects/Automaticbloodsmeardevice/blood trails.png" alt="Blood Trails" class="w-full max-w-sm mx-auto rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5 object-contain" />
+          <img src="/Projects/Automaticbloodsmeardevice/blood trails.png" alt="Blood Trails" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
         </div>
 
         <div class="space-y-4">
@@ -168,7 +168,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Coordinated the full sequence (initialization, positioning, gripping, spreading, and return) into a single automated cycle, eliminating manual intervention.
           </p>
-          <video src="/Projects/Automaticbloodsmeardevice/final prototype demo.mov" controls class="w-full max-w-sm mx-auto rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5"></video>
+          <video src="/Projects/Automaticbloodsmeardevice/final prototype demo.mov" controls class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50"></video>
         </div>
 
         <div class="space-y-4">
@@ -287,9 +287,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
         </p>
         <div class="mt-4 flex justify-center">
           <img 
-            src="/Projects/Automaticbloodsmeardevice/Letter of Recommendation by Prof. Parag Bhargava.png" 
-            alt="Letter of Recommendation" 
-            class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+            src="/Projects/Automaticbloodsmeardevice/Letter of Recommendation by Prof. Parag Bhargava.png" alt="Letter of Recommendation" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
           />
         </div>
       </div>
@@ -303,9 +301,7 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
         <div class="mt-4 flex justify-center w-full">
           <img 
-            src="/Projects/Automaticbloodsmeardevice/Internship Certificate.jpg" 
-            alt="Internship Certificate" 
-            class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+            src="/Projects/Automaticbloodsmeardevice/Internship Certificate.jpg" alt="Internship Certificate" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
           />
         </div>
       </div>
@@ -337,3 +333,4 @@ const profileImage = await resolveAssetImage("blood-smear@dp.png");
     100% { transform: translate(0, 0) rotate(0deg); }
   }
 </style>
+

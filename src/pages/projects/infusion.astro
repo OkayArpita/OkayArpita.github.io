@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
 import { Icon } from 'astro-icon/components';
@@ -104,7 +104,7 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Built a scalable architecture with up to 5 independently controllable syringe-pump modules. The central controller uses an <strong>ESP32 microcontroller</strong> with Bluetooth capabilities, designed for future integration with the platform's <strong>NI LabVIEW control system</strong>.
           </p>
-          <img src="/Projects/MultichannelInfusionSystem/Two Modules.png" alt="Two Modules" class="rounded-lg border border-accent/20 shadow-md w-full max-w-2xl mx-auto object-cover" />
+          <img src="/Projects/MultichannelInfusionSystem/Two Modules.png" alt="Two Modules" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
         </div>
 
         <div class="space-y-4">
@@ -112,7 +112,7 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Designed the syringe-actuation mechanisms using <strong>Autodesk Fusion</strong> and fabricated them via <strong>resin 3D printing</strong>. Each module measures 16.3 cm x 3.5 cm and uses a <strong>12V N20 geared DC motor with an integrated encoder</strong> and a <strong>100mm M4 lead screw</strong> to translate rotary motion into linear syringe displacement. Limit switches provide mechanical end-position detection.
           </p>
-          <img src="/Projects/MultichannelInfusionSystem/CadRender - 1.png" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full max-w-2xl mx-auto object-cover" />
+          <img src="/Projects/MultichannelInfusionSystem/CadRender - 1.png" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
         </div>
 
         <div class="space-y-4">
@@ -121,8 +121,8 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
             Assembled a compact dual-layer motherboard containing the <strong>ESP32 microcontroller</strong>, a <strong>TB6612FNG dual-channel motor driver</strong>, and an <strong>MP1584 DC-DC buck converter</strong>. This unified board independently drives multiple modules while utilizing a shared power subsystem.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img src="/Projects/MultichannelInfusionSystem/Wiring Diagram.png" alt="Wiring Diagram" class="rounded-lg border border-accent/20 shadow-md w-full object-cover aspect-video bg-white/5" />
-            <img src="/Projects/MultichannelInfusionSystem/pcb.png" alt="PCB Assembly" class="rounded-lg border border-accent/20 shadow-md w-full object-cover aspect-video bg-white/5" />
+            <img src="/Projects/MultichannelInfusionSystem/Wiring Diagram.png" alt="Wiring Diagram" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+            <img src="/Projects/MultichannelInfusionSystem/pcb.png" alt="PCB Assembly" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
           </div>
         </div>
 
@@ -132,7 +132,7 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
             Integrated mechanical and electronic subsystems into a two-channel functional prototype. Validated independent channel actuation, linear translation accuracy, limit-switch feedback, and wireless ESP32 coordination.
           </p>
           <div class="flex justify-center mt-4">
-            <video controls autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-w-2xl aspect-video object-cover bg-black/50">
+            <video controls autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
               <source src="/Projects/MultichannelInfusionSystem/Project Demonstration.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -237,9 +237,7 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
         <img 
-          src="/Projects/MultichannelInfusionSystem/Internship Certificate.jpg" 
-          alt="Internship Certificate" 
-          class="w-full max-w-xl object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+          src="/Projects/MultichannelInfusionSystem/Internship Certificate.jpg" alt="Internship Certificate" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
         />
       </div>
     </div>
@@ -270,3 +268,4 @@ const profileImage = await resolveAssetImage("infusion@dp.png");
     100% { transform: translate(0, 0) rotate(0deg); }
   }
 </style>
+

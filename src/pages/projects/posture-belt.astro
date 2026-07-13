@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/nav.astro';
 import { Icon } from 'astro-icon/components';
@@ -117,8 +117,8 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
             <p><strong>Outcome:</strong> This phase concluded with a working proof-of-concept that successfully proved the hypothesis, earning the Best Innovation Award for its clinical promise.</p>
           </div>
           <div class="grid grid-cols-2 gap-4 md:gap-6 mt-4">
-            <img src="/Projects/PostureProBelt/medha prototype and concept.png" alt="MEDHA Prototype and Concept" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
-            <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
+            <img src="/Projects/PostureProBelt/medha prototype and concept.png" alt="MEDHA Prototype and Concept" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+            <video controls class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
               <source src="/Projects/PostureProBelt/medhaDemo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -134,8 +134,8 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
             <p><strong>Outcome:</strong> The result is a sleek, patented wearable device that is ready for real-world application, accurately providing both preventive alerts and localized therapeutic massage without hindering natural movement.</p>
           </div>
           <div class="grid grid-cols-2 gap-4 md:gap-6 mt-4">
-            <img src="/Projects/PostureProBelt/Final Belt as product.png" alt="Final Belt as Product" class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-contain bg-background p-2" />
-            <video controls class="rounded-xl border border-accent/20 shadow-lg h-64 md:h-80 w-full object-cover bg-background">
+            <img src="/Projects/PostureProBelt/Final Belt as product.png" alt="Final Belt as Product" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+            <video controls class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
               <source src="/Projects/PostureProBelt/PosturePro Belt Demonstration medic.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -171,7 +171,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Integrates multiple coin vibration motors across the thoracic and lumbar regions. The actuator array is divided into independent upper and lower sections for targeted muscle coverage.
           </p>
-          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="w-full max-w-lg mx-auto block rounded-lg border border-accent/20 shadow-lg mt-4 bg-white/5 object-contain" />
+          <img src="/Projects/PostureProBelt/Massagers.png" alt="Vibration System" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
         </div>
 
         <div class="space-y-4">
@@ -179,7 +179,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Powered by a 5000 mAh Li-Po battery with a TP4056 charging module. Driven by an Arduino Nano and a buck converter for regulated power distribution.
           </p>
-          <img src="/Projects/PostureProBelt/controller circuit.png" alt="Controller Circuit" class="w-full max-w-lg mx-auto block rounded-lg border border-accent/20 shadow-lg mt-4 object-cover" />
+          <img src="/Projects/PostureProBelt/controller circuit.png" alt="Controller Circuit" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
         </div>
 
         <div class="space-y-4">
@@ -305,7 +305,7 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
             <p class="text-gray font-mono text-xs mt-1">Application No.: 202511041609</p>
             <p class="text-gray text-xs mt-1 mb-3">Published by the Indian Patent Office (April 2025).</p>
             <a href="/Projects/PostureProBelt/Patent Publication (Posture Pro Belt).jpg" target="_blank" class="inline-block">
-              <img src="/Projects/PostureProBelt/Patent Publication (Posture Pro Belt).jpg" alt="Patent Publication" class="rounded-lg border border-accent/20 max-h-40 object-cover hover:opacity-90 transition-opacity" />
+              <img src="/Projects/PostureProBelt/Patent Publication (Posture Pro Belt).jpg" alt="Patent Publication" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
             </a>
           </div>
         </div>
@@ -322,18 +322,14 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center text-center">
           <div class="flex flex-col items-center gap-2">
             <img 
-              src="/Projects/PostureProBelt/MEDHA 2024 (Ar)_page-0001.jpg" 
-              alt="MEDHA Certificate" 
-              class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5 mx-auto block"
+              src="/Projects/PostureProBelt/MEDHA 2024 (Ar)_page-0001.jpg" alt="MEDHA Certificate" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
               onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
             />
             <p class="text-accent font-semibold text-sm">Medical Device Hackathon (MEDHA) 2024</p>
           </div>
           <div class="flex flex-col items-center gap-2">
             <img 
-              src="/Projects/PostureProBelt/MEDIC 2024.jpg" 
-              alt="MEDIC Certificate" 
-              class="w-full max-w-sm object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5 mx-auto block"
+              src="/Projects/PostureProBelt/MEDIC 2024.jpg" alt="MEDIC Certificate" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
               onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
             />
             <p class="text-accent font-semibold text-sm">Medical Device Innovation Course (MEDIC) 2024</p>
@@ -368,3 +364,4 @@ const profileImage = await resolveAssetImage("posture-belt@dp.png");
     100% { transform: translate(0, 0) rotate(0deg); }
   }
 </style>
+
