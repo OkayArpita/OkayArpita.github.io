@@ -2,6 +2,7 @@
   {
     "event": "e-Yantra Robotics Competition",
     "logo": "eYantra.png",
+    "link": "/achievements/e-yantra",
     "editions": [
       {
         "award": "10th Position Internationally among 682 teams",
@@ -18,6 +19,7 @@
   {
     "event": "HMEL Innovation Challenge",
     "logo": "HMEL.png",
+    "link": "/achievements/hmel",
     "editions": [
       {
         "award": "1st Runner-Up among 300+ teams",
@@ -29,6 +31,7 @@
   {
     "event": "TechnoXian - World Robotics Championship",
     "logo": "Technoxian.png",
+    "link": "/achievements/technoxian",
     "editions": [
       {
         "award": "Participant",
@@ -40,6 +43,7 @@
   {
     "event": "BETIC, IIT Bombay",
     "logo": "BETIC.png",
+    "link": "/achievements/betic",
     "editions": [
       {
         "event": "Medical Device Innovation Challenge (MEDIC 2024)",

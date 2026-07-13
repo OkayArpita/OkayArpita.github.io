@@ -41,7 +41,7 @@ const navItems: NavItem[] = [
     label: "Achievements",
     href: "#achievements",
     icon: `mdi:trophy`,
-    subItems: achievementsData.map((item, index) => ({ label: item.event, href: `/#achievement-${index}` }))
+    subItems: achievementsData.map((item) => ({ label: item.event, href: item.link }))
   },
   {
     label: "Tech",

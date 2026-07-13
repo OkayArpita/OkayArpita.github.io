@@ -17,7 +17,7 @@ import achievementsData from '../data/achievements.json';
 
     <div class="space-y-6">
       {achievementsData.map((item, index) => (
-        <div id={`achievement-${index}`} class="achievement-card opacity-0 group flex flex-col sm:flex-row items-start gap-6 bg-accent/5 border border-white/5 border-l-4 border-l-accent p-6 rounded-r-2xl hover:bg-accent/10 transition-all duration-300">
+        <a href={item.link} id={`achievement-${index}`} class="achievement-card opacity-0 group flex flex-col sm:flex-row items-start gap-6 bg-accent/5 border border-white/5 border-l-4 border-l-accent p-6 rounded-r-2xl hover:bg-accent/10 transition-all duration-300 block">
           
           <!-- Logo or Trophy Icon -->
           <div class="shrink-0 mt-1">
@@ -59,7 +59,7 @@ import achievementsData from '../data/achievements.json';
 
           </div>
 
-        </div>
+        </a>
       ))}
     </div>
 
