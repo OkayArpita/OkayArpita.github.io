@@ -61,7 +61,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
             Department of Computer Science & Engineering, IIT Bombay
           </p>
           <p class="text-subtext font-body text-sm md:text-base mt-1 text-gray">
-            An initiative under the e-Yantra Project, sponsored by the Ministry of Education, Government of India (formerly MHRD).
+            Sponsored by the Ministry of Education, Government of India.
           </p>
           <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
             Role: FPGA & Embedded Systems Developer
@@ -80,13 +80,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Designed and developed an FPGA-based autonomous agricultural warehouse robot for the e-Yantra Robotics Competition (eYRC 2025-26). The project focused on autonomous navigation inside a dynamically changing warehouse environment while simultaneously performing environmental sensing for post-harvest agricultural monitoring.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The robot was built entirely around an Intel DE0-Nano FPGA, where the complete control architecture - including navigation logic, custom CPU architecture, sensor interfacing, motor control, and wireless communication - was implemented in Verilog HDL. Leveraging the inherent parallelism of programmable logic, the system executed multiple hardware modules concurrently, enabling deterministic real-time control without relying on a conventional microcontroller.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Operating within an irregular warehouse-like maze, the robot autonomously explored unknown pathways, detected blocked routes, identified environmental sensing stations, measured soil moisture, and wirelessly transmitted navigation updates and sensing data to a Central Control Unit (CCU) for warehouse monitoring and map updates.
+          Developed an FPGA-based autonomous robot for the e-Yantra Robotics Competition (eYRC 2025-26) designed to navigate dynamic warehouse environments and perform post-harvest monitoring. Implemented the complete control pipeline in Verilog HDL on an Intel DE0-Nano FPGA to execute navigation, motor control, sensing, and wireless telemetry concurrently.
         </p>
       </div>
     </div>
@@ -98,25 +92,13 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The e-Yantra Robotics Competition (eYRC) is one of India's premier embedded systems and robotics competitions, organized annually by the Department of Computer Science & Engineering, IIT Bombay, under the e-Yantra Project supported by the Ministry of Education, Government of India.
+          The e-Yantra Robotics Competition (eYRC) is hosted by IIT Bombay to challenge participants to build complete physical robots integrating digital hardware, embedded electronics, mechanical design, and control systems.
         </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Unlike conventional robotics competitions, eYRC requires participants to design and build complete robotic systems from scratch by integrating digital hardware, embedded electronics, FPGA design, mechanical systems, PCB development, autonomous algorithms, and system integration under strict engineering constraints.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed font-bold text-maintext">
-          The competition is conducted in three progressively challenging stages:
-        </p>
-        <div class="space-y-4 pl-2">
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            <strong class="text-accent">Stage 1 - Simulation Phase:</strong> All registered teams develop and validate autonomous navigation algorithms within the official simulation environment. Teams are evaluated on algorithm correctness, task completion, and system performance.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            <strong class="text-accent">Stage 2 - Hardware Development Phase (Qualified):</strong> Approximately 50-100 teams nationwide are shortlisted from the simulation phase and receive official hardware kits from IIT Bombay. During this stage, teams designed the complete FPGA-based robotic system, implemented the control architecture in Verilog HDL, designed and fabricated a custom PCB, built the complete robot chassis and competition arena, integrated sensors, actuators, wireless communication, and validated autonomous operation within strict dimensional and performance constraints. Our team successfully qualified for and completed this stage, earning the Level-2 Certification.
-          </p>
-          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            <strong class="text-accent">Stage 3 - National Finals:</strong> The highest-performing teams from the hardware stage are invited to IIT Bombay to compete in the national finals, where complete robotic systems are evaluated for robustness, navigation efficiency, hardware implementation, and overall autonomous performance.
-          </p>
-        </div>
+        <ul class="list-disc list-outside ml-5 text-gray font-body text-base md:text-lg leading-relaxed space-y-2">
+          <li><strong>Stage 1 (Simulation Phase):</strong> Develop and validate autonomous navigation algorithms in simulation.</li>
+          <li><strong>Stage 2 (Hardware Phase):</strong> Build the physical robot from scratch, including PCB routing, chassis fabrication, Verilog controller development, and sensor calibration. Our team completed this stage and earned Level-2 Certification.</li>
+          <li><strong>Stage 3 (National Finals):</strong> Final evaluation of the integrated robot at IIT Bombay.</li>
+        </ul>
       </div>
     </div>
 
@@ -127,10 +109,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Modern autonomous robotic systems increasingly demand deterministic, low-latency processing that cannot always be achieved using sequential firmware running on microcontrollers. This project demonstrates how FPGA-based architectures can execute sensing, control, and communication pipelines concurrently through dedicated hardware modules.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          The work involved designing synthesizable digital logic, finite-state-machine (FSM)-based navigation, custom CPU architecture, peripheral interfacing, PCB design, electromechanical integration, and autonomous exploration algorithms operating directly on programmable logic. The resulting platform showcases hardware-accelerated robotics capable of real-time environmental perception, navigation, and communication.
+          High-speed autonomous navigation demands deterministic, low-latency processing. Executing sensing, control, and communication concurrently on programmable logic (FPGA) avoids the sequential execution bottlenecks of conventional microcontrollers.
         </p>
       </div>
     </div>
@@ -145,7 +124,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">FPGA Control Architecture</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Designed a modular digital architecture on the Intel DE0-Nano FPGA using Verilog HDL. A custom CPU architecture coordinated multiple parallel hardware modules responsible for ultrasonic sensing, infrared detection, encoder acquisition, PWM generation, servo actuation, UART communication, and autonomous navigation. Hardware-level parallelism enabled deterministic execution with minimal latency.
+            Designed a modular digital architecture on the Intel DE0-Nano FPGA using Verilog HDL. A custom CPU architecture coordinates parallel hardware modules for ultrasonic ranging, infrared detection, encoder feedback, PWM generation, and UART telemetry.
           </p>
           <div class="pt-2 flex justify-center">
             <img src="/Projects/MazeSolverBot/QuartusSimulation.jpg" alt="Quartus Simulation" class="rounded-lg border border-accent/20 shadow-md max-w-xl w-full max-h-80 object-contain bg-black/20" />
@@ -155,21 +134,21 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Autonomous Maze Navigation</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Implemented an FPGA-based autonomous maze-solving algorithm capable of exploring an unknown warehouse environment with dynamically changing pathways. Using ultrasonic ranging and encoder feedback, the robot continuously detected walls, identified blocked paths, selected valid navigation routes, and updated the Central Control Unit with real-time map information.
+            Implemented a wall-following and maze-exploration algorithm on the FPGA. The robot uses ultrasonic sensors to detect walls, processes path updates, and synchronizes coordinates with the Central Control Unit.
           </p>
         </div>
 
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Environmental Monitoring System</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Developed an integrated sensing mechanism for warehouse microclimate monitoring. A servo-actuated arm positioned a capacitive soil moisture sensor at designated sensing locations, while digital IR sensors identified measurement checkpoints. Environmental readings were processed onboard and transmitted wirelessly to the Central Control Unit for warehouse condition monitoring.
+            Designed a servo-actuated mechanical arm carrying a capacitive soil moisture sensor. The arm aligns the sensor at checkpoints detected by infrared sensors to capture agricultural telemetry.
           </p>
         </div>
 
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Electronic System Design</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Designed a custom PCB in KiCad integrating power distribution, voltage regulation, FPGA I/O expansion, motor driver interfaces, sensor connectors, and communication peripherals. Careful consideration was given to signal integrity, power isolation, connector accessibility, and modular subsystem integration for reliable operation.
+            Designed a custom PCB in KiCad for power distribution, voltage regulation, FPGA I/O breakout, and motor driver isolation to ensure electrical reliability.
           </p>
           <div class="pt-2 flex justify-center">
             <img src="/Projects/MazeSolverBot/CustomPCB.png" alt="Custom PCB design" class="rounded-lg border border-accent/20 shadow-md max-w-xl w-full max-h-80 object-contain bg-black/20" />
@@ -179,7 +158,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">Mechanical Design & Fabrication</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Designed the complete robot chassis, sensor mounts, and environmental sensing mechanism using Autodesk Fusion. Structural optimization emphasized weight reduction, balanced center of gravity, sensor alignment, and ease of assembly. Components were fabricated using additive manufacturing techniques to produce a lightweight yet rigid robotic platform.
+            Modeled the chassis, sensor mounts, and servo mechanisms in Autodesk Fusion. Optimized structural components for weight distribution and fabricated them using 3D printing.
           </p>
           <div class="pt-2 flex justify-center">
             <img src="/Projects/MazeSolverBot/cad%20design.png" alt="CAD design" class="rounded-lg border border-accent/20 shadow-md max-w-xl w-full max-h-80 object-contain bg-black/20" />
@@ -189,7 +168,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
         <div class="space-y-4">
           <h3 class="text-xl font-heading font-bold text-maintext text-accent">System Integration & Validation</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Integrated FPGA hardware, embedded electronics, mechanical assemblies, wireless communication, and sensing subsystems into a unified autonomous robot. Extensive module-level debugging, hardware validation, navigation trials, and communication testing were performed to optimize system reliability and competition performance.
+            Assembled and validated the electromechanical subsystems, control logic, and wireless communication, testing navigation reliability under competition arena constraints.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
             <img src="/Projects/MazeSolverBot/arena%20making.jpg" alt="Arena Fabrication" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
@@ -216,7 +195,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
           <li>Designed PWM-based motor control and encoder interfacing modules</li>
           <li>Integrated ultrasonic, infrared, and soil moisture sensing systems</li>
           <li>Developed UART-based wireless communication with the Central Control Unit (CCU)</li>
-          <li>Designed and fabricated a custom PCB for power management and peripheral integration</li>
+          <li>Designed and routed a custom PCB for power management and peripheral integration</li>
           <li>Engineered a servo-actuated environmental sensing mechanism</li>
           <li>Designed and fabricated a custom 3D-printed robotic chassis</li>
           <li>Performed complete electromechanical system integration, validation, and testing</li>
@@ -231,10 +210,7 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Successfully qualified for the Hardware Development Stage (Level-2 Certification) of the e-Yantra Robotics Competition (eYRC 2025-26) after progressing through the nationwide simulation round.
-        </p>
-        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Designed, fabricated, and validated a complete FPGA-based autonomous robotic system - including programmable logic architecture, custom PCB, embedded electronics, mechanical assembly, sensing mechanisms, and wireless communication - for evaluation under official competition constraints.
+          Qualified for the Hardware Development Stage (Level-2 Certification) of the e-Yantra Robotics Competition (eYRC 2025-26) by completing the simulation phase. Designed, fabricated, and validated a complete FPGA-controlled robot within official competition rules.
         </p>
       </div>
     </div>
@@ -336,12 +312,12 @@ const profileImage = await resolveAssetImage("maze-solver@dp.png");
         <img 
           src="/Projects/MazeSolverBot/Certificate of Completion_page-0001.jpg" 
           alt="eYRC Certificate Page 1" 
-          class="w-full object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+          class="w-full max-h-80 object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
         />
         <img 
           src="/Projects/MazeSolverBot/Certificate of Completion_page-0002.jpg" 
           alt="eYRC Certificate Page 2" 
-          class="w-full object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
+          class="w-full max-h-80 object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5"
         />
       </div>
     </div>
