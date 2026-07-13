@@ -5,7 +5,7 @@ import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import { resolveAssetImage } from '../../utils/images';
 
-const title = "Fastest Line Follower Robot";
+const title = "Fast Line Follower Robot";
 const profileImage = await resolveAssetImage("line-follower@dp.png");
 ---
 <Layout title={title}>
@@ -34,6 +34,10 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
       <h1 class="text-4xl md:text-6xl font-heading font-bold text-maintext tracking-tight mt-6">
         {title}
       </h1>
+      <br>
+      <p class="text-gray font-body text-lg leading-relaxed">
+        High-Speed Autonomous Line Following Robot for Competitive Robotics
+      </p>
     </div>
   </section>
 
@@ -57,28 +61,26 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
             All India Council for Robotics & Automation (AICRA)
           </p>
           <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
-            Developer 
-          </p>
-          <p class="text-gray font-body text-base md:text-lg mt-1">
-            <span class="font-semibold text-maintext">Project:</span> Fastest Line Follower Robot<br/>
+            Role: Developer
           </p>
           <p class="text-subtext font-body text-base md:text-lg mt-2 font-semibold">
-            Aug 2025 - Sep 2025
+            Duration: Aug 2025 – Sep 2025
           </p>
         </div>
       </div>
     </div>
 
-    
     <!-- Project Summary -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span>
-        Project Summary
+        <span class="text-accent">/</span> Project Summary
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Built a high-speed STM32-based line-follower robot using Pololu QTRX-16MD sensors and encoder-equipped micro metal-gear motors for precise and responsive navigation. Implemented PID-based tracking with yaw stabilization, designing a full embedded control stack, motor-driver interface, and sensor-processing pipeline for stable high-speed trajectory performance.
+          Designed and developed a high-speed autonomous line follower for the Technoxian World Robotics Championship, engineered to navigate complex tracks featuring sharp corners, hairpin bends, and a 2 cm track width at competitive speeds. The robot was built around an STM32F103C8T6 real-time embedded platform, integrating high-density infrared sensing, encoder-based differential drive control, and low-latency motor actuation.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          To maximize performance, the complete electronic system was assembled on a lightweight double-sided prototyping PCB (dot board) without using any 3D-printed structural components, significantly reducing overall weight while improving structural rigidity, ease of maintenance, and overall power-to-weight ratio for competitive racing.
         </p>
       </div>
     </div>
@@ -88,9 +90,12 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Why this Project is Important
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-          Autonomous line-following at high speeds pushes the limits of embedded systems by demanding extremely low-latency sensor processing, tight control loops, and robust hardware design. This project highlights the ability to integrate precision motor control, real-time trajectory stabilization, and high-density sensing arrays to achieve competitive performance in robotics tournaments.
+          High-speed line following is fundamentally a real-time embedded systems and control engineering problem. Unlike conventional educational line followers, competitive robots must execute sensing, computation, and actuation within milliseconds while maintaining stability at high velocities through sharp turns and narrow tracks.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          This project demonstrates expertise in embedded firmware development, sensor signal processing, closed-loop motion control, lightweight hardware design, and autonomous navigation. It also highlights the engineering trade-offs between mechanical design, power delivery, sensing accuracy, controller tuning, and system latency required to build reliable high-performance autonomous robots.
         </p>
       </div>
     </div>
@@ -103,46 +108,151 @@ const profileImage = await resolveAssetImage("line-follower@dp.png");
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-10">
         
         <div class="space-y-4">
-          <h3 class="text-xl font-heading font-bold text-maintext text-accent">High-Speed Trajectory Control</h3>
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Real-Time Motion Control</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Engineered an advanced PID-based tracking system with yaw stabilization to ensure the robot stays firmly on the line even during sharp turns. Designed the full embedded control stack on an STM32 microcontroller to execute computations with minimal latency.
+            Designed a deterministic embedded control architecture on the STM32 platform for high-speed differential-drive navigation. Implemented a PID-based trajectory tracking controller that continuously estimates lateral position error from the reflectance sensor array and generates real-time steering corrections while maintaining forward velocity through high-curvature sections of the track.
           </p>
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Sensor Processing Pipeline</h3>
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">High-Density Reflectance Sensing</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Integrated Pololu QTRX-16MD high-density infrared sensor arrays for precise line position detection. The custom sensor-processing pipeline reliably filters noise and calibrates dynamic thresholds for robust environmental adaptation.
+            Integrated a Pololu QTRX-16MD high-density infrared reflectance sensor array to accurately detect and estimate line position on narrow 2 cm competition tracks. Developed sensor calibration and signal-processing routines for reliable reflectance measurement, enabling robust line detection under varying surface reflectivity and ambient lighting conditions.
           </p>
         </div>
 
         <div class="space-y-4">
-          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Precision Locomotion</h3>
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Embedded Hardware Architecture</h3>
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
-            Powered by micro metal-gear motors equipped with high-resolution magnetic encoders, the hardware allows for exact odometry feedback and rapid acceleration, enabling highly responsive navigation.
+            Designed and assembled the complete electronic system on a lightweight double-sided prototyping PCB (dot board), eliminating the need for 3D-printed structural components to minimize overall mass. Implemented an efficient power distribution architecture using an MP1584 buck converter for voltage regulation and dedicated TB6612FNG motor drivers for each drive motor, ensuring stable current delivery and rapid motor response during aggressive acceleration.
           </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="/Projects/FastestLineFollowerRobot/CAD%20render.png" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full aspect-video object-cover" />
+            <img src="/Projects/FastestLineFollowerRobot/Cad%20renders.png" alt="CAD Render 2" class="rounded-lg border border-accent/20 shadow-md w-full aspect-video object-cover" />
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Precision Locomotion System</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Developed a differential-drive locomotion platform using encoder-equipped micro metal gear motors to achieve responsive steering and smooth velocity control. The encoder feedback enabled accurate wheel-speed synchronization, improving trajectory stability while negotiating sharp turns and maintaining high-speed performance.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">Embedded Firmware Development</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Developed modular firmware in Embedded C using STM32CubeIDE, implementing peripheral drivers, PWM-based motor control, sensor acquisition routines, encoder interfacing, and closed-loop control algorithms. The software architecture was organized into independent hardware abstraction, sensing, control, and actuation layers to simplify debugging, controller tuning, and future hardware upgrades.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-xl font-heading font-bold text-maintext text-accent">System Integration & Performance Optimization</h3>
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+            Optimized the complete sensing-to-actuation pipeline through iterative tuning of PID parameters, sensor calibration, power distribution, and mechanical layout. Particular emphasis was placed on minimizing processing latency, reducing electrical noise, lowering overall system weight, and improving dynamic response to achieve consistent high-speed tracking on complex competition tracks.
+          </p>
+          <img src="/Projects/FastestLineFollowerRobot/at%20technoxian.png" alt="At Technoxian" class="rounded-lg border border-accent/20 shadow-md w-full max-w-3xl mx-auto object-cover" />
         </div>
 
       </div>
     </div>
-
-    <!-- Tech Stack -->
+    
+    <!-- Engineering Challenges & Key Learnings -->
     <div class="space-y-4">
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
-        <span class="text-accent">/</span> Tech Stack
+        <span class="text-accent">/</span> Engineering Challenges & Key Learnings
       </h2>
-      <div class="flex flex-wrap gap-4 pt-2">
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:chip" class="w-5 h-5" />
-          STM32 & Sensors
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          Although the robot demonstrated reliable high-speed performance during development and extensive internal testing, it was unable to perform as expected during the championship finals due to differences between the practice environment and the official competition arena.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The robot had been developed and tuned using a self-fabricated practice track constructed indoors. During the finals, the official competition arena exhibited slight differences in track width, corner geometry, and surface characteristics. Since the reflectance sensor calibration and PID controller gains had been optimized specifically for the practice track, these dimensional variations altered the measured line position and tracking error, leading to unstable steering corrections at competition speeds.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4 font-bold text-maintext">
+          This experience highlighted several important engineering principles:
+        </p>
+        <ul class="list-disc list-outside ml-5 text-gray font-body text-base md:text-lg leading-relaxed space-y-2">
+          <li>The necessity of validating autonomous systems on environments that closely replicate deployment conditions.</li>
+          <li>The importance of adaptive sensor calibration and robust line-position estimation to accommodate geometric and environmental variations.</li>
+          <li>Designing control algorithms that generalize across manufacturing tolerances rather than relying solely on environment-specific parameter tuning.</li>
+          <li>Incorporating systematic validation procedures and parameter verification before deployment in competitive or real-world environments.</li>
+        </ul>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4">
+          The project reinforced that the performance of autonomous robotic systems depends not only on hardware capability and control algorithms but also on the robustness of calibration, environmental adaptability, and system validation. These insights have significantly influenced my subsequent approach to embedded robotics by prioritizing repeatability, portability, and resilience during system design.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tech Stack & Hardware Stack -->
+    <div class="space-y-8">
+      <div class="space-y-4">
+        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+          <span class="text-accent">/</span> Tech Stack
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
+            <Icon name="mdi:code-braces" class="w-8 h-8 flex-shrink-0" />
+            <div>
+              <p class="font-bold text-maintext">Embedded C</p>
+              <p class="text-sm text-gray">Embedded firmware development</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
+            <Icon name="mdi:developer-board" class="w-8 h-8 flex-shrink-0" />
+            <div>
+              <p class="font-bold text-maintext">STM32CubeIDE</p>
+              <p class="text-sm text-gray">Firmware development and debugging</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
+            <Icon name="mdi:cube-outline" class="w-8 h-8 flex-shrink-0" />
+            <div>
+              <p class="font-bold text-maintext">Autodesk Fusion</p>
+              <p class="text-sm text-gray">Mechanical design and CAD</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 rounded-lg p-4 bg-background border border-accent/20 text-accent transition-all shadow-sm">
+            <Icon name="mdi:chart-line-variant" class="w-8 h-8 flex-shrink-0" />
+            <div>
+              <p class="font-bold text-maintext">PID Control</p>
+              <p class="text-sm text-gray">Closed-loop trajectory tracking</p>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:code-braces" class="w-5 h-5" />
-          Embedded C
-        </div>
-        <div class="flex items-center gap-2 rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
-          <Icon name="mdi:robot-outline" class="w-5 h-5" />
-          PID Control
+      </div>
+
+      <div class="space-y-4">
+        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+          <span class="text-accent">/</span> Hardware Stack
+        </h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray font-body text-base md:text-lg">
+          <li><strong class="text-accent">STM32F103C8T6 (Blue Pill):</strong> Main controller</li>
+          <li><strong class="text-accent">Pololu QTRX-16MD:</strong> 16-channel IR sensor array</li>
+          <li><strong class="text-accent">CD74HC4067:</strong> 16-channel analog multiplexer</li>
+          <li><strong class="text-accent">TB6612FNG ×2:</strong> Independent H-bridge motor drivers</li>
+          <li><strong class="text-accent">Micro Metal Gear Motors:</strong> Magnetic encoder feedback</li>
+          <li><strong class="text-accent">MP1584 Buck Converter:</strong> High-efficiency DC-DC regulation</li>
+          <li><strong class="text-accent">11.1 V Li-Po:</strong> High-current power source</li>
+          <li><strong class="text-accent">Dot Board:</strong> Lightweight custom electronics integration</li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+          <span class="text-accent">/</span> Core Engineering Concepts
+        </h2>
+        <div class="flex flex-wrap gap-3 pt-2">
+          {[
+            "Real-Time Embedded Systems", "Autonomous Mobile Robotics", "Differential Drive Kinematics",
+            "Closed-Loop Motion Control", "PID Controller Tuning", "Sensor Signal Processing",
+            "PWM Motor Control", "Encoder Feedback Control", "Low-Latency Systems",
+            "Lightweight Hardware Design", "Power Electronics"
+          ].map((concept) => (
+            <span class="rounded-lg px-4 py-2 bg-background border border-accent/20 text-accent font-medium text-sm md:text-base hover:border-accent/60 hover:bg-accent/5 transition-all shadow-sm">
+              {concept}
+            </span>
+          ))}
         </div>
       </div>
     </div>
