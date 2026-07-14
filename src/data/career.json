@@ -6,12 +6,7 @@
     "type": "Remote Internship",
     "description": "Designing CAD models for the Open Parametric Hand project. Working on 3D design and rapid prototyping to improve modular robotic hands.",
     "skills": ["CAD Modelling", "Rapid Prototyping", "Hardware Design"],
-<<<<<<< HEAD
-    "logo": "EPFL.png",
-    "link": "/career/epfl"
-=======
     "logo": "EPFL.png"
->>>>>>> parent of e2dca58 (54528)
   },
   {
     "company": "ACT Lab, IIT Madras",
@@ -20,12 +15,7 @@
     "type": "Onsite Internship",
     "description": "Built a multi-channel infusion system for an ex vivo heart revival platform. Developed the firmware in C and designed the PCB and circuit routing.",
     "skills": ["Embedded C", "PCB Design", "Electromechanical Integration"],
-<<<<<<< HEAD
-    "logo": "IIT_Madras.png",
-    "link": "/career/iit-madras"
-=======
     "logo": "IIT_Madras.png"
->>>>>>> parent of e2dca58 (54528)
   },
   {
     "company": "BETIC, IIT Bombay",
@@ -34,12 +24,7 @@
     "type": "Onsite Internship",
     "description": "Worked on building an automatic blood smear device for screening sickle cell anemia. Handled the embedded control stack and motor control.",
     "skills": ["Embedded Hardware Design", "Motor Control", "Bench-level testing"],
-<<<<<<< HEAD
-    "logo": "IIT_Bombay.png",
-    "link": "/career/iit-bombay"
-=======
     "logo": "IIT_Bombay.png"
->>>>>>> parent of e2dca58 (54528)
   },
   {
     "company": "Dr. A. P. J. Abdul Kalam Technical University",
@@ -48,11 +33,6 @@
     "type": "Student",
     "description": "Studying core electronics subjects and focusing on embedded systems, control systems, and hardware-software integration.",
     "skills": ["Analog Circuits", "Digital Electronics", "Microcontrollers"],
-<<<<<<< HEAD
-    "logo": "AKTU.png",
-    "link": "/career/aktu"
-=======
     "logo": "AKTU.png"
->>>>>>> parent of e2dca58 (54528)
   }
 ]

@@ -64,14 +64,6 @@ import CareerCard from './career-card.astro';
       </div>
     </div>
   </div>
-
-  <!-- Career Cursor Badge -->
-  <div id="career-cursor-badge" class="career-cursor-badge">
-    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-      <path d="M8 5v14l11-7z" />
-    </svg>
-    <span>Open</span>
-  </div>
 </section>
 
 <style>
@@ -87,28 +79,6 @@ import CareerCard from './career-card.astro';
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-  /* Career Cursor Badge */
-  .career-cursor-badge {
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 9999;
-    background-color: #ffffff;
-    color: #000000;
-    font-weight: 700;
-    font-size: 0.875rem;
-    padding: 0.625rem 1.25rem;
-    border-radius: 9999px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.5);
-    will-change: transform, opacity;
   }
 
   /* Initial state of the card */
@@ -149,75 +119,9 @@ import CareerCard from './career-card.astro';
     cards.forEach(card => observer.observe(card));
   }
 
-  const initCareerCursorBadge = () => {
-    const badge = document.getElementById('career-cursor-badge');
-    const cards = document.querySelectorAll('.career-card');
-    if (!badge || cards.length === 0) return;
-
-    let mouseX = 0;
-    let mouseY = 0;
-    let badgeX = 0;
-    let badgeY = 0;
-    let currentScale = 0.5;
-    let targetScale = 0.5;
-    let currentOpacity = 0;
-    let targetOpacity = 0;
-    let isHovering = false;
-
-    const onMouseMove = (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    };
-
-    window.addEventListener('mousemove', onMouseMove);
-
-    cards.forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        isHovering = true;
-        targetScale = 1;
-        targetOpacity = 1;
-      });
-
-      card.addEventListener('mouseleave', () => {
-        isHovering = false;
-        targetScale = 0.5;
-        targetOpacity = 0;
-      });
-    });
-
-    let animationFrameId;
-
-    const animate = () => {
-      const dx = mouseX - badgeX;
-      const dy = mouseY - badgeY;
-      badgeX += dx * 0.15;
-      badgeY += dy * 0.15;
-
-      currentScale += (targetScale - currentScale) * 0.15;
-      currentOpacity += (targetOpacity - currentOpacity) * 0.15;
-
-      badge.style.opacity = currentOpacity.toFixed(3);
-      badge.style.transform = `translate3d(${badgeX}px, ${badgeY}px, 0) translate(-50%, -50%) scale(${currentScale.toFixed(3)})`;
-
-      animationFrameId = requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    return () => {
-      window.removeEventListener('mousemove', onMouseMove);
-      cancelAnimationFrame(animationFrameId);
-    };
-  };
-
-  let cleanupCareerCursor = null;
-
-  const setupCareerAll = () => {
-    if (cleanupCareerCursor) cleanupCareerCursor();
-    revealCards();
-    cleanupCareerCursor = initCareerCursorBadge();
-  };
-
-  window.addEventListener('load', setupCareerAll);
-  document.addEventListener('astro:after-swap', setupCareerAll);
+  // Runs on initial load
+  revealCards();
+  
+  // Necessary for Astro View Transitions if you use them
+  document.addEventListener('astro:after-swap', revealCards);
 </script>

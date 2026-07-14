@@ -7,7 +7,6 @@ interface Props {
     description: string;
     skills: string[];
     logo?: string;
-    link?: string;
   };
   variant: 'mobile' | 'desktop-left' | 'desktop-right';
 }
@@ -21,7 +20,7 @@ const alignmentClass = isLeft ? "text-right" : "";
 const skillContainerClasses = `flex flex-wrap gap-2.5 ${isLeft ? 'justify-end' : ''}`;
 ---
 
-<a href={item.link} class={`career-card block cursor-pointer bg-accent/5 border border-accent/10 p-6 md:p-8 rounded-2xl hover:border-accent/40 hover:bg-accent/10 transition-all group ${alignmentClass}`}>
+<div class={`bg-accent/5 border border-accent/10 p-6 md:p-8 rounded-2xl hover:border-accent/40 transition-all group ${alignmentClass}`}>
   
   <div class={`flex gap-5 items-start mb-5 ${isLeft ? 'flex-row-reverse' : ''}`}>
     {item.logo && (
@@ -46,4 +45,4 @@ const skillContainerClasses = `flex flex-wrap gap-2.5 ${isLeft ? 'justify-end' :
       <span class={`rounded-md text-xs md:text-sm px-3 md:px-5 py-1.5 bg-accent/5 border border-accent/10 text-accent/80 group-hover:border-accent/40 group-hover:text-accent`}>{skill}</span>
     ))}
   </div>
-</a>
+</div>
