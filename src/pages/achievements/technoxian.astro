@@ -154,29 +154,16 @@ const title = "TechnoXian - World Robotics Championship";
             </div>
           </div>
 
-          <!-- Run Video -->
-          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
-            <div class="aspect-video w-full overflow-hidden bg-black flex items-center justify-center">
-              <video class="max-w-full max-h-full object-contain" controls preload="metadata" playsinline>
-                <source src="/Achievements/technoxian/the-run.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
-              <p class="text-maintext font-heading font-bold text-sm">Robot Run Demonstration</p>
-              <p class="text-gray text-xs mt-1">Testing the fast track navigation run of the autonomous robot</p>
-            </div>
-          </div>
-
           <!-- Last Minute Debugging -->
           <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
             <div class="aspect-video w-full overflow-hidden bg-black flex items-center justify-center">
-              <video class="max-w-full max-h-full object-contain" controls preload="metadata" playsinline>
+              <video class="max-w-full max-h-full object-contain -rotate-90" controls preload="metadata" playsinline>
                 <source src="/Achievements/technoxian/last-minute-debugging.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
               <p class="text-maintext font-heading font-bold text-sm">Last-Minute Debugging</p>
-              <p class="text-gray text-xs mt-1">Calibrating parameters and sensor ranges on the track</p>
+              <p class="text-gray text-xs mt-1">Calibrating parameters and sensor ranges on the track (rotated 90° anticlockwise)</p>
             </div>
           </div>
 
@@ -208,13 +195,28 @@ const title = "TechnoXian - World Robotics Championship";
                 <p class="text-gray text-xs mt-1">Official participation certificate issued by AICRA</p>
               </div>
             </a>
+
+            <!-- Embedded Robot Run Video Card inside Official Documents -->
+            <div class="group block overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
+              <div class="aspect-[4/3] w-full overflow-hidden bg-black flex items-center justify-center p-2">
+                <video class="max-w-full max-h-full object-contain" controls preload="metadata" playsinline>
+                  <source src="/Achievements/technoxian/the-run.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">
+                  <span>Robot Run Demonstration</span>
+                </p>
+                <p class="text-gray text-xs mt-1">Autonomous high-speed track navigation test run (played directly inline)</p>
+              </div>
+            </div>
             
           </div>
         </div>
 
         <!-- Press & Social Media -->
         <div class="space-y-4">
-          <h3 class="text-lg font-heading font-bold text-maintext">Press & Social Media & Event Videos</h3>
+          <h3 class="text-lg font-heading font-bold text-maintext">Press & Social Media</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             
             <a href="https://www.technoxian.com/" target="_blank" rel="noopener noreferrer" class="achievement-tile group block overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
@@ -229,21 +231,6 @@ const title = "TechnoXian - World Robotics Championship";
                 <p class="text-gray text-xs mt-1">Official platform for the World Robotics Championship updates</p>
               </div>
             </a>
-
-            <!-- Embedded Robot Run Video Card -->
-            <div class="group block overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
-              <div class="aspect-video w-full overflow-hidden bg-black flex items-center justify-center">
-                <video class="max-w-full max-h-full object-contain" controls preload="metadata" playsinline>
-                  <source src="/Achievements/technoxian/the-run.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div class="p-4 border-t border-accent/5">
-                <p class="text-maintext font-heading font-bold text-sm">
-                  <span>Robot Run Demonstration</span>
-                </p>
-                <p class="text-gray text-xs mt-1">Autonomous high-speed track navigation test run (played directly inline)</p>
-              </div>
-            </div>
 
           </div>
         </div>
