@@ -4,17 +4,17 @@
     "role": "Research Intern",
     "period": "Mar 2026 - May 2026",
     "type": "Remote Internship",
-    "description": "Designing CAD models for the Open Parametric Hand project. Working on 3D design and rapid prototyping to improve modular robotic hands.",
-    "skills": ["CAD Modelling", "Rapid Prototyping", "Hardware Design"],
+    "description": "Designed and optimized CAD models for the Open Parametric Hand to improve modular prosthetic architectures. Developed parametric design strategies for robotic hand systems and executed rapid prototyping cycles using 3D printing to ensure scalable, cost-effective development.",
+    "skills": ["CAD Modelling", "Parametric Design", "3D Printing", "Hardware Optimization"],
     "logo": "EPFL.png"
   },
   {
-    "company": "ACT Lab, IIT Madras",
+    "company": "HTIC, IIT Madras",
     "role": "Research Intern",
     "period": "Sep 2025 - Nov 2025",
     "type": "Onsite Internship",
-    "description": "Built a multi-channel infusion system for an ex vivo heart revival platform. Developed the firmware in C and designed the PCB and circuit routing.",
-    "skills": ["Embedded C", "PCB Design", "Electromechanical Integration"],
+    "description": "Led full system development for a multi-channel infusion system used in an ex vivo cardiac revival platform. Designed a programmable architecture featuring Bluetooth control, PCB routing, electromechanical integration, and micro metal-gear motors with encoder-based calibration.",
+    "skills": ["Embedded C", "PCB Design (KiCAD)", "Electromechanical Integration", "IoT Telemetry"],
     "logo": "IIT_Madras.png"
   },
   {
@@ -22,17 +22,17 @@
     "role": "Research Intern",
     "period": "May 2025 - Jul 2025",
     "type": "Onsite Internship",
-    "description": "Worked on building an automatic blood smear device for screening sickle cell anemia. Handled the embedded control stack and motor control.",
-    "skills": ["Embedded Hardware Design", "Motor Control", "Bench-level testing"],
+    "description": "Designed the actuation-control subsystem for an automated blood smear device for sickle-cell screening, achieving 100 mm/s linear motion. Conducted engineering analysis on the Helios 500 intraoral scanner to propose optical and board-level circuitry improvements.",
+    "skills": ["Embedded Hardware", "Motor Control", "C/C++", "Bench-level Testing"],
     "logo": "IIT_Bombay.png"
   },
   {
     "company": "Dr. A. P. J. Abdul Kalam Technical University",
-    "role": "B.Tech in Electronics and Communication",
+    "role": "B.Tech in Electronics & Communication",
     "period": "Oct 2023 - Jul 2027",
-    "type": "Student",
-    "description": "Studying core electronics subjects and focusing on embedded systems, control systems, and hardware-software integration.",
-    "skills": ["Analog Circuits", "Digital Electronics", "Microcontrollers"],
+    "type": "Education",
+    "description": "Pursuing a Bachelor of Technology with a CGPA of 7.94/10. Coursework focuses on Embedded System Design, FPGA Architecture, Control Systems, Real-Time Systems, and Analog/Digital Electronics.",
+    "skills": ["Control Systems", "Digital Electronics", "Microprocessors", "Signals & Systems"],
     "logo": "AKTU.png"
   }
 ]
