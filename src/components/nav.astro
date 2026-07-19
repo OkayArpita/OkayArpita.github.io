@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
     label: "Career",
     href: "#career",
     icon: `mdi:work`,
-    subItems: careerData.map((item, index) => ({ label: item.company, href: `/#career-${index}` }))
+    subItems: careerData.map((item) => ({ label: item.company, href: item.link }))
   },
   {
     label: "Projects",
