@@ -4,7 +4,7 @@
     "category": "Robotics / 3D Design",
     "description": "Working on this during my remote internship at CREATE Lab, EPFL. Mostly focusing on 3D design and rapid prototyping to build an open-source robotic hand.",
     "images": [
-      "oph.png"
+      "oph.jpg"
     ],
     "platforms": [],
     "tech": [
@@ -80,7 +80,7 @@
     "category": "Wearable Tech",
     "description": "Led the R&D for a portable posture correction belt prototype for MEDHA 2024. Focused completely on the hardware-software integration.",
     "images": [
-      "posture-belt.png"
+      "posture-belt.jpg"
     ],
     "platforms": [],
     "tech": [
@@ -110,7 +110,7 @@
     "category": "Robotics",
     "description": "[YOUR LINE FOLLOWER DESCRIPTION GOES HERE. Mention the sensors and microcontroller you used.]",
     "images": [
-      "line-follower.png"
+      "line-follower.jpg"
     ],
     "platforms": [],
     "tech": [
