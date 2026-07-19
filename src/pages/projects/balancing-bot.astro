@@ -105,6 +105,10 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Designed and tuned PID and LQR controllers to stabilize the inverted-pendulum platform. The controller continuously compensates for disturbances caused by manipulator motion, payload transfer, and external perturbations.
           </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <img src="/Projects/BalancingBuilderBot/PIDControl.png" alt="PID Control" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+            <img src="/Projects/BalancingBuilderBot/LQRControl.png" alt="LQR Control" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -130,6 +134,7 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">
             This method is computationally efficient and suitable for real-time angle measurement applications.
           </p>
+          <img src="/Projects/BalancingBuilderBot/InvertedPendulum.png" alt="Inverted Pendulum Model" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20 mt-4" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
         </div>
 
         <div class="space-y-4">
@@ -137,6 +142,7 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Designed a lightweight 3D-printed robotic arm and servo-driven gripper capable of picking, transporting, and placing construction blocks while minimizing the impact on the robot's stability.
           </p>
+          <img src="/Projects/BalancingBuilderBot/Manipulator.png" alt="Robotic Manipulator" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20 mt-4" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
         </div>
 
         <div class="space-y-4">
@@ -144,6 +150,7 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Developed a custom Android application using MIT App Inventor to wirelessly control both the robot's locomotion and manipulator via Bluetooth UART communication. The interface enabled intuitive real-time operation while the balancing controller maintained platform stability.
           </p>
+          <img src="/Projects/BalancingBuilderBot/ControllerApp.png" alt="Controller App" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20 mt-4" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
         </div>
 
         <div class="space-y-4">
@@ -151,6 +158,18 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Developed and validated the robot in CoppeliaSim before deploying the control algorithms to the physical platform, allowing efficient controller tuning and system verification prior to hardware implementation.
           </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <video controls playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
+              <source src="/Projects/BalancingBuilderBot/SimulationDemo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video controls playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
+              <source src="/Projects/BalancingBuilderBot/HardwareDemo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <img src="/Projects/BalancingBuilderBot/bot front.JPG" alt="Bot Front View" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+            <img src="/Projects/BalancingBuilderBot/bot back.JPG" alt="Bot Back View" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -247,6 +266,27 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
             </tr>
           </tbody>
         </table>
+      </div>
+    <!-- Certificates -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Certificates
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center text-center">
+          <div class="flex flex-col items-center gap-2">
+            <img 
+              src="/Projects/BalancingBuilderBot/eYRC24_Certificate_1.jpg" alt="eYRC Certificate 1" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
+              onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
+            />
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <img 
+              src="/Projects/BalancingBuilderBot/eYRC24_Certificate_2.png" alt="eYRC Certificate 2" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
+              onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
