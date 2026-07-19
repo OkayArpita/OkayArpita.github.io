@@ -360,10 +360,8 @@ const title = "e-Yantra 2025-26 Competition Details";
     let animationFrameId: number;
 
     const animate = () => {
-      const dx = mouseX - badgeX;
-      const dy = mouseY - badgeY;
-      badgeX += dx * 0.15;
-      badgeY += dy * 0.15;
+      badgeX = mouseX;
+      badgeY = mouseY;
 
       currentScale += (targetScale - currentScale) * 0.15;
       currentOpacity += (targetOpacity - currentOpacity) * 0.15;

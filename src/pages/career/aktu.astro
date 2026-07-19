@@ -283,8 +283,8 @@ const title = "Dr. A. P. J. Abdul Kalam Technical University";
 
     let animationFrameId: number;
     const animate = () => {
-      badgeX += (mouseX - badgeX) * 0.15;
-      badgeY += (mouseY - badgeY) * 0.15;
+      badgeX = mouseX;
+      badgeY = mouseY;
       currentScale += (targetScale - currentScale) * 0.15;
       currentOpacity += (targetOpacity - currentOpacity) * 0.15;
 

@@ -158,10 +158,8 @@ import projectsData from '../data/projects.json';
 
     const animate = () => {
       // Smoothen coordinates with a LERP factor (0.15)
-      const dx = mouseX - badgeX;
-      const dy = mouseY - badgeY;
-      badgeX += dx * 0.15;
-      badgeY += dy * 0.15;
+      badgeX = mouseX;
+      badgeY = mouseY;
 
       // Smoothen scale and opacity
       currentScale += (targetScale - currentScale) * 0.15;
