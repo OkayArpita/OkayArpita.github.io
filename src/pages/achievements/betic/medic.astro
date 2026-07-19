@@ -14,11 +14,13 @@ const title = "Medical Device Innovation Camp (MEDIC 2024)";
   <Nav />
   
   <section class="flex flex-col items-center justify-center section-container pt-20 md:pt-30 gap-1 min-h-[50vh] text-center">
-    <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
-      <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center">
-        <img src="/BETIC.png" alt={title} class="w-full h-full object-cover" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
-      </div>
-      <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30"></div>
+        <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
+      <a href="https://www.betic.org/" target="_blank" rel="noopener noreferrer" class="block cursor-pointer">
+        <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center hover:scale-105 transition-transform duration-300">
+          <img src="/BETIC.png" alt={title} class="w-full h-full object-cover" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+        </div>
+        <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
+      </a>
     </div>
     
     <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
