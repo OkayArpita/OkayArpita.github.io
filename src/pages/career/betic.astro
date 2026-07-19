@@ -15,28 +15,134 @@ const title = "BETIC, IIT Bombay";
   
   <section class="flex flex-col items-center justify-center section-container pt-20 md:pt-30 gap-1 min-h-[50vh] text-center">
     <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
-      <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center">
-        <img src="/IIT_Bombay.png" alt={title} class="w-full h-full object-cover" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
-      </div>
-      <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30"></div>
+      <a href="https://www.iitb.ac.in/" target="_blank" rel="noopener noreferrer" class="block cursor-pointer">
+        <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center hover:scale-105 transition-transform duration-300">
+          <img src="/IIT_Bombay.png" alt={title} class="w-full h-full object-cover" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+        </div>
+        <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
+      </a>
     </div>
     
     <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
       <h1 class="text-4xl md:text-6xl font-heading font-bold text-maintext tracking-tight mt-6">
-        {title}
+        <a href="https://www.betic.org/" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors inline-block achievement-tile relative">BETIC</a>, IIT Bombay
       </h1>
       <p class="text-accent font-semibold mt-2 text-lg">Research Intern</p>
-      <p class="text-gray text-sm mt-1">May 2025 - Jul 2025 | Onsite</p>
+      <p class="text-gray text-sm mt-1">May 2025 – July 2025 | Onsite (Full-Time)</p>
+      
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+        <span class="bg-accent/10 border border-accent/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold">
+          Supervisors: Prof. Parag Bhargava · Dr. Bhanupratap
+        </span>
+      </div>
+
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+        <span class="bg-accent/10 border border-accent/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold">
+          Projects: Automatic Blood Smear Device · Dental Intraoral Scanner Evaluation
+        </span>
+      </div>
     </div>
   </section>
 
   <!-- Content Sections -->
   <section class="px-6 sm:px-14 md:px-18 lg:px-28 max-w-360 mx-auto w-full py-10 space-y-12 reveal-content pb-32" style="animation-delay: 400ms;">
-    <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-      <p class="text-gray font-body text-base md:text-lg leading-relaxed text-center">
-        Designed the actuation-control subsystem for an automated blood smear device for sickle-cell screening, achieving 100 mm/s linear motion. Conducted engineering analysis on the Helios 500 intraoral scanner to propose optical and board-level circuitry improvements.
-      </p>
+
+    <!-- About IIT Bombay -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> About IIT Bombay
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The Indian Institute of Technology Bombay (IIT Bombay) is one of India's leading public institutions for engineering, science, and technology. It is consistently ranked among the country's top engineering institutes and is recognized internationally for its research and innovation. In the QS World University Rankings 2027, IIT Bombay is ranked among the top 150 universities worldwide.
+        </p>
+      </div>
     </div>
+
+    <!-- About BETIC -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> About BETIC
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The Biomedical Engineering and Technology Innovation Centre (BETIC) is a medical technology innovation centre at IIT Bombay that brings together engineers, clinicians, researchers, and industry partners to develop healthcare technologies addressing real clinical needs. The centre supports the complete product development cycle, from concept and prototyping to testing and validation.
+        </p>
+      </div>
+    </div>
+
+    <!-- Research Experience -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Research Experience
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          As a Research Intern at BETIC, I worked on two biomedical device development projects.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          My primary project involved developing the actuation and control subsystem for an Automatic Blood Smear Device designed to automate peripheral blood smear preparation for sickle cell disease screening. I also contributed to the engineering evaluation of the Helios 500 Dental Intraoral Scanner, studying its optical system, electronics, imaging architecture, and data acquisition workflow.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The internship provided practical experience in embedded systems, electronics, precision motion control, CAD modelling, rapid prototyping, testing, and medical device development within a multidisciplinary engineering environment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Research Impact -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Research Impact
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span class="text-gray font-body text-base md:text-lg leading-relaxed">Contributed to the development of two biomedical device projects.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span class="text-gray font-body text-base md:text-lg leading-relaxed">Worked in a multidisciplinary medical technology research environment.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span class="text-gray font-body text-base md:text-lg leading-relaxed">Gained practical experience in embedded systems, electronics, CAD, rapid prototyping, and system validation.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span class="text-gray font-body text-base md:text-lg leading-relaxed">Volunteered in the e-Yantra Summer Internship Program (eYSIP 2025) alongside the internship, participating in technical sessions and community activities.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- eYSIP -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> e-Yantra Summer Internship Program (eYSIP 2025)
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          During my internship at IIT Bombay, I was invited by Prof. Kavi Arya to volunteer in the e-Yantra Summer Internship Program (eYSIP 2025). Alongside my research work at BETIC, I occasionally assisted with the program by attending technical lectures, workshops, and mentoring sessions organized for the interns.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          I also participated in the weekend activities conducted as part of the program, including the educational visit to the Kanheri Caves. This provided an opportunity to engage with the e-Yantra community and experience the collaborative learning environment fostered by the program.
+        </p>
+      </div>
+    </div>
+
+    <!-- Media & Featured -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Media & Featured
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <p class="text-gray font-body text-base md:text-lg leading-relaxed col-span-full">Gallery items to be added here.</p>
+        </div>
+      </div>
+    </div>
+
   </section>
 </Layout>
 
