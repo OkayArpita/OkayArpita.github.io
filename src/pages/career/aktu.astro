@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/nav.astro';
+
+const title = "Dr. A. P. J. Abdul Kalam Technical University";
+---
+<Layout title={title}>
+  <!-- Back Button -->
+  <div class="fixed top-4 left-4 z-50 reveal-content" style="animation-delay: 700ms;">
+    <a href="/#career" class="group flex items-center justify-center w-12 h-12 bg-background/50 backdrop-blur-md rounded-full border border-accent/10 hover:border-accent/50 hover:bg-accent/10 transition-all duration-300 shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent group-hover:text-maintext transition-colors"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+    </a>
+  </div>
+  <Nav />
+  
+  <section class="flex flex-col items-center justify-center section-container pt-20 md:pt-30 gap-1 min-h-[50vh] text-center">
+    <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
+      <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center">
+        <img src="/AKTU.png" alt={title} class="w-full h-full object-contain p-4 bg-white" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+      </div>
+      <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30"></div>
+    </div>
+    
+    <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
+      <h1 class="text-3xl md:text-5xl font-heading font-bold text-maintext tracking-tight mt-6 leading-tight">
+        {title}
+      </h1>
+      <p class="text-accent font-semibold mt-2 text-lg">B.Tech in Electronics & Communication</p>
+      <p class="text-gray text-sm mt-1">Oct 2023 - Jul 2027</p>
+    </div>
+  </section>
+
+  <!-- Content Sections -->
+  <section class="px-6 sm:px-14 md:px-18 lg:px-28 max-w-360 mx-auto w-full py-10 space-y-12 reveal-content pb-32" style="animation-delay: 400ms;">
+    <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+      <p class="text-gray font-body text-base md:text-lg leading-relaxed text-center">
+        Pursuing a Bachelor of Technology with a CGPA of 7.94/10. Coursework focuses on Embedded System Design, FPGA Architecture, Control Systems, Real-Time Systems, and Analog/Digital Electronics.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .reveal-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+  @keyframes revealIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .balloon-float {
+    will-change: transform;
+    animation: floating-balloon 8s ease-in-out infinite;
+  }
+  @keyframes floating-balloon {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(3px, -8px) rotate(1deg); }
+    66% { transform: translate(-3px, -4px) rotate(-1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+</style>
