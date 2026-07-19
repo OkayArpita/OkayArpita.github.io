@@ -15,10 +15,12 @@ const title = "HTIC, IIT Madras";
   
   <section class="flex flex-col items-center justify-center section-container pt-20 md:pt-30 gap-1 min-h-[50vh] text-center">
     <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
-      <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center">
-        <img src="/IIT_Madras.png" alt={title} class="w-full h-full object-cover" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
-      </div>
-      <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30"></div>
+      <a href="https://htic.iitm.ac.in/" target="_blank" rel="noopener noreferrer" class="block cursor-pointer">
+        <div class="balloon-float w-40 h-40 md:w-56 md:h-56 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)] bg-background flex items-center justify-center hover:scale-105 transition-transform duration-300">
+          <img src="/IIT_Madras.png" alt={title} class="w-full h-full object-cover" onerror="this.src='/Career/IIT MADRAS/at iitm.png'; this.onerror=null;" />
+        </div>
+        <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
+      </a>
     </div>
     
     <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
@@ -26,16 +28,214 @@ const title = "HTIC, IIT Madras";
         {title}
       </h1>
       <p class="text-accent font-semibold mt-2 text-lg">Research Intern</p>
-      <p class="text-gray text-sm mt-1">Sep 2025 - Nov 2025 | Onsite</p>
+      <p class="text-gray text-sm mt-1">September 2025 – November 2025 | Onsite (Full-Time)</p>
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+        <span class="bg-accent/10 border border-accent/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold">Supervisors: Prof. Jayaraj Joseph · Dr. Nabeel P. M. · Dr. Raj Kiran V.</span>
+        <span class="bg-accent/10 border border-accent/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold">Project: Multi-Channel Infusion System</span>
+      </div>
+      <div class="mt-4">
+        <a href="/projects/infusion" class="inline-flex items-center gap-2 text-accent hover:text-maintext transition-colors text-sm font-semibold border border-accent/20 rounded-full px-4 py-2 hover:bg-accent/10">
+          View Project
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Content Sections -->
   <section class="px-6 sm:px-14 md:px-18 lg:px-28 max-w-360 mx-auto w-full py-10 space-y-12 reveal-content pb-32" style="animation-delay: 400ms;">
-    <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-      <p class="text-gray font-body text-base md:text-lg leading-relaxed text-center">
-        Led full system development for a multi-channel infusion system used in an ex vivo cardiac revival platform. Designed a programmable architecture featuring Bluetooth control, PCB routing, electromechanical integration, and micro metal-gear motors with encoder-based calibration.
-      </p>
+    
+    <!-- About IIT Madras -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> About IIT Madras
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          The Indian Institute of Technology Madras (IIT Madras) is one of India's leading institutions for engineering, science, and technology. The institute has consistently secured the No. 1 position in the NIRF Engineering Rankings since their inception and is also ranked No. 1 Overall among higher education institutions in India. Internationally, IIT Madras is ranked 170th in the QS World University Rankings 2027, reflecting its strong research, academic, and innovation ecosystem.
+        </p>
+      </div>
+    </div>
+
+    <!-- About HTIC & ACT Lab -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> About HTIC & ACT Lab
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          My internship was carried out through the Advanced Cardiac Technologies (ACT) Laboratory, Department of Electrical Engineering, under the guidance of Prof. Jayaraj Joseph. Although I was officially appointed as an Academic Research Intern in ACT Lab, my project was primarily developed at the Healthcare Technology Innovation Centre (HTIC), located within the IIT Madras Research Park.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          ACT Lab and HTIC work closely together under the leadership of Prof. Jayaraj Joseph, enabling research to progress from academic investigation to translational medical technology development. Consequently, I worked across both facilities throughout the internship, with the majority of my research and engineering activities taking place at HTIC.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          HTIC is a multidisciplinary R&D centre established as a joint initiative of IIT Madras and the Department of Biotechnology (DBT), Government of India. It brings together engineers, clinicians, researchers, hospitals, industry, and government agencies to develop healthcare technologies addressing real clinical needs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Research Experience -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Research Experience
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-6">
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          As a Research Intern, I contributed to the development of a Multi-Channel Infusion System for India's first Ex Vivo Cardiac Revival Platform, designed to enable precise delivery of cardioplegic drugs and perfusates during heart preservation research.
+        </p>
+        <p class="text-gray font-body text-base md:text-lg leading-relaxed">
+          Working within a multidisciplinary team, I was involved in embedded firmware development, custom PCB design, electromechanical integration, CAD modelling, rapid prototyping, system calibration, and validation. The internship provided practical exposure to the complete medical device development workflow—from engineering design and hardware integration to testing and clinical-oriented product development.
+        </p>
+        <div class="flex items-center gap-3 text-accent text-sm md:text-base font-semibold border-t border-accent/10 pt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          <a href="/projects/infusion" class="hover:underline hover:text-maintext transition-colors">Detailed technical implementation is available on the dedicated project page.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Impact -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Research Impact
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <ul class="list-disc list-outside ml-5 space-y-3 text-gray font-body text-base md:text-lg leading-relaxed">
+          <li>Contributed to the development of a critical subsystem for India's first ex vivo cardiac revival platform.</li>
+          <li>Worked across both an academic research laboratory (ACT Lab) and a translational medical technology centre (HTIC).</li>
+          <li>Collaborated with researchers, clinicians, and engineers in a multidisciplinary R&D environment.</li>
+          <li>Gained experience in embedded medical devices, hardware development, prototyping, and system validation.</li>
+          <li>Strengthened my understanding of translating engineering research into practical healthcare technologies.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Media & Gallery -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Media & Featured
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <a href="/Career/IIT MADRAS/at iitm.png" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/at iitm.png" alt="At IIT Madras" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">At IIT Madras</p>
+              <p class="text-gray text-xs mt-1">Research Intern</p>
+            </div>
+          </a>
+
+          <a href="/Career/IIT MADRAS/at htic .jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/at htic .jpg" alt="At HTIC" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">At HTIC</p>
+              <p class="text-gray text-xs mt-1">Healthcare Technology Innovation Centre</p>
+            </div>
+          </a>
+
+          <a href="/Career/IIT MADRAS/at iitm research park.jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/at iitm research park.jpg" alt="IITM Research Park" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">IITM Research Park</p>
+              <p class="text-gray text-xs mt-1">Translational Research</p>
+            </div>
+          </a>
+          
+          <a href="/Career/IIT MADRAS/campus exploration.jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/campus exploration.jpg" alt="Campus Exploration" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Campus Exploration</p>
+              <p class="text-gray text-xs mt-1">Life at IIT Madras</p>
+            </div>
+          </a>
+
+          <a href="/Career/IIT MADRAS/componenet procurement.jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/componenet procurement.jpg" alt="Component Procurement" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Component Procurement</p>
+              <p class="text-gray text-xs mt-1">Hardware Engineering</p>
+            </div>
+          </a>
+
+          <a href="/Career/IIT MADRAS/working.jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/working.jpg" alt="Working" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">In the Lab</p>
+              <p class="text-gray text-xs mt-1">System Integration & Testing</p>
+            </div>
+          </a>
+
+          <a href="/Career/IIT MADRAS/me with infusion system.jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/me with infusion system.jpg" alt="With Infusion System" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Infusion System</p>
+              <p class="text-gray text-xs mt-1">Cardiac Revival Platform</p>
+            </div>
+          </a>
+
+          <a href="/Career/IIT MADRAS/Teamhtic.jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/Teamhtic.jpg" alt="HTIC Team" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Team HTIC</p>
+              <p class="text-gray text-xs mt-1">Multidisciplinary R&D</p>
+            </div>
+          </a>
+
+          <a href="/Career/IIT MADRAS/iit madras.jpg" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/iit madras.jpg" alt="IIT Madras Campus" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">IIT Madras Campus</p>
+              <p class="text-gray text-xs mt-1">Research Environment</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/arpita-kumari-293673295/" target="_blank" rel="noopener noreferrer" class="career-tile group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md block">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/linkedin.png" alt="LinkedIn Post" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">LinkedIn Feature</p>
+              <p class="text-gray text-xs mt-1">Professional Updates</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Certificate
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
+        <a href="/Career/IIT MADRAS/Internship Certificate (ACT Lab)_page-0001.jpg" class="career-tile block relative w-full max-w-xl group">
+          <img 
+            src="/Career/IIT MADRAS/Internship Certificate (ACT Lab)_page-0001.jpg" 
+            alt="ACT Lab Internship Certificate" 
+            class="w-full aspect-[1/1.414] object-contain rounded-lg border border-accent/20 shadow-lg bg-white/5 transition-transform duration-500 group-hover:scale-[1.02]"
+          />
+        </a>
+      </div>
     </div>
   </section>
 </Layout>
