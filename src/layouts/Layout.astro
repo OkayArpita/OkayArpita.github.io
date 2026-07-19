@@ -215,7 +215,20 @@ const defaultTheme = `${baseTheme}-dark`;
 
       document.body.addEventListener('click', (e) => {
         const target = e.target;
-        if (target instanceof HTMLImageElement && !target.closest('a') && !target.closest('button') && target !== dialogImg && !target.classList.contains('no-fullscreen')) {
+        if (target instanceof HTMLImageElement && !target.closest('button') && target !== dialogImg && !target.classList.contains('no-fullscreen')) {
+          
+          const parentLink = target.closest('a');
+          if (parentLink) {
+            const href = parentLink.getAttribute('href');
+            // If the link points to an image file, prevent opening in a new tab and use lightbox instead
+            if (href && /\.(jpe?g|png|webp|gif)$/i.test(href.split('?')[0])) {
+              e.preventDefault();
+            } else {
+              // For external links or PDFs, allow normal navigation
+              return;
+            }
+          }
+
           dialogImg.src = target.src;
           dialog.showModal();
           setTimeout(() => {
