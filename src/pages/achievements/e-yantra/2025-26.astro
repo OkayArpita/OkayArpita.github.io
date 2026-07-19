@@ -269,7 +269,7 @@ const title = "e-Yantra 2025-26 Competition Details";
   </section>
 
   <!-- Project Cursor Badge -->
-  <div id="project-cursor-badge" class="project-cursor-badge">
+  <div id="project-cursor-badge" style="display:none;" class="project-cursor-badge">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
       <path d="M8 5v14l11-7z" />
     </svg>
@@ -324,7 +324,7 @@ const title = "e-Yantra 2025-26 Competition Details";
 </style>
 
 <script>
-  const initCursorBadge = () => {
+  const initCursorBadge = () => { return;
     const badge = document.getElementById('project-cursor-badge');
     const cards = document.querySelectorAll('.achievement-tile');
     if (!badge || cards.length === 0) return;

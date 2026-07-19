@@ -153,7 +153,7 @@ import CareerCard from './career-card.astro';
   // Runs on initial load
   revealCards();
   
-  const initCareerCursor = () => {
+  const initCareerCursor = () => { return;
     const badge = document.getElementById('career-cursor-badge');
     const tiles = document.querySelectorAll('.career-tile');
     if (!badge || tiles.length === 0) return;
