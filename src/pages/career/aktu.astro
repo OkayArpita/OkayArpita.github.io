@@ -25,19 +25,160 @@ const title = "Dr. A. P. J. Abdul Kalam Technical University";
       <h1 class="text-3xl md:text-5xl font-heading font-bold text-maintext tracking-tight mt-6 leading-tight">
         {title}
       </h1>
-      <p class="text-accent font-semibold mt-2 text-lg">B.Tech in Electronics & Communication</p>
-      <p class="text-gray text-sm mt-1">Oct 2023 - Jul 2027</p>
+      <p class="text-accent font-semibold mt-2 text-lg">Bachelor of Technology (B.Tech.)</p>
+      <p class="text-gray text-sm mt-1">Oct 2023 - Jul 2027 | Electronics & Communication Engineering</p>
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+        <span class="bg-accent/10 border border-accent/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold">KIET Group of Institutions</span>
+        <span class="bg-accent/10 border border-accent/20 text-accent px-4 py-1.5 rounded-full text-sm font-semibold">CGPA: 7.71 / 10</span>
+      </div>
     </div>
   </section>
 
   <!-- Content Sections -->
   <section class="px-6 sm:px-14 md:px-18 lg:px-28 max-w-360 mx-auto w-full py-10 space-y-12 reveal-content pb-32" style="animation-delay: 400ms;">
-    <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-4">
-      <p class="text-gray font-body text-base md:text-lg leading-relaxed text-center">
-        Pursuing a Bachelor of Technology with a CGPA of 7.94/10. Coursework focuses on Embedded System Design, FPGA Architecture, Control Systems, Real-Time Systems, and Analog/Digital Electronics.
-      </p>
+    
+    <!-- 2. Relevant Coursework -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Relevant Coursework
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray font-body text-base md:text-lg">
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Embedded System Design</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> FPGA & Digital System Architecture</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Control Systems</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Microprocessors & Microcontrollers</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Sensors & Instrumentation</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Real-Time Systems</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Communication Systems</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Analog & Digital Electronics</li>
+          <li class="flex items-center gap-3"><span class="text-accent text-xl">•</span> Data Structures & Algorithms</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- 3. Academic Highlights -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Academic Highlights
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 space-y-6">
+        <ul class="space-y-4 text-gray font-body text-base md:text-lg list-none">
+          <li class="flex items-start gap-4">
+            <span class="text-accent text-2xl mt-0.5">✨</span>
+            <span><strong>Research internships</strong> at prestigious institutions including IIT Bombay, IIT Madras, and EPFL.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-accent text-2xl mt-0.5">🔬</span>
+            <span>Applied academic knowledge to real-world impact in <strong>medical devices, robotics, and embedded systems</strong>.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-accent text-2xl mt-0.5">🏆</span>
+            <span>Participated and achieved top ranks in <strong>national and international robotics competitions</strong>.</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-accent text-2xl mt-0.5">🛠️</span>
+            <span>Gained extensive hands-on experience in <strong>PCB design, embedded firmware, CAD, and rapid prototyping</strong>.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4. Areas of Interest -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Areas of Interest
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="flex flex-wrap gap-3">
+          {["Robotics", "Embedded Systems", "Biomedical Engineering", "Medical Devices", "Control Systems", "FPGA & Digital Design", "Internet of Things (IoT)", "Assistive Technologies"].map(interest => (
+            <span class="px-5 py-2 rounded-xl border border-accent/20 bg-background/50 hover:bg-accent/10 transition-colors text-maintext text-sm font-semibold shadow-sm cursor-default">
+              {interest}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. MOOCs & Certifications -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> MOOCs & Certifications
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="achievement-tile cursor-pointer group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/AKTU/Basics of Embedded Systems and Robotics (Merit)_page-0001.jpg" alt="Embedded Systems MOOC" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Embedded Systems</p>
+              <p class="text-gray text-xs mt-1">e-Yantra, IIT Bombay</p>
+            </div>
+          </div>
+          
+          <div class="achievement-tile cursor-pointer group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
+            <div class="aspect-[4/3] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/AKTU/ROS2 MOOC (Merit)_page-0001.jpg" alt="ROS 2 for Robotics MOOC" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">ROS 2 for Robotics</p>
+              <p class="text-gray text-xs mt-1">e-Yantra, IIT Bombay</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Academic Records -->
+    <div class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
+        <span class="text-accent">/</span> Academic Records
+      </h2>
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="achievement-tile cursor-pointer group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
+            <div class="aspect-[1/1.4] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/AKTU/Result_page-0001.jpg" alt="Semester Result Page 1" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Academic Transcript</p>
+              <p class="text-gray text-xs mt-1">Page 1</p>
+            </div>
+          </div>
+          
+          <div class="achievement-tile cursor-pointer group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
+            <div class="aspect-[1/1.4] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/AKTU/Result_page-0002.jpg" alt="Semester Result Page 2" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Academic Transcript</p>
+              <p class="text-gray text-xs mt-1">Page 2</p>
+            </div>
+          </div>
+          
+          <div class="achievement-tile cursor-pointer group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md">
+            <div class="aspect-[1/1.4] w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/AKTU/Result_page-0003.jpg" alt="Semester Result Page 3" class="max-w-full max-h-full object-contain mx-auto group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5">
+              <p class="text-maintext font-heading font-bold text-sm">Academic Transcript</p>
+              <p class="text-gray text-xs mt-1">Page 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
+
+  <!-- Project Cursor Badge -->
+  <div id="project-cursor-badge" class="project-cursor-badge">
+    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z" />
+    </svg>
+    <span>Open</span>
+  </div>
 </Layout>
 
 <style>
@@ -59,4 +200,79 @@ const title = "Dr. A. P. J. Abdul Kalam Technical University";
     66% { transform: translate(-3px, -4px) rotate(-1deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
   }
+
+  /* Project Cursor Badge */
+  .project-cursor-badge {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    will-change: transform, opacity;
+  }
 </style>
+
+<script>
+  const initCursorBadge = () => {
+    const badge = document.getElementById('project-cursor-badge');
+    const cards = document.querySelectorAll('.achievement-tile');
+    if (!badge || cards.length === 0) return;
+
+    let mouseX = 0, mouseY = 0;
+    let badgeX = 0, badgeY = 0;
+    let currentScale = 0.5, targetScale = 0.5;
+    let currentOpacity = 0, targetOpacity = 0;
+
+    const onMouseMove = (e: MouseEvent) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    };
+    window.addEventListener('mousemove', onMouseMove);
+
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => { targetScale = 1; targetOpacity = 1; });
+      card.addEventListener('mouseleave', () => { targetScale = 0.5; targetOpacity = 0; });
+    });
+
+    let animationFrameId: number;
+    const animate = () => {
+      badgeX += (mouseX - badgeX) * 0.15;
+      badgeY += (mouseY - badgeY) * 0.15;
+      currentScale += (targetScale - currentScale) * 0.15;
+      currentOpacity += (targetOpacity - currentOpacity) * 0.15;
+
+      badge.style.opacity = currentOpacity.toFixed(3);
+      badge.style.transform = `translate3d(${badgeX}px, ${badgeY}px, 0) translate(-50%, -50%) scale(${currentScale.toFixed(3)})`;
+
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    animate();
+
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
+  };
+
+  let cleanupCursor: (() => void) | null = null;
+  const setupAll = () => {
+    if (cleanupCursor) cleanupCursor();
+    cleanupCursor = initCursorBadge();
+  };
+
+  window.addEventListener('load', setupAll);
+  document.addEventListener('astro:after-swap', setupAll);
+  setupAll();
+</script>
