@@ -166,11 +166,27 @@ const profileImage = await resolveAssetImage("maze-solver@dp.jpg");
             Assembled and validated the electromechanical subsystems, control logic, and wireless communication, testing navigation reliability under competition arena constraints.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-            <img src="/Projects/MazeSolverBot/arena-making.jpg" alt="Arena Fabrication" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-            <video controls autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
-              <source src="/Projects/MazeSolverBot/hardware-demo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/MazeSolverBot/arena-making.jpg" alt="Arena Fabrication" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Arena Fabrication</p>
+                <p class="text-gray text-xs mt-1">Fabricating the testing arena.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <video controls autoplay loop muted playsinline class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700">
+                  <source src="/Projects/MazeSolverBot/hardware-demo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Hardware Demo</p>
+                <p class="text-gray text-xs mt-1">System in action.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -304,12 +320,24 @@ const profileImage = await resolveAssetImage("maze-solver@dp.jpg");
         <span class="text-accent">/</span> Certificate
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <img 
-          src="/Projects/MazeSolverBot/certificate-page-1.jpg" alt="eYRC Certificate Page 1" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
-        />
-        <img 
-          src="/Projects/MazeSolverBot/certificate-page-2.jpg" alt="eYRC Certificate Page 2" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
-        />
+        <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+          <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+            <img src="/Projects/MazeSolverBot/certificate-page-1.jpg" alt="eYRC Certificate Page 1" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+            <p class="text-maintext font-heading font-bold text-sm">Certificate Page 1</p>
+            <p class="text-gray text-xs mt-1">eYRC Level-2 Certification.</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+          <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+            <img src="/Projects/MazeSolverBot/certificate-page-2.jpg" alt="eYRC Certificate Page 2" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+          </div>
+          <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+            <p class="text-maintext font-heading font-bold text-sm">Certificate Page 2</p>
+            <p class="text-gray text-xs mt-1">eYRC Level-2 Certification details.</p>
+          </div>
+        </div>
       </div>
     </div>
 

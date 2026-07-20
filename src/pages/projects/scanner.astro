@@ -133,13 +133,23 @@ const profileImage = await resolveAssetImage("scanner@dp.jpg");
             Tested the scanning system across different dental cast models to evaluate acquisition continuity, surface completeness, and geometric accuracy. Conducted a dual-cast simultaneous scan to evaluate the registration pipeline's capability to maintain separation and detail.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <div class="space-y-2">
-              <img src="/Projects/DentalIntraoralScanner/lower teeth full scan.jpg" alt="Lower Teeth Full Scan" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-              <p class="text-xs text-subtext text-center italic">Reconstructed 3D geometry of lower dental cast model</p>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/DentalIntraoralScanner/lower teeth full scan.jpg" alt="Lower Teeth Full Scan" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Lower Teeth Full Scan</p>
+                <p class="text-gray text-xs mt-1">Reconstructed 3D geometry of lower dental cast model.</p>
+              </div>
             </div>
-            <div class="space-y-2">
-              <img src="/Projects/DentalIntraoralScanner/two different dentures in one scan.jpg" alt="Two Dentures In One Scan" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-              <p class="text-xs text-subtext text-center italic">Registration of two independent dental cast models scanned simultaneously</p>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/DentalIntraoralScanner/two different dentures in one scan.jpg" alt="Two Dentures In One Scan" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Two Dentures In One Scan</p>
+                <p class="text-gray text-xs mt-1">Registration of two independent dental cast models scanned simultaneously.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -153,13 +163,23 @@ const profileImage = await resolveAssetImage("scanner@dp.jpg");
             Tested the scanner on a keyring to evaluate tracking behavior on arbitrary geometries. The scanner struggled to produce a complete reconstruction, showing the dependence of commercial reconstruction algorithms on dental-specific anatomical markers.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <div class="space-y-2">
-              <img src="/Projects/DentalIntraoralScanner/keyring.jpg" alt="Physical Keyring" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-              <p class="text-xs text-subtext text-center italic">Physical keyring used for non-dental geometry testing</p>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/DentalIntraoralScanner/keyring.jpg" alt="Physical Keyring" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Physical Keyring</p>
+                <p class="text-gray text-xs mt-1">Physical keyring used for non-dental geometry testing.</p>
+              </div>
             </div>
-            <div class="space-y-2">
-              <img src="/Projects/DentalIntraoralScanner/keyringscan.jpg" alt="Keyring 3D Reconstruction Attempt" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-              <p class="text-xs text-subtext text-center italic">Resulting reconstruction scan showing registration errors on flat areas</p>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/DentalIntraoralScanner/keyringscan.jpg" alt="Keyring 3D Reconstruction Attempt" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">3D Reconstruction Attempt</p>
+                <p class="text-gray text-xs mt-1">Resulting reconstruction scan showing registration errors on flat areas.</p>
+              </div>
             </div>
           </div>
         </div>

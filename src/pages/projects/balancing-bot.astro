@@ -106,8 +106,24 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
             Designed and tuned PID and LQR controllers to stabilize the inverted-pendulum platform. The controller continuously compensates for disturbances caused by manipulator motion, payload transfer, and external perturbations.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <img src="/Projects/BalancingBuilderBot/PIDControl.png" alt="PID Control" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
-            <img src="/Projects/BalancingBuilderBot/LQRControl.png" alt="LQR Control" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/BalancingBuilderBot/PIDControl.png" alt="PID Control" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">PID Control</p>
+                <p class="text-gray text-xs mt-1">Dynamic stabilization using PID controller.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/BalancingBuilderBot/LQRControl.png" alt="LQR Control" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">LQR Control</p>
+                <p class="text-gray text-xs mt-1">Dynamic stabilization using LQR controller.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -134,7 +150,17 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-2">
             This method is computationally efficient and suitable for real-time angle measurement applications.
           </p>
-          <img src="/Projects/BalancingBuilderBot/InvertedPendulum.png" alt="Inverted Pendulum Model" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20 mt-4" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/BalancingBuilderBot/InvertedPendulum.png" alt="Inverted Pendulum Model" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Inverted Pendulum Model</p>
+                <p class="text-gray text-xs mt-1">Model used for state estimation and control.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -142,7 +168,17 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Designed a lightweight 3D-printed robotic arm and servo-driven gripper capable of picking, transporting, and placing construction blocks while minimizing the impact on the robot's stability.
           </p>
-          <img src="/Projects/BalancingBuilderBot/Manipulator.png" alt="Robotic Manipulator" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20 mt-4" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/BalancingBuilderBot/Manipulator.png" alt="Robotic Manipulator" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Robotic Manipulator</p>
+                <p class="text-gray text-xs mt-1">Lightweight 3D-printed arm for manipulation.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -150,7 +186,17 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Developed a custom Android application using MIT App Inventor to wirelessly control both the robot's locomotion and manipulator via Bluetooth UART communication. The interface enabled intuitive real-time operation while the balancing controller maintained platform stability.
           </p>
-          <img src="/Projects/BalancingBuilderBot/ControllerApp.png" alt="Controller App" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20 mt-4" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/BalancingBuilderBot/ControllerApp.png" alt="Controller App" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Controller App</p>
+                <p class="text-gray text-xs mt-1">Custom Android application for teleoperation.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -159,16 +205,48 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
             Developed and validated the robot in CoppeliaSim before deploying the control algorithms to the physical platform, allowing efficient controller tuning and system verification prior to hardware implementation.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <video controls playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
-              <source src="/Projects/BalancingBuilderBot/SimulationDemo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <video controls playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
-              <source src="/Projects/BalancingBuilderBot/HardwareDemo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <img src="/Projects/BalancingBuilderBot/bot front.JPG" alt="Bot Front View" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
-            <img src="/Projects/BalancingBuilderBot/bot back.JPG" alt="Bot Back View" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <video controls playsinline class="max-w-full max-h-full object-contain">
+                  <source src="/Projects/BalancingBuilderBot/SimulationDemo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Simulation</p>
+                <p class="text-gray text-xs mt-1">CoppeliaSim physics-based simulation.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <video controls playsinline class="max-w-full max-h-full object-contain">
+                  <source src="/Projects/BalancingBuilderBot/HardwareDemo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Hardware Demo</p>
+                <p class="text-gray text-xs mt-1">Demonstration on the physical platform.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/BalancingBuilderBot/bot front.JPG" alt="Bot Front View" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Bot Front View</p>
+                <p class="text-gray text-xs mt-1">Front profile of the completed robot.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/BalancingBuilderBot/bot back.JPG" alt="Bot Back View" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Bot Back View</p>
+                <p class="text-gray text-xs mt-1">Rear profile displaying electronics.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -273,18 +351,24 @@ const profileImage = await resolveAssetImage("balancing-bot@dp.jpg");
         <span class="text-accent">/</span> Certificates
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center text-center">
-          <div class="flex flex-col items-center gap-2">
-            <img 
-              src="/Projects/BalancingBuilderBot/eYRC24_Certificate_1.jpg" alt="eYRC Certificate 1" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
-              onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
-            />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Projects/BalancingBuilderBot/eYRC24_Certificate_1.jpg" alt="eYRC Certificate 1" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">eYRC Stage 3</p>
+              <p class="text-gray text-xs mt-1">Certificate of participation as Stage 3 Finalist.</p>
+            </div>
           </div>
-          <div class="flex flex-col items-center gap-2">
-            <img 
-              src="/Projects/BalancingBuilderBot/eYRC24_Certificate_2.png" alt="eYRC Certificate 2" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
-              onerror="this.src='/placeholder.jpeg'; this.onerror=null;"
-            />
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Projects/BalancingBuilderBot/eYRC24_Certificate_2.png" alt="eYRC Certificate 2" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" onerror="this.src='/placeholder.jpeg'; this.onerror=null;" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">eYRC Completion</p>
+              <p class="text-gray text-xs mt-1">Certificate of completion for the competition.</p>
+            </div>
           </div>
         </div>
       </div>

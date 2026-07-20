@@ -124,9 +124,25 @@ const profileImage = await resolveAssetImage("line-follower@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Assembled the electronic system on a prototyping PCB to minimize mass. Implemented power distribution using an MP1584 buck converter and TB6612FNG motor drivers for stable current delivery.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-            <img src="/Projects/FastestLineFollowerRobot/cad-render-1.jpg" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-            <img src="/Projects/FastestLineFollowerRobot/cad-renders.jpg" alt="CAD Render 2" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/FastestLineFollowerRobot/cad-render-1.jpg" alt="CAD Render" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">CAD Render</p>
+                <p class="text-gray text-xs mt-1">Mechanical design of the differential drive system.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/FastestLineFollowerRobot/cad-renders.jpg" alt="CAD Render 2" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">CAD Assembly</p>
+                <p class="text-gray text-xs mt-1">Full electromechanical assembly overview.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -149,12 +165,28 @@ const profileImage = await resolveAssetImage("line-follower@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Iteratively tuned PID parameters, sensor calibration, and power distribution to minimize processing latency and improve dynamic response.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-            <img src="/Achievements/technoxian/at-technoxian.jpg" alt="At Technoxian" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-            <video controls autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
-              <source src="/Projects/FastestLineFollowerRobot/the-run.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Achievements/technoxian/at-technoxian.jpg" alt="At Technoxian" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">At Technoxian</p>
+                <p class="text-gray text-xs mt-1">Robot deployed at the World Robotics Championship.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <video controls autoplay loop muted playsinline class="max-w-full max-h-full object-contain">
+                  <source src="/Projects/FastestLineFollowerRobot/the-run.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">The Run</p>
+                <p class="text-gray text-xs mt-1">High-speed trajectory tracking demonstration.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -170,8 +202,16 @@ const profileImage = await resolveAssetImage("line-follower@dp.jpg");
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
           The robot was unable to perform as expected during the championship finals due to differences between the practice environment and the official competition arena. The official arena exhibited slight differences in track width, corner geometry, and surface characteristics. Since the sensor calibration and PID controller gains had been optimized specifically for the practice track, these dimensional variations led to unstable steering corrections at competition speeds.
         </p>
-        <div class="pt-2 flex justify-center">
-          <img src="/Projects/FastestLineFollowerRobot/home-made-practice-arena.jpg" alt="Home Made Practice Arena" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Projects/FastestLineFollowerRobot/home-made-practice-arena.jpg" alt="Home Made Practice Arena" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">Practice Arena</p>
+              <p class="text-gray text-xs mt-1">Home-made track used for PID tuning.</p>
+            </div>
+          </div>
         </div>
         <p class="text-gray font-body text-base md:text-lg leading-relaxed mt-4 font-bold text-maintext">
           Key Engineering Principles Highlighted:
@@ -283,8 +323,18 @@ const profileImage = await resolveAssetImage("line-follower@dp.jpg");
       <h2 class="text-2xl md:text-3xl font-heading font-bold text-maintext flex items-center gap-3">
         <span class="text-accent">/</span> Certificate
       </h2>
-      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
-        <img src="/Projects/FastestLineFollowerRobot/Participation%20Certificate.jpg" alt="Participation Certificate" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+      <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Projects/FastestLineFollowerRobot/Participation%20Certificate.jpg" alt="Participation Certificate" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">Participation Certificate</p>
+              <p class="text-gray text-xs mt-1">Technoxian World Robotics Championship.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

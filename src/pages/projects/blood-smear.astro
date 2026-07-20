@@ -129,7 +129,17 @@ const profileImage = await resolveAssetImage("blood-smear@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Used a 12 V planetary-geared DC motor with an incremental encoder. Iteratively refined the actuation mechanism to achieve a stable 100 mm/s linear spreading velocity.
           </p>
-          <video src="/Projects/Automaticbloodsmeardevice/Blood smear Demo Video.mp4" controls playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50"></video>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <video src="/Projects/Automaticbloodsmeardevice/Blood smear Demo Video.mp4" controls playsinline class="max-w-full max-h-full object-contain"></video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Mechanism Demo</p>
+                <p class="text-gray text-xs mt-1">Electromechanical actuation system in action.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -144,7 +154,17 @@ const profileImage = await resolveAssetImage("blood-smear@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Tuned motor parameters and mechanical alignment to suppress vibrations during the spreading stroke. This successfully eliminated visible striations and improved the consistency of the blood film.
           </p>
-          <img src="/Projects/Automaticbloodsmeardevice/blood trails.jpg" alt="Blood Trails" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/Automaticbloodsmeardevice/blood trails.jpg" alt="Blood Trails" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Blood Trails</p>
+                <p class="text-gray text-xs mt-1">Comparing smear quality before and after vibration suppression.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -166,7 +186,17 @@ const profileImage = await resolveAssetImage("blood-smear@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Coordinated the full sequence (initialization, positioning, gripping, spreading, and return) into a single automated cycle, eliminating manual intervention.
           </p>
-          <video src="/Projects/Automaticbloodsmeardevice/final prototype demo.mov" controls playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50"></video>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <video src="/Projects/Automaticbloodsmeardevice/final prototype demo.mov" controls playsinline class="max-w-full max-h-full object-contain"></video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Prototype Demo</p>
+                <p class="text-gray text-xs mt-1">Full automated cycle demonstration.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -283,10 +313,16 @@ const profileImage = await resolveAssetImage("blood-smear@dp.jpg");
         <p class="text-gray font-body text-base md:text-lg leading-relaxed">
           <strong>Letter of Recommendation</strong> received from Prof. Parag Bhargava for successful early completion of the proof of concept.
         </p>
-        <div class="mt-4 flex justify-center">
-          <img 
-            src="/Projects/Automaticbloodsmeardevice/Letter of Recommendation by Prof. Parag Bhargava.jpg" alt="Letter of Recommendation" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
-          />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Projects/Automaticbloodsmeardevice/Letter of Recommendation by Prof. Parag Bhargava.jpg" alt="Letter of Recommendation" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">Letter of Recommendation</p>
+              <p class="text-gray text-xs mt-1">From Prof. Parag Bhargava.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -297,10 +333,16 @@ const profileImage = await resolveAssetImage("blood-smear@dp.jpg");
         <span class="text-accent">/</span> Certificate
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8 flex justify-center">
-        <div class="mt-4 flex justify-center w-full">
-          <img 
-            src="/Projects/Automaticbloodsmeardevice/Internship Certificate.jpg" alt="Internship Certificate" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20"
-          />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Projects/Automaticbloodsmeardevice/Internship Certificate.jpg" alt="Internship Certificate" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">Internship Certificate</p>
+              <p class="text-gray text-xs mt-1">Certificate of internship completion.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

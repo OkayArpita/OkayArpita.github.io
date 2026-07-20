@@ -105,7 +105,17 @@ const profileImage = await resolveAssetImage("infusion@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Built a scalable architecture with up to 5 independently controllable syringe-pump modules. The central controller uses an <strong>ESP32 microcontroller</strong> with Bluetooth capabilities, designed for future integration with the platform's <strong>NI LabVIEW control system</strong>.
           </p>
-          <img src="/Projects/MultichannelInfusionSystem/Two Modules.jpg" alt="Two Modules" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/MultichannelInfusionSystem/Two Modules.jpg" alt="Two Modules" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Two Modules</p>
+                <p class="text-gray text-xs mt-1">Modular architecture of the syringe-pump.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -113,7 +123,17 @@ const profileImage = await resolveAssetImage("infusion@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Designed the syringe-actuation mechanisms using <strong>Autodesk Fusion</strong> and fabricated them via <strong>resin 3D printing</strong>. Each module measures 16.3 cm x 3.5 cm and uses a <strong>12V N20 geared DC motor with an integrated encoder</strong> and a <strong>100mm M4 lead screw</strong> to translate rotary motion into linear syringe displacement. Limit switches provide mechanical end-position detection.
           </p>
-          <img src="/Projects/MultichannelInfusionSystem/CadRender - 1.jpg" alt="CAD Render" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/MultichannelInfusionSystem/CadRender - 1.jpg" alt="CAD Render" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">CAD Render</p>
+                <p class="text-gray text-xs mt-1">Electromechanical design of the actuation mechanism.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4">
@@ -121,9 +141,25 @@ const profileImage = await resolveAssetImage("infusion@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Assembled a compact dual-layer motherboard containing the <strong>ESP32 microcontroller</strong>, a <strong>TB6612FNG dual-channel motor driver</strong>, and an <strong>MP1584 DC-DC buck converter</strong>. This unified board independently drives multiple modules while utilizing a shared power subsystem.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img src="/Projects/MultichannelInfusionSystem/Wiring Diagram.jpg" alt="Wiring Diagram" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
-            <img src="/Projects/MultichannelInfusionSystem/pcb.jpg" alt="PCB Assembly" class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/20" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/MultichannelInfusionSystem/Wiring Diagram.jpg" alt="Wiring Diagram" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">Wiring Diagram</p>
+                <p class="text-gray text-xs mt-1">Schematic of custom control electronics.</p>
+              </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <img src="/Projects/MultichannelInfusionSystem/pcb.jpg" alt="PCB Assembly" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">PCB Assembly</p>
+                <p class="text-gray text-xs mt-1">Unified control board assembly.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -132,11 +168,19 @@ const profileImage = await resolveAssetImage("infusion@dp.jpg");
           <p class="text-gray font-body text-base md:text-lg leading-relaxed">
             Integrated mechanical and electronic subsystems into a two-channel functional prototype. Validated independent channel actuation, linear translation accuracy, limit-switch feedback, and wireless ESP32 coordination.
           </p>
-          <div class="flex justify-center mt-4">
-            <video controls autoplay loop muted playsinline class="rounded-lg border border-accent/20 shadow-md w-full max-h-64 object-contain bg-black/50">
-              <source src="/Projects/MultichannelInfusionSystem/Project Demonstration.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+              <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+                <video controls autoplay loop muted playsinline class="max-w-full max-h-full object-contain">
+                  <source src="/Projects/MultichannelInfusionSystem/Project Demonstration.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+                <p class="text-maintext font-heading font-bold text-sm">System Integration Demo</p>
+                <p class="text-gray text-xs mt-1">Testing and validation of the full system.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -237,30 +281,25 @@ const profileImage = await resolveAssetImage("infusion@dp.jpg");
         <span class="text-accent">/</span> Certificates
       </h2>
       <div class="bg-accent/5 border border-accent/10 rounded-2xl p-6 md:p-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center text-center">
-          
-          <div class="flex flex-col items-center gap-2">
-            <a href="/Projects/MultichannelInfusionSystem/Internship Certificate.jpg" class="achievement-tile block relative w-full max-w-sm group mx-auto">
-              <img 
-                src="/Projects/MultichannelInfusionSystem/Internship Certificate.jpg" 
-                alt="ACT Lab Internship Certificate" 
-                class="w-full aspect-[1/1.414] object-contain rounded-lg border border-accent/20 shadow-lg bg-black/20 transition-transform duration-500 group-hover:scale-[1.02]"
-              />
-            </a>
-            <p class="text-maintext font-heading font-semibold mt-2">ACT Lab Certificate</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Projects/MultichannelInfusionSystem/Internship Certificate.jpg" alt="ACT Lab Internship Certificate" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">ACT Lab Certificate</p>
+              <p class="text-gray text-xs mt-1">Certificate of internship completion.</p>
+            </div>
           </div>
-
-          <div class="flex flex-col items-center gap-2">
-            <a href="/Career/IIT MADRAS/Internship Certificate (HTIC)_page-0001.jpg" class="achievement-tile block relative w-full max-w-sm group mx-auto">
-              <img 
-                src="/Career/IIT MADRAS/Internship Certificate (HTIC)_page-0001.jpg" 
-                alt="HTIC Internship Certificate" 
-                class="w-full aspect-[1/1.414] object-contain rounded-lg border border-accent/20 shadow-lg bg-black/20 transition-transform duration-500 group-hover:scale-[1.02]"
-              />
-            </a>
-            <p class="text-maintext font-heading font-semibold mt-2">HTIC Certificate</p>
+          <div class="group relative overflow-hidden rounded-xl border border-accent/10 hover:border-accent/40 transition-all duration-500 bg-background/50 shadow-md flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-black/10 flex items-center justify-center p-2">
+              <img src="/Career/IIT MADRAS/Internship Certificate (HTIC)_page-0001.jpg" alt="HTIC Internship Certificate" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="p-4 border-t border-accent/5 flex-grow flex flex-col justify-center">
+              <p class="text-maintext font-heading font-bold text-sm">HTIC Certificate</p>
+              <p class="text-gray text-xs mt-1">Certificate of internship completion from HTIC.</p>
+            </div>
           </div>
-
         </div>
       </div>
     </div>
